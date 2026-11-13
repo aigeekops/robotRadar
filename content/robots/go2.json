@@ -1,0 +1,709 @@
+{
+  "repository": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go2_description",
+  "commit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+  "sourceFile": "robots/go2_description/urdf/go2_description.urdf",
+  "sourceSha256": "7d19fe48e2e689ee1a032ab99f2a4a8b671d87e73de48d3e65811682a5b48b9e",
+  "license": "BSD-3-Clause",
+  "method": "Official URDF or expanded vendor Xacro; mesh paths rewritten only. Visual meshes retained. No new geometry.",
+  "files": [
+    {
+      "file": "dae/base.dae",
+      "sha256": "e52bebbb5c7ff1f6aedee620c9b5b349f6e965360ecc63a9bb743eeff2d0be64",
+      "bytes": 10727399,
+      "sourcePath": "robots/go2_description/dae/base.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/base.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/hip.dae",
+      "sha256": "8735e10617afe252cef0844c1d139d15bc6d4c653660d742fea9fe05c2704d8f",
+      "bytes": 4666421,
+      "sourcePath": "robots/go2_description/dae/hip.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/hip.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/thigh.dae",
+      "sha256": "a622381ae308897ff143b8bbf02f075457c342b22984205040424a5a983246fa",
+      "bytes": 3884136,
+      "sourcePath": "robots/go2_description/dae/thigh.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/thigh.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/calf.dae",
+      "sha256": "29872fa1a435b92bc2b395fdfa7f0aee26101db3c494681896bd4ef24ee7883c",
+      "bytes": 1125517,
+      "sourcePath": "robots/go2_description/dae/calf.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/calf.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/foot.dae",
+      "sha256": "ffbd95fd641866ce9bd277aa249b92dafc9148d70131fa2c52709a35ce5b710b",
+      "bytes": 506988,
+      "sourcePath": "robots/go2_description/dae/foot.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/foot.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/thigh_mirror.dae",
+      "sha256": "c7bae0b0565c2aa4b7cc15a538d795e9153e0f10c821cc18429e92693172bdc6",
+      "bytes": 3896575,
+      "sourcePath": "robots/go2_description/dae/thigh_mirror.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/thigh_mirror.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    },
+    {
+      "file": "dae/calf_mirror.dae",
+      "sha256": "79c66be7ed06760bd5001c067a1fb0ac517f639d8b1a5f89be471903b3f359e1",
+      "bytes": 1125457,
+      "sourcePath": "robots/go2_description/dae/calf_mirror.dae",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/dae/calf_mirror.dae",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/go2_description/package.xml",
+        "README.md",
+        "robots/go2_description/README.md"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "Head_upper_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "Head_upper",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.285 0 0.01",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "Head_lower_joint",
+      "type": "fixed",
+      "parent": "Head_upper",
+      "child": "Head_lower",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.008 0 -0.07",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_hip_joint",
+      "type": "revolute",
+      "parent": "base",
+      "child": "FL_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.1934 0.0465 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "1.0472",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "FL_hip_rotor_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "FL_hip_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.11215 0.04675 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_thigh_joint",
+      "type": "revolute",
+      "parent": "FL_hip",
+      "child": "FL_thigh",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0.0955 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.5708",
+        "upper": "3.4907",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "FL_thigh_rotor_joint",
+      "type": "fixed",
+      "parent": "FL_hip",
+      "child": "FL_thigh_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 -0.00015 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_calf_joint",
+      "type": "revolute",
+      "parent": "FL_thigh",
+      "child": "FL_calf",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7227",
+        "upper": "-0.83776",
+        "effort": "45.43",
+        "velocity": "15.70"
+      }
+    },
+    {
+      "id": "FL_calflower_joint",
+      "type": "fixed",
+      "parent": "FL_calf",
+      "child": "FL_calflower",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.020 0 -0.148",
+        "rpy": "0 0.05 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_calflower1_joint",
+      "type": "fixed",
+      "parent": "FL_calflower",
+      "child": "FL_calflower1",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.01 0 -0.04",
+        "rpy": "0 0.48 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_calf_rotor_joint",
+      "type": "fixed",
+      "parent": "FL_thigh",
+      "child": "FL_calf_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 -0.03235 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FL_foot_joint",
+      "type": "fixed",
+      "parent": "FL_calf",
+      "child": "FL_foot",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_hip_joint",
+      "type": "revolute",
+      "parent": "base",
+      "child": "FR_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.1934 -0.0465 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "1.0472",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "FR_hip_rotor_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "FR_hip_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.11215 -0.04675 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_thigh_joint",
+      "type": "revolute",
+      "parent": "FR_hip",
+      "child": "FR_thigh",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 -0.0955 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.5708",
+        "upper": "3.4907",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "FR_thigh_rotor_joint",
+      "type": "fixed",
+      "parent": "FR_hip",
+      "child": "FR_thigh_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0.00015 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_calf_joint",
+      "type": "revolute",
+      "parent": "FR_thigh",
+      "child": "FR_calf",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7227",
+        "upper": "-0.83776",
+        "effort": "45.43",
+        "velocity": "15.70"
+      }
+    },
+    {
+      "id": "FR_calflower_joint",
+      "type": "fixed",
+      "parent": "FR_calf",
+      "child": "FR_calflower",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.020 0 -0.148",
+        "rpy": "0 0.05 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_calflower1_joint",
+      "type": "fixed",
+      "parent": "FR_calflower",
+      "child": "FR_calflower1",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.01 0 -0.04",
+        "rpy": "0 0.48 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_calf_rotor_joint",
+      "type": "fixed",
+      "parent": "FR_thigh",
+      "child": "FR_calf_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0.03235 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "FR_foot_joint",
+      "type": "fixed",
+      "parent": "FR_calf",
+      "child": "FR_foot",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_hip_joint",
+      "type": "revolute",
+      "parent": "base",
+      "child": "RL_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "-0.1934 0.0465 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "1.0472",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "RL_hip_rotor_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "RL_hip_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.11215 0.04675 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_thigh_joint",
+      "type": "revolute",
+      "parent": "RL_hip",
+      "child": "RL_thigh",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0.0955 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.5236",
+        "upper": "4.5379",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "RL_thigh_rotor_joint",
+      "type": "fixed",
+      "parent": "RL_hip",
+      "child": "RL_thigh_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 -0.00015 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_calf_joint",
+      "type": "revolute",
+      "parent": "RL_thigh",
+      "child": "RL_calf",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7227",
+        "upper": "-0.83776",
+        "effort": "45.43",
+        "velocity": "15.70"
+      }
+    },
+    {
+      "id": "RL_calflower_joint",
+      "type": "fixed",
+      "parent": "RL_calf",
+      "child": "RL_calflower",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.020 0 -0.148",
+        "rpy": "0 0.05 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_calflower1_joint",
+      "type": "fixed",
+      "parent": "RL_calflower",
+      "child": "RL_calflower1",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.01 0 -0.04",
+        "rpy": "0 0.48 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_calf_rotor_joint",
+      "type": "fixed",
+      "parent": "RL_thigh",
+      "child": "RL_calf_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 -0.03235 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RL_foot_joint",
+      "type": "fixed",
+      "parent": "RL_calf",
+      "child": "RL_foot",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_hip_joint",
+      "type": "revolute",
+      "parent": "base",
+      "child": "RR_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "-0.1934 -0.0465 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "1.0472",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "RR_hip_rotor_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "RR_hip_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.11215 -0.04675 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_thigh_joint",
+      "type": "revolute",
+      "parent": "RR_hip",
+      "child": "RR_thigh",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 -0.0955 0",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.5236",
+        "upper": "4.5379",
+        "effort": "23.7",
+        "velocity": "30.1"
+      }
+    },
+    {
+      "id": "RR_thigh_rotor_joint",
+      "type": "fixed",
+      "parent": "RR_hip",
+      "child": "RR_thigh_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0.00015 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_calf_joint",
+      "type": "revolute",
+      "parent": "RR_thigh",
+      "child": "RR_calf",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7227",
+        "upper": "-0.83776",
+        "effort": "45.43",
+        "velocity": "15.70"
+      }
+    },
+    {
+      "id": "RR_calflower_joint",
+      "type": "fixed",
+      "parent": "RR_calf",
+      "child": "RR_calflower",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.020 0 -0.148",
+        "rpy": "0 0.05 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_calflower1_joint",
+      "type": "fixed",
+      "parent": "RR_calflower",
+      "child": "RR_calflower1",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.01 0 -0.04",
+        "rpy": "0 0.48 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_calf_rotor_joint",
+      "type": "fixed",
+      "parent": "RR_thigh",
+      "child": "RR_calf_rotor",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0.03235 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "RR_foot_joint",
+      "type": "fixed",
+      "parent": "RR_calf",
+      "child": "RR_foot",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0 0 -0.213",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "imu_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "imu",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.02557 0 0.04232",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "radar_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "radar",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "0.28945 0 -0.046825",
+        "rpy": "0 2.8782 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "front_camera_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "front_camera",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.32715 -0.00003 0.04297"
+      },
+      "limit": {}
+    }
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "Package manifest explicitly covers configuration, 3D models and launch files under BSD; root provides BSD-3-Clause terms. No per-file or subtree exceptions found.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/LICENSE"
+      },
+      {
+        "repositoryPath": "robots/go2_description/package.xml",
+        "sha256": "fc1a4712aa4ce5b298b0f429752e4445e7e91e3e1fd4b582b6d0745309fe4b54",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/package.xml"
+      },
+      {
+        "repositoryPath": "README.md",
+        "sha256": "212e380359686fbac6fee1c80475ded88b0824f236289a10c6a203d11b3dc943",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/README.md"
+      },
+      {
+        "repositoryPath": "robots/go2_description/README.md",
+        "sha256": "9d6808861100c053d1650be9cc03180d0d4f57c7fe4de8070aa2c6321f28988c",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/README.md"
+      },
+      {
+        "repositoryPath": "robots/go2_description/launch/gazebo.launch",
+        "sha256": "bde8110f39066b0df5c8e24d663317d842cb90286db739f1e031bb92dbce4026",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/launch/gazebo.launch"
+      },
+      {
+        "repositoryPath": "robots/go2_description/config/robot_control.yaml",
+        "sha256": "c9f800011ef2b676d06dae36127314622279ead7df3e2024ead4c69ceb3f8cf5",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2_description/config/robot_control.yaml"
+      }
+    ],
+    "scope": "Actual referenced meshes and generated description only. No blanket licence inference for other robot assets.",
+    "reviewDate": "2026-11-13"
+  },
+  "supportStatus": {
+    "zh": "12 个主动腿部关节。仓库提供 ROS 1 Gazebo 低层控制配置，但本应用只加载可视化 URDF；未运行 Gazebo、SDK 或行走控制器，不能据此声称高层行走支持。",
+    "en": "12 actuated leg joints. The repository supplies ROS 1 Gazebo low-level control configuration; this app only loads the visual URDF. Gazebo, SDK and locomotion controllers have not been run; high-level walking support is not claimed."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "MODIFICATIONS.txt",
+    "ATTRIBUTION.txt"
+  ]
+}

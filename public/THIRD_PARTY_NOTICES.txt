@@ -1,0 +1,68 @@
+ROBOT RADAR — THIRD-PARTY SOFTWARE NOTICES
+
+These unmodified license texts accompany the bundled browser application. Versions below are read from the installed packages used by this workspace, not inferred from dependency ranges.
+
+react 19.3.1
+License declared by package: MIT
+Source: {'type': 'git', 'url': 'https://github.com/react/react.git', 'directory': 'packages/react'}
+License text: licenses/react-LICENSE.txt
+
+react-dom 19.3.1
+License declared by package: MIT
+Source: {'type': 'git', 'url': 'https://github.com/react/react.git', 'directory': 'packages/react-dom'}
+License text: licenses/react-dom-LICENSE.txt
+
+scheduler 0.28.0
+License declared by package: MIT
+Source: {'type': 'git', 'url': 'https://github.com/react/react.git', 'directory': 'packages/scheduler'}
+License text: licenses/scheduler-LICENSE.txt
+
+three 0.183.2
+License declared by package: MIT
+Source: {'type': 'git', 'url': 'https://github.com/mrdoob/three.js'}
+License text: licenses/three-LICENSE.txt
+
+lucide-react 0.577.0
+License declared by package: ISC
+Source: {'type': 'git', 'url': 'https://github.com/lucide-icons/lucide.git', 'directory': 'packages/lucide-react'}
+License text: licenses/lucide-react-LICENSE.txt
+
+URDF Loader 0.12.7
+License: Apache-2.0
+Source: https://github.com/gkjohnson/urdf-loaders
+The npm package omits the LICENSE file. Complete license obtained from its matching upstream v0.12.7 tag:
+https://raw.githubusercontent.com/gkjohnson/urdf-loaders/v0.12.7/LICENSE
+License text: licenses/urdf-loader-LICENSE.txt
+Full installed README license/copyright/Caltech acknowledgment: licenses/urdf-loader-README-NOTICE.txt
+
+# LICENSE
+
+The software is available under the [Apache V2.0 license](../LICENSE).
+
+Copyright © 2020 California Institute of Technology. ALL RIGHTS
+RESERVED. United States Government Sponsorship Acknowledged.
+Neither the name of Caltech nor its operating division, the
+Jet Propulsion Laboratory, nor the names of its contributors may be
+used to endorse or promote products derived from this software
+without specific prior written permission.
+
+
+MuJoCo
+Distribution: community-published npm mujoco 3.1.16; runtime identifies as MuJoCo 3.5.1.
+Existing Apache-2.0 license: vendor/mujoco/LICENSE
+Detailed provenance and limitations: vendor/mujoco/PROVENANCE.md
+The inspected npm tarball contains no LICENSE, NOTICE or third-party-license file. Official upstream main and 3.5.0 root listings contain LICENSE but no root NOTICE. The requested upstream 3.5.1 ref was unavailable (404). No claim is made that this is a complete transitive WASM dependency license audit.
+
+Robot model assets retain separate licenses and source attributions under robots/<model>/. Existing files have not been replaced:
+robots/g1/LICENSE.txt
+robots/panda/NOTICE.txt
+robots/panda/LICENSE.txt
+robots/so101/LEROBOT-LICENSE.txt
+robots/so101/LICENSE.txt
+robots/fr3/NOTICE.txt
+robots/fr3/LICENSE.txt
+robots/h1/LICENSE.txt
+robots/turtlebot3/LICENSE.txt
+robots/ur5e/LICENSE.txt
+robots/go2/LICENSE.txt
+robots/so101/build-kit/SOURCE-LICENSE

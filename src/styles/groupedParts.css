@@ -1,0 +1,113 @@
+.grouped-parts {
+  color: var(--text, #e4edf8);
+  background: var(--panel, #131c29);
+  padding: 16px;
+  border: 1px solid var(--line, #304053);
+  border-radius: 12px;
+}
+.grouped-parts h3 {
+  margin: 6px 0 12px;
+}
+.grouped-parts small,
+.gp-note,
+.gp-boundary {
+  color: var(--muted, #a2b4cb);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.gp-mode {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.grouped-parts button {
+  min-height: 44px;
+  padding: 8px 10px;
+  background: #1a283b;
+  border: 1px solid #3a506c;
+  color: inherit;
+  border-radius: 7px;
+  cursor: pointer;
+  touch-action: manipulation;
+  font: inherit;
+}
+.grouped-parts button[aria-pressed="true"] {
+  background: #183f49;
+  border-color: #55d7c9;
+}
+.grouped-parts button:focus-visible,
+.grouped-parts summary:focus-visible {
+  outline: 3px solid #65e5d3;
+  outline-offset: 3px;
+}
+.grouped-parts button:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+.gp-count {
+  font-size: 13px;
+  color: #7be6d5;
+}
+.gp-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
+  max-height: 560px;
+  overflow: auto;
+  padding: 3px;
+}
+.gp-card {
+  border: 1px solid #304156;
+  border-radius: 9px;
+  padding: 8px;
+  min-width: 0;
+}
+.gp-card.selected {
+  border-color: #65e5d3;
+}
+.gp-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 12px;
+}
+.gp-select code {
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.gp-select strong {
+  white-space: nowrap;
+  color: #7be6d5;
+}
+.gp-card summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.gp-card ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+}
+.gp-card li button {
+  width: 100%;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+.gp-uri,
+.gp-revision {
+  display: block;
+  font-size: 10px;
+  overflow-wrap: anywhere;
+  color: #9cb0c8;
+  margin: 7px 0;
+}
+.grouped-parts a {
+  color: #82e3db;
+}
+.gp-boundary {
+  margin-top: 0;
+}

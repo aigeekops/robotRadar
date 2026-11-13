@@ -1,0 +1,4 @@
+https://github.com/bdaiinstitute/spot_description
+Commit: 156d1802bfb117f219dbfce7597d283d5fabc968
+Licence: MIT AND BSD-3-Clause
+Retain all upstream licence texts and copyright notices. No manufacturer endorsement implied.

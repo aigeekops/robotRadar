@@ -1,0 +1,29 @@
+{
+  "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/docs/images/assembly.gif",
+  "contextUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/README.md",
+  "commit": "db044a7d2e50d204cf6e6f9dc80492a484ad5441",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2020 Intel ISL (Intel Intelligent Systems Lab)",
+  "licenseEvidence": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/LICENSE",
+  "basis": "Root repository MIT; docs and docs/images contain no license override. Referenced by official Regular body README. Repository declaration, not an independent third-party IP warranty.",
+  "sourceGitBlob": "81b746d26ff270d09c7bce2f08068ccd6f6980c6",
+  "modifications": "GIF bytes unchanged. PNG is exact decoded final frame 69 of 70, extracted via native ImageIO; no generated content, retouching or geometry edits.",
+  "scope": "Official Regular body CAD assembly illustration, NOT a physical photograph, hardware acceptance, or verification of the Nano/L298N wiring variant.",
+  "files": [
+    {
+      "file": "openbot-diy-assembly.gif",
+      "bytes": 2095512,
+      "sha256": "105dca1e9cee636f746c111bcc930a8877c64e393520c0cc3b7b05641f7816e1"
+    },
+    {
+      "file": "openbot-diy-assembly.png",
+      "bytes": 51588,
+      "sha256": "78a04829f5ef91e214a198456826f5dc39b7d7334de4529a3f50a78455dd5d3a"
+    },
+    {
+      "file": "openbot-diy-assembly.LICENSE.txt",
+      "bytes": 1098,
+      "sha256": "7815496a899eb0916fe9407c8eaeb7642518536f3f701876dbf73b523878760f"
+    }
+  ]
+}

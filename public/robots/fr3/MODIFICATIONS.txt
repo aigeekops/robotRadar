@@ -1,0 +1,1 @@
+This runtime description is derived from the identified official source. Xacro was expanded where applicable, XML was formatted, and mesh URLs were changed to local browser paths. Original mesh bytes, dimensions, joint axes and limits were not changed. See provenance.json for exact source and checksum.

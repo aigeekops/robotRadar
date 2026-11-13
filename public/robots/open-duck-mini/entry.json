@@ -1,0 +1,30 @@
+{
+  "id": "open-duck-mini",
+  "name": {
+    "zh": "Open Duck Mini v2 · 双足小鸭",
+    "en": "Open Duck Mini v2 · Biped"
+  },
+  "manufacturer": "apirrone / Open Duck community",
+  "form": "humanoid",
+  "description": {
+    "zh": "官方 v2 源模型与部分制作资料；不是完整实物制作或行走验证。",
+    "en": "Official v2 source model and partial making resources; not a fully verified physical build or walking controller."
+  },
+  "urdfUrl": "/robots/open-duck-mini/robot.urdf",
+  "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/mini_bdx/robots/open_duck_mini_v2/robot.urdf",
+  "sourceCommit": "b23317a485b3cec7d8417f352478778b3475173c",
+  "license": "Apache-2.0",
+  "provenanceUrl": "/robots/open-duck-mini/provenance.json",
+  "licenseNoticeUrl": "/robots/open-duck-mini/LICENSE.txt",
+  "verifiedScope": {
+    "zh": "21连杆、20关节，官方打印清单；原始网格字节保持",
+    "en": "21 links, 20 joints, official print list; original mesh bytes preserved"
+  },
+  "limitations": {
+    "zh": "装配指南不完整；未验证实物、接线、电池安全或行走。外部BOM/CAD及运行软件不打包。",
+    "en": "Assembly guide incomplete; no physical, wiring, battery-safety or walking validation. External BOM/CAD and runtime software not bundled."
+  },
+  "jointCount": 16,
+  "linkCount": 21,
+  "downloadBytes": 18824895
+}

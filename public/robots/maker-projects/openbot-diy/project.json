@@ -1,0 +1,684 @@
+{
+  "id": "openbot-diy",
+  "title": {
+    "zh": "OpenBot DIY · 四轮制作项目",
+    "en": "OpenBot DIY · Four-wheel maker project"
+  },
+  "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+  "commit": "db044a7d2e50d204cf6e6f9dc80492a484ad5441",
+  "limitations": [
+    {
+      "zh": "锁定Regular body + Arduino Nano + L298N。不是Lite、PCB、RTR或ESP32的混合教程。",
+      "en": "Locked to Regular body + Arduino Nano + L298N, not a mix of Lite, PCB, RTR or ESP32 guides."
+    },
+    {
+      "zh": "有较完整文档链，但未实物打印、接线、烧录、编译或验收；没有核实完整URDF。",
+      "en": "A documented build chain, but no physical print, wiring, flashing, compilation or acceptance test; no verified full URDF."
+    },
+    {
+      "zh": "原仓库文件按根MIT分发，无独立CAD许可覆盖；第三方依赖和APK不打包。官方APK仅debug key签名。",
+      "en": "Repository files use root MIT with no CAD-specific override found. Third-party dependencies and APKs excluded; official APKs use a debug signing key."
+    },
+    {
+      "zh": "电池、焊接和电源需按实际器件核验；本站仅提供阅读，不执行硬件操作。",
+      "en": "Battery, soldering and power require checking actual components; this site provides reading, not hardware actions."
+    }
+  ],
+  "parts": [
+    {
+      "name": "body_bottom",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "原始文件；未实物试配",
+        "en": "Original file; no physical fit test"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/openbot-diy/body_bottom.stl"
+        },
+        {
+          "format": "STEP",
+          "url": "/robots/maker-projects/openbot-diy/body_bottom.step"
+        }
+      ]
+    },
+    {
+      "name": "body_top",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "原始文件；未实物试配",
+        "en": "Original file; no physical fit test"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/openbot-diy/body_top.stl"
+        },
+        {
+          "format": "STEP",
+          "url": "/robots/maker-projects/openbot-diy/body_top.step"
+        }
+      ]
+    },
+    {
+      "name": "phone_mount_bottom",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "原始文件；未实物试配",
+        "en": "Original file; no physical fit test"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/openbot-diy/phone_mount_bottom.stl"
+        },
+        {
+          "format": "STEP",
+          "url": "/robots/maker-projects/openbot-diy/phone_mount_bottom.step"
+        }
+      ]
+    },
+    {
+      "name": "phone_mount_top",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "原始文件；未实物试配",
+        "en": "Original file; no physical fit test"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/openbot-diy/phone_mount_top.stl"
+        },
+        {
+          "format": "STEP",
+          "url": "/robots/maker-projects/openbot-diy/phone_mount_top.step"
+        }
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "name": "Arduino Nano",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "TT motors with tires",
+      "quantity": 4,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "18650 battery",
+      "quantity": 3,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "18650 battery holder",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "USB OTG cable",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Spring or rubber band",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "M3x25 screw",
+      "quantity": 16,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "M3 nut",
+      "quantity": 16,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "M3x5 screw",
+      "quantity": 6,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Dupont cables",
+      "quantity": null,
+      "unit": "unknown",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "L298N Motor Driver",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "官方BOM；核对实际规格与供电，不代表采购认证",
+        "en": "Official BOM; verify actual specifications and power, not procurement certification"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Speed sensor",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Ultrasonic sensor",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "On/off switch",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Orange LED 5mm",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "OLED display",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "LED resistor 150 ohm",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Voltage-divider resistor 20k ohm",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    },
+    {
+      "name": "Voltage-divider resistor 10k ohm",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "选配；必须同步固件配置",
+        "en": "Optional; match firmware configuration"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#bill-of-materials",
+      "downloads": []
+    }
+  ],
+  "settings": [
+    {
+      "zh": "Regular车壳至少240×150mm平台；官方Ultimaker S5样例：0.2mm层高、1.5mm壁厚、20% grid、80mm/s、无支撑。PLA/ABS/CPE曾用于原作者试印。不是其他打印机的保证。",
+      "en": "Regular body requires at least 240×150mm. Source Ultimaker S5 example: 0.2mm layer, 1.5mm wall, 20% grid, 80mm/s, no support; author used PLA/ABS/CPE. Not a guarantee for other printers."
+    }
+  ],
+  "steps": [
+    {
+      "title": "Step 01",
+      "text": {
+        "zh": "Solder wires to the motors and add the encoder disks to the two front motors if you intend to use the speed sensors.",
+        "en": "Solder wires to the motors and add the encoder disks to the two front motors if you intend to use the speed sensors."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 02",
+      "text": {
+        "zh": "Insert the positive and negative leads of the two left motors into OUT1 (+) and OUT2 (-) of the L298N board. Insert the positive and negative leads of the two right motors into OUT4 (+) and OUT3 (-) of the L298N board.",
+        "en": "Insert the positive and negative leads of the two left motors into OUT1 (+) and OUT2 (-) of the L298N board. Insert the positive and negative leads of the two right motors into OUT4 (+) and OUT3 (-) of the L298N board."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 03",
+      "text": {
+        "zh": "Mount the motors with eight M3x25 screws and nuts.",
+        "en": "Mount the motors with eight M3x25 screws and nuts."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 04",
+      "text": {
+        "zh": "Mount the L298N with four M3x5 screws",
+        "en": "Mount the L298N with four M3x5 screws"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 05",
+      "text": {
+        "zh": "(Optional) Install the ultrasonic sensor and replace the angled connector with a straigt one (or carefully bend the pins).",
+        "en": "(Optional) Install the ultrasonic sensor and replace the angled connector with a straigt one (or carefully bend the pins)."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 06",
+      "text": {
+        "zh": "(Optional) Install the orange LEDs for the indicator signals.",
+        "en": "(Optional) Install the orange LEDs for the indicator signals."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 07",
+      "text": {
+        "zh": "Mount the bottom of the phone mount to the top plate using two M3x25 screws and nuts.",
+        "en": "Mount the bottom of the phone mount to the top plate using two M3x25 screws and nuts."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 08",
+      "text": {
+        "zh": "Insert the top of the phone mount and install the spring or rubber band.",
+        "en": "Insert the top of the phone mount and install the spring or rubber band."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 09",
+      "text": {
+        "zh": "Replace the angled connector with a straigt one (or carefully bend the pins) and then mount the speed sensors with one M3x5 screw each.",
+        "en": "Replace the angled connector with a straigt one (or carefully bend the pins) and then mount the speed sensors with one M3x5 screw each."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 10",
+      "text": {
+        "zh": "Install the battery case (e.g. velcro).",
+        "en": "Install the battery case (e.g. velcro)."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 11",
+      "text": {
+        "zh": "(Optional) Insert the on/off switch put it in the current path.",
+        "en": "(Optional) Insert the on/off switch put it in the current path."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 12",
+      "text": {
+        "zh": "(Optional) Attach the OLED display.",
+        "en": "(Optional) Attach the OLED display."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 13",
+      "text": {
+        "zh": "Connect the PWM inputs of the L298N to pins D5, D6, D9 and D10 of the Arduino.",
+        "en": "Connect the PWM inputs of the L298N to pins D5, D6, D9 and D10 of the Arduino."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 14",
+      "text": {
+        "zh": "Connect the speed sensors and ultrasonic sensor to 5V and GND.",
+        "en": "Connect the speed sensors and ultrasonic sensor to 5V and GND."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 15",
+      "text": {
+        "zh": "Connect pin D0 of the speed sensors to pins D2 (left) and D3 (right) of the Arduino.",
+        "en": "Connect pin D0 of the speed sensors to pins D2 (left) and D3 (right) of the Arduino."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 16",
+      "text": {
+        "zh": "Connect pins Echo and Trigger of the ultrasonic sensor to pins D11 and D12 of the Arduino respectively.",
+        "en": "Connect pins Echo and Trigger of the ultrasonic sensor to pins D11 and D12 of the Arduino respectively."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 17",
+      "text": {
+        "zh": "(Optional) Connect the LEDs to pins D4 (left) and D7 (right) of the Arduino and GND. We recommend to add a 150 Ohm resistor in series to limit the current draw.",
+        "en": "(Optional) Connect the LEDs to pins D4 (left) and D7 (right) of the Arduino and GND. We recommend to add a 150 Ohm resistor in series to limit the current draw."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 18",
+      "text": {
+        "zh": "(Optional) Connect the voltage divider to pin A7 of the Arduino. It is used to measure the battery voltage.",
+        "en": "(Optional) Connect the voltage divider to pin A7 of the Arduino. It is used to measure the battery voltage."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 19",
+      "text": {
+        "zh": "(Optional) Connect the OLED display (SSD1306 chip) via the I2C bus to the Arduino Nano",
+        "en": "(Optional) Connect the OLED display (SSD1306 chip) via the I2C bus to the Arduino Nano"
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 20",
+      "text": {
+        "zh": "Connect the power cables to +12V and GND of the L298N.",
+        "en": "Connect the power cables to +12V and GND of the L298N."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 21",
+      "text": {
+        "zh": "Connect the USB cable to the Arduino and route it through the top cover.",
+        "en": "Connect the USB cable to the Arduino and route it through the top cover."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 22",
+      "text": {
+        "zh": "Insert six M3 nuts into the bottom plate and mount the top cover with six M3x25 screws.",
+        "en": "Insert six M3 nuts into the bottom plate and mount the top cover with six M3x25 screws."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    },
+    {
+      "title": "Step 23",
+      "text": {
+        "zh": "Install the wheels.",
+        "en": "Install the wheels."
+      },
+      "source": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md#option-1-diy"
+    }
+  ],
+  "links": [
+    {
+      "label": "Firmware · OPENBOT=DIY / Arduino Nano",
+      "url": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/firmware/README.md"
+    },
+    {
+      "label": "Android setup · external software, not bundled",
+      "url": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/robot/android/README.md"
+    },
+    {
+      "label": "Print settings source",
+      "url": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/README.md"
+    }
+  ],
+  "files": [
+    {
+      "file": "body_bottom.stl",
+      "sourcePath": "body/diy/cad/regular_body/body_bottom.stl",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/body_bottom.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "ce1c731227c58ae2ab08eaaad873a5a7c827324e08a8c5f7c51095770ff26e61",
+      "bytes": 3382384,
+      "modified": false
+    },
+    {
+      "file": "body_bottom.step",
+      "sourcePath": "body/diy/cad/regular_body/body_bottom.step",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/body_bottom.step",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "5bf362a2890e85701c8b313575f2244072eb2d9239979cccf406c6e2c168f8f2",
+      "bytes": 682913,
+      "modified": false
+    },
+    {
+      "file": "body_top.stl",
+      "sourcePath": "body/diy/cad/regular_body/body_top.stl",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/body_top.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "bb5980f637e91d08b404ad94e34b6502335b1c06c66a9979f24980d49aaf61af",
+      "bytes": 2972284,
+      "modified": false
+    },
+    {
+      "file": "body_top.step",
+      "sourcePath": "body/diy/cad/regular_body/body_top.step",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/body_top.step",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "e754503017985d64848fd32d367b81a42f90f45d80a44ce200348a03c600182a",
+      "bytes": 1250244,
+      "modified": false
+    },
+    {
+      "file": "phone_mount_bottom.stl",
+      "sourcePath": "body/phone_mount/phone_mount_bottom.stl",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/phone_mount/phone_mount_bottom.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "0a4e04e5c2608a18c7225d080d3ff1b26a748e0184ca0651a501579f14e5f8c2",
+      "bytes": 329784,
+      "modified": false
+    },
+    {
+      "file": "phone_mount_bottom.step",
+      "sourcePath": "body/phone_mount/phone_mount_bottom.step",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/phone_mount/phone_mount_bottom.step",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "b1ee886f9aecd218f275ec766ceb277bfb53a8748693f65da6c1f0a802092e87",
+      "bytes": 164556,
+      "modified": false
+    },
+    {
+      "file": "phone_mount_top.stl",
+      "sourcePath": "body/phone_mount/phone_mount_top.stl",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/phone_mount/phone_mount_top.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "df4443f0516e03ae033f813599916f054359c42edd01e3db6159725322deab81",
+      "bytes": 272584,
+      "modified": false
+    },
+    {
+      "file": "phone_mount_top.step",
+      "sourcePath": "body/phone_mount/phone_mount_top.step",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/phone_mount/phone_mount_top.step",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "003d73116f613c846db6cdb3e5c75ea1d0581ddfecf63fe774cff0825a745398",
+      "bytes": 141985,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/LICENSE",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "7815496a899eb0916fe9407c8eaeb7642518536f3f701876dbf73b523878760f",
+      "bytes": 1098,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-body-diy-README.md",
+      "sourcePath": "body/diy/README.md",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/README.md",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "4215a9f5007fc5ebd29bfcbc0994796176264dc96eb8bc8f5dc72d3dcd61c693",
+      "bytes": 15841,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-body-diy-cad-regular_body-README.md",
+      "sourcePath": "body/diy/cad/regular_body/README.md",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/body/diy/cad/regular_body/README.md",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "e69230baa128e9587ef6d285905c0a0afa4aae8a7275342d0556e34a3be34b90",
+      "bytes": 1194,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-firmware-README.md",
+      "sourcePath": "firmware/README.md",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/firmware/README.md",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "d78bf4508bf49b0a583300cce4242ad9e91ba206554ede7302fc474d83baaf6c",
+      "bytes": 25236,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-robot-android-README.md",
+      "sourcePath": "robot/android/README.md",
+      "sourceUrl": "https://github.com/ob-f/OpenBot/blob/db044a7d2e50d204cf6e6f9dc80492a484ad5441/robot/android/README.md",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "4f7e99e3911bf42a9b0e0eee27bae1c77fd56c52d360897bf97b30d165bc174b",
+      "bytes": 4488,
+      "modified": false
+    }
+  ]
+}

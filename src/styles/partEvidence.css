@@ -1,0 +1,49 @@
+.part-evidence {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #dae2e1;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.part-evidence h4 {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.part-evidence h5 {
+  font-size: 13px;
+  margin: 16px 0 8px;
+}
+.part-evidence p {
+  line-height: 1.6;
+}
+.part-evidence dl {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+.part-evidence dt {
+  color: #526461;
+}
+.part-evidence dd {
+  margin: 0 0 9px;
+  font-family: monospace;
+}
+.part-evidence ul {
+  padding-left: 15px;
+}
+.part-evidence li {
+  margin-bottom: 12px;
+}
+.part-evidence li p {
+  margin: 5px 0;
+}
+.part-evidence .text-button {
+  white-space: normal;
+  text-align: left;
+}
+.evidence-sources {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0 10px;
+}

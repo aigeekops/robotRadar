@@ -1,0 +1,4 @@
+ROBOTIS
+Source: https://github.com/ROBOTIS-GIT/turtlebot3
+Commit: 0d4e59cf34da9c0661f80008bb0fa02636c713b2
+Package manifest explicitly describes the package as 3D models for simulation and visualization and declares Apache 2.0; root LICENSE provides terms. No nested licence override or NOTICE found.

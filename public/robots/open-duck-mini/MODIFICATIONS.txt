@@ -1,0 +1,1 @@
+URDF mesh paths only rewritten to local bundled resources. No geometry, joint, mass, inertia or calibration changed.

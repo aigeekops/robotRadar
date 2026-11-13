@@ -1,0 +1,366 @@
+{
+  "configuration": "SO-101 follower / Waveshare / 7.4V STS3215 C001 baseline",
+  "commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "repository": "https://github.com/TheRobotStudio/SO-ARM100",
+  "rows": [
+    {
+      "id": "Base_motor_holder_SO101",
+      "name": "Base_motor_holder_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Base_motor_holder_SO101.stl"
+    },
+    {
+      "id": "Base_SO101",
+      "name": "Base_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Base_SO101.stl"
+    },
+    {
+      "id": "Motor_holder_SO101_Base",
+      "name": "Motor_holder_SO101_Base",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Motor_holder_SO101_Base.stl"
+    },
+    {
+      "id": "Motor_holder_SO101_Wrist",
+      "name": "Motor_holder_SO101_Wrist",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Motor_holder_SO101_Wrist.stl"
+    },
+    {
+      "id": "Under_arm_SO101",
+      "name": "Under_arm_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Under_arm_SO101.stl"
+    },
+    {
+      "id": "Upper_arm_SO101",
+      "name": "Upper_arm_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Upper_arm_SO101.stl"
+    },
+    {
+      "id": "Rotation_Pitch_SO101",
+      "name": "Rotation_Pitch_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Rotation_Pitch_SO101.stl"
+    },
+    {
+      "id": "Wrist_Roll_Pitch_SO101",
+      "name": "Wrist_Roll_Pitch_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Wrist_Roll_Pitch_SO101.stl"
+    },
+    {
+      "id": "WaveShare_Mounting_Plate_SO101",
+      "name": "WaveShare_Mounting_Plate_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/WaveShare_Mounting_Plate_SO101.stl"
+    },
+    {
+      "id": "Moving_Jaw_SO101",
+      "name": "Moving_Jaw_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Moving_Jaw_SO101.stl"
+    },
+    {
+      "id": "Wrist_Roll_Follower_SO101",
+      "name": "Wrist_Roll_Follower_SO101",
+      "category": "printed",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "One follower; shared-part quantity derived from 3DPRINT.md (two per leader/follower pair). Waveshare board variant only.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-4-print-the-parts",
+      "download": "/robots/so101/build-kit/Wrist_Roll_Follower_SO101.stl"
+    },
+    {
+      "id": "servo",
+      "name": "STS3215 7.4V, 1/345 (C001)",
+      "category": "hardware",
+      "quantity": 6,
+      "unit": "piece",
+      "note": "Baseline follower only. 12V alternative requires matching power supply; never mix.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "board",
+      "name": "Waveshare motor control board",
+      "category": "hardware",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "Use matching Waveshare printed mounting plate; check connector and board revision.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "usb",
+      "name": "USB-C cable (2 pcs pack)",
+      "category": "hardware",
+      "quantity": 1,
+      "unit": "pack",
+      "note": "Upstream shopping unit is one two-cable pack, not two required connections. Confirm data capability.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "power",
+      "name": "Power supply",
+      "category": "hardware",
+      "quantity": 1,
+      "unit": "piece",
+      "note": "Baseline source references 5V supply for 7.4V servos. Verify actual motor, polarity, current and connector before power. 12V alternative: 12V 5A+ per source.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "clamp",
+      "name": "Table clamps (2 pcs pack)",
+      "category": "hardware",
+      "quantity": 1,
+      "unit": "pack",
+      "note": "Two physical clamps in one source pack.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "tools",
+      "name": "Screwdriver set",
+      "category": "hardware",
+      "quantity": 1,
+      "unit": "set",
+      "note": "Phillips #0 and #1 recommended.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#parts-for-one-follower-arm",
+      "download": null
+    },
+    {
+      "id": "fasteners",
+      "name": "Screws / horns / servo cables",
+      "category": "hardware",
+      "quantity": null,
+      "unit": "kit",
+      "note": "Complete follower-only count not reconciled. Guide has ambiguous M2/M3 fastener wording. Verify kit contents and each official step; not purchase-ready.",
+      "source": "https://github.com/huggingface/lerobot/blob/e6ffde60312365c5452c46189a26872483943154/docs/source/so101.mdx#L225-L328",
+      "download": null
+    }
+  ],
+  "files": [
+    {
+      "file": "Base_motor_holder_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Base_motor_holder_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Base_motor_holder_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "e10eb1296560bc00dca91af5f35d9be637be026a5b544c0ebfcac51501aa3c70",
+      "bytes": 340884,
+      "modified": false
+    },
+    {
+      "file": "Base_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Base_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Base_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "19f3c6baafc23a3bc92805762e906df9514d1008be84d490a90a9096ffdcf3c8",
+      "bytes": 477984,
+      "modified": false
+    },
+    {
+      "file": "Motor_holder_SO101_Base.stl",
+      "sourcePath": "STL/SO101/Individual/Motor_holder_SO101_Base.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Motor_holder_SO101_Base.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "f9971aa805e2d6fb61726d2787e752a6fe0ff21d3c66023296ee4c57a2b100a4",
+      "bytes": 292784,
+      "modified": false
+    },
+    {
+      "file": "Motor_holder_SO101_Wrist.stl",
+      "sourcePath": "STL/SO101/Individual/Motor_holder_SO101_Wrist.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Motor_holder_SO101_Wrist.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "936c84ed2c918b3ec14e2c3ec3f742f47bed10a4e3d0a2c9bf7869d0a2a55149",
+      "bytes": 400584,
+      "modified": false
+    },
+    {
+      "file": "Under_arm_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Under_arm_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Under_arm_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "537b03e68ff7c061da4cc70bf0b5a61018a76c00bccc72d61f022d1644230db5",
+      "bytes": 525484,
+      "modified": false
+    },
+    {
+      "file": "Upper_arm_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Upper_arm_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Upper_arm_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "96333913c296b13ecb1c81e63e57e4352fb6b5dea7722c84ec1fbd5073e23865",
+      "bytes": 401984,
+      "modified": false
+    },
+    {
+      "file": "Rotation_Pitch_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Rotation_Pitch_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Rotation_Pitch_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "5ef34a5420071627d01323be13e80b7ac8af0760c72d8382c0664c914f281800",
+      "bytes": 334884,
+      "modified": false
+    },
+    {
+      "file": "Wrist_Roll_Pitch_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Wrist_Roll_Pitch_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Wrist_Roll_Pitch_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "14eb2f45ab1b279025ed2aea358f0091aad6aff967faef58527fd216f28fb6e5",
+      "bytes": 851884,
+      "modified": false
+    },
+    {
+      "file": "WaveShare_Mounting_Plate_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/WaveShare_Mounting_Plate_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/WaveShare_Mounting_Plate_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "6275f05ef28cd407be13ea882735282c4a8b2ef64930c77a9e7b5a3811740be1",
+      "bytes": 37684,
+      "modified": false
+    },
+    {
+      "file": "Moving_Jaw_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Moving_Jaw_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Moving_Jaw_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "403763bbab8656cc7ce5ea6374741d0860bd19426b5b4b0041de3a2c1275f90b",
+      "bytes": 563084,
+      "modified": false
+    },
+    {
+      "file": "Wrist_Roll_Follower_SO101.stl",
+      "sourcePath": "STL/SO101/Individual/Wrist_Roll_Follower_SO101.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/STL/SO101/Individual/Wrist_Roll_Follower_SO101.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "3f47a4b889b95a4c71046bda9ddfc9399d96d80a57ad7fc079700e240323a302",
+      "bytes": 602884,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-README.md",
+      "sourcePath": "README.md",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+      "bytes": 26605,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-3DPRINT.md",
+      "sourcePath": "3DPRINT.md",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/3DPRINT.md",
+      "license": "Apache-2.0",
+      "licenseEvidence": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE",
+      "sha256": "c734900f07e2501cfa8f9d508380cb3293baa2fc463bb77de2a09c173bc482b3",
+      "bytes": 3792,
+      "modified": false
+    }
+  ],
+  "limitations": [
+    "Not a certified or complete manufacturing package. No physical build or print validation performed.",
+    "No 3MF file verified. Simulation servo meshes and SO101 Assembly.stl are not printable procurement parts.",
+    "No torque, nozzle/bed temperature, tolerances or full fastener total verified."
+  ],
+  "printSettings": [
+    {
+      "parameter": "Material",
+      "value": "PLA+",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-1-choose-a-printer"
+    },
+    {
+      "parameter": "Nozzle / layer height",
+      "value": "0.4 mm / 0.2 mm OR 0.6 mm / 0.4 mm",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-1-choose-a-printer"
+    },
+    {
+      "parameter": "Infill (local printing)",
+      "value": "15%",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-1-choose-a-printer"
+    },
+    {
+      "parameter": "Infill (outsourced printing guide)",
+      "value": "20% FDM, mm units; separate context, not a replacement for local profile",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/3DPRINT.md"
+    },
+    {
+      "parameter": "Supports",
+      "value": "Source: supports everywhere; ignore slopes >45° to horizontal; none in horizontal-axis screw holes. Review slicer interpretation.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-2-set-up-the-printer"
+    },
+    {
+      "parameter": "Fit check",
+      "value": "Use upstream servo or Lego gauges before printing final parts; no physical fit validated here.",
+      "source": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md#step-3-check-printer-accuracy"
+    }
+  ]
+}

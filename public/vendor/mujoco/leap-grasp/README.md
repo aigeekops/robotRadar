@@ -1,0 +1,15 @@
+# LEAP contact teaching sample
+
+This separate MuJoCo 3.5.1 browser worker uses the existing single-thread runtime and eight unchanged LEAP source STL files. It does not replace the G1 experiment.
+
+`model.xml` originates from the pinned LEAP URDF imported with `usethread=false`, `discardvisual=true`, `fusestatic=false`, then exported by `mj_saveLastXML`. The import retains 17 source collision meshes, 16 revolute joints, source inertias and limits. The original MIT license/notice remains at `robots/leap_hand/LICENSE.txt` and `NOTICE.md`; engine provenance remains at `vendor/mujoco/PROVENANCE.md`. `profile.json` records hashes, exact source revision and experimental additions.
+
+Added teaching parameters: a free 80 mm sphere with 25 g mass; gravity 9.81 m/s²; a force-driven vertical slide with 50 mm lift; a 24 mm pedestal and four visible 4 mm-radius capsule rails forming a shallow passive cradle; joint damping 0.08; joint position gain 0.8 with generalized torque limited to ±0.2 N·m; contact friction 1 / 0.01 / 0.001 and six-dimensional contact. These are NOT calibrated material, motor, human-hand or hardware parameters. Palm/adjacent-link exclusions are listed explicitly. All hand-object and hand-support collision remains active.
+
+The object has a free joint. No weld/equality constraint, body parenting, external object force or per-frame object pose assignment makes it follow the hand. Scene motion comes from live integration, not a recorded animation. Source convex mesh collision is an approximation to the original surfaces. Visible slide guide is a non-colliding fixture illustration; sphere/support/rails use matching physical geometry.
+
+Task success is sequential: actual thumb and long-finger contact; object >=30 mm above initial height with no support contact; stationary slide, object speed <0.01 m/s and angular speed <0.1 rad/s for >=1 s, drift <=2 mm; then lower, open, retract, and support the object in the original target area with no hand contact and small velocity for >=1 s. Merely leaving an object on its support cannot pass. The visible three buttons drive the physical controller, not object transforms.
+
+Node evidence: `notes/contact-prototype/formal-core.log`, `runtime-verification.json`, `force-check.json`. Tests cover full cycle at 1 ms and 0.5 ms, immediate/delayed user actions, open-hand/no-collision/no-support counterexamples, and absence of equality attachment. Initial object penetration is zero. Tested peak soft object penetration is below 1.1 mm (sphere diameter 80 mm). Simple supported-box contact force sum matches 0.025*9.81=0.24525 N. These are simulated results, not real-world force measurements. Node timing is not a browser performance claim.
+
+Reproduce: `node --test tests/simulation/contact-grasp.mjs`. Browser tests: `tests/e2e/contact-grasp.spec.ts`. No hardware commands or arbitrary model/code upload are supported. Reset terminates the old worker; pause/blur stops integration and requires an explicit resume. Worker assets use same-origin static-base URLs with SHA-256 checks.

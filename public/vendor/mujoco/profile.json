@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "engine": "MuJoCo",
+  "engineVersion": "3.5.1",
+  "configuration": "g1_23dof_mode_10",
+  "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/g1_23dof_mode_10.urdf",
+  "sourceCommit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+  "sourceSha256": "9333e89c51614c92b416c2c22a28f1614284d02321548e10479cce73552bcf43",
+  "base": "fixed",
+  "control": "qfrc_applied generalized torque, not SDK or motor firmware",
+  "jointCount": 23,
+  "actuatorCount": 0,
+  "bodyCount": 24,
+  "geometryCount": 57,
+  "timestepSeconds": 0.001,
+  "gravityMS2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "maxDurationSeconds": 0.5,
+  "maxAbsTorqueNm": 0.5,
+  "joints": [
+    {
+      "name": "left_hip_pitch_joint",
+      "lowerRad": -2.5307,
+      "upperRad": 2.8798
+    },
+    {
+      "name": "left_hip_roll_joint",
+      "lowerRad": -0.5236,
+      "upperRad": 2.9671
+    },
+    {
+      "name": "left_hip_yaw_joint",
+      "lowerRad": -2.7576,
+      "upperRad": 2.7576
+    },
+    {
+      "name": "left_knee_joint",
+      "lowerRad": -0.087267,
+      "upperRad": 2.8798
+    },
+    {
+      "name": "left_ankle_pitch_joint",
+      "lowerRad": -0.87267,
+      "upperRad": 0.5236
+    },
+    {
+      "name": "left_ankle_roll_joint",
+      "lowerRad": -0.2618,
+      "upperRad": 0.2618
+    },
+    {
+      "name": "right_hip_pitch_joint",
+      "lowerRad": -2.5307,
+      "upperRad": 2.8798
+    },
+    {
+      "name": "right_hip_roll_joint",
+      "lowerRad": -2.9671,
+      "upperRad": 0.5236
+    },
+    {
+      "name": "right_hip_yaw_joint",
+      "lowerRad": -2.7576,
+      "upperRad": 2.7576
+    },
+    {
+      "name": "right_knee_joint",
+      "lowerRad": -0.087267,
+      "upperRad": 2.8798
+    },
+    {
+      "name": "right_ankle_pitch_joint",
+      "lowerRad": -0.87267,
+      "upperRad": 0.5236
+    },
+    {
+      "name": "right_ankle_roll_joint",
+      "lowerRad": -0.2618,
+      "upperRad": 0.2618
+    },
+    {
+      "name": "waist_yaw_joint",
+      "lowerRad": -2.618,
+      "upperRad": 2.618
+    },
+    {
+      "name": "left_shoulder_pitch_joint",
+      "lowerRad": -3.0892,
+      "upperRad": 2.6704
+    },
+    {
+      "name": "left_shoulder_roll_joint",
+      "lowerRad": -1.5882,
+      "upperRad": 2.2515
+    },
+    {
+      "name": "left_shoulder_yaw_joint",
+      "lowerRad": -2.618,
+      "upperRad": 2.618
+    },
+    {
+      "name": "left_elbow_joint",
+      "lowerRad": -1.0472,
+      "upperRad": 2.0944
+    },
+    {
+      "name": "left_wrist_roll_joint",
+      "lowerRad": -1.972222054,
+      "upperRad": 1.972222054
+    },
+    {
+      "name": "right_shoulder_pitch_joint",
+      "lowerRad": -3.0892,
+      "upperRad": 2.6704
+    },
+    {
+      "name": "right_shoulder_roll_joint",
+      "lowerRad": -2.2515,
+      "upperRad": 1.5882
+    },
+    {
+      "name": "right_shoulder_yaw_joint",
+      "lowerRad": -2.618,
+      "upperRad": 2.618
+    },
+    {
+      "name": "right_elbow_joint",
+      "lowerRad": -1.0472,
+      "upperRad": 2.0944
+    },
+    {
+      "name": "right_wrist_roll_joint",
+      "lowerRad": -1.972222054,
+      "upperRad": 1.972222054
+    }
+  ],
+  "scope": {
+    "zh": "真实 MuJoCo 固定基座动力学。使用 G1 Mode 10 官方 URDF 的质量、惯性、碰撞与关节数据。小幅外加广义力矩，不是 SDK、电机固件、行走控制器或实机验证。没有地面和自由浮动基座；接触计数仅来自模型内部碰撞。",
+    "en": "Real MuJoCo fixed-base dynamics using the official G1 Mode 10 URDF mass, inertia, collision, and joint data. Small applied generalized torques are not SDK calls, motor firmware, a walking controller, or hardware validation. There is no floor or floating base; contacts come from model self-collision."
+  },
+  "limitsNote": {
+    "zh": "这是无闭环控制的短时实验，其他关节在重力下也会运动。MuJoCo 位置限制是软约束，数值结果可能略超限；不能用于实机安全判断。",
+    "en": "This short experiment has no closed-loop controller; other joints also move under gravity. MuJoCo joint limits are soft constraints and may be slightly exceeded numerically. Do not use this for hardware safety decisions."
+  },
+  "nativeReferenceEngineVersion": "3.4.0",
+  "runtime": "browser WebAssembly worker",
+  "servedUrdfSha256": "9591761921365557fdcc466cfd34c5bcce23c102ed99cf056dbdb3a81c459fff",
+  "compilerRewrites": [
+    "mesh paths /robots/g1/meshes/ -> meshes/ in virtual filesystem",
+    "compiler usethread=false; compilation concurrency only"
+  ]
+}

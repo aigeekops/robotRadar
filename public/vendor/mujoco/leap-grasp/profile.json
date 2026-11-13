@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "engine": "MuJoCo",
+  "engineVersion": "3.5.1",
+  "task": "four-digit enveloping sphere grasp, lift, replace in passive cradle",
+  "source": "https://github.com/leap-hand/LEAP_Hand_Sim",
+  "sourceCommit": "150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+  "sourceUrdfSha256": "47b8b0bd81cd0ae28f867bb63ca556a7199e330fef3e8ec84113592d70639b92",
+  "mjcfSha256": "abd809ba65cc2b0f9d9e11404bba3ffb36081d3759b61a5f9b38cdd83b2cfa34",
+  "license": "MIT; existing robots/leap_hand/LICENSE.txt and NOTICE.md",
+  "conversion": "MuJoCo URDF import then mj_saveLastXML; retained 17 source collision meshes and inertias. Added explicit teaching scenario below. No hardware validation.",
+  "scenario": {
+    "timestep": 0.001,
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ],
+    "ballRadiusM": 0.04,
+    "ballMassKg": 0.025,
+    "ballInitialPosition": [
+      -0.045,
+      -0.035,
+      0.0701
+    ],
+    "handBaseZ": 0.145,
+    "liftM": 0.05,
+    "liftForceLimitN": 20,
+    "jointTorqueLimitNm": 0.2,
+    "jointPositionGain": 0.8,
+    "jointDamping": 0.08,
+    "friction": [
+      1,
+      0.01,
+      0.001
+    ],
+    "contactDimensions": 6,
+    "cradle": "24mm square post, four radius4mm passive capsule rails",
+    "calibrated": false
+  },
+  "excludedSelfCollisionPairs": [
+    [
+      "palm_lower",
+      "mcp_joint"
+    ],
+    [
+      "palm_lower",
+      "mcp_joint_2"
+    ],
+    [
+      "palm_lower",
+      "mcp_joint_3"
+    ],
+    [
+      "palm_lower",
+      "pip_4"
+    ],
+    [
+      "palm_lower",
+      "thumb_pip"
+    ],
+    [
+      "palm_lower",
+      "thumb_dip"
+    ]
+  ],
+  "limits": [
+    "Source convex mesh collisions approximate shape, not measured compliant fingertip pads.",
+    "Source-adjacent palm pairs excluded; all hand-object and hand-support collisions remain active.",
+    "Simulated vertical carriage is not a real LEAP wrist/arm.",
+    "Task needs consecutive measured hold then contact-free stable replacement; idle sphere alone cannot pass.",
+    "No object weld, body attachment, object force injection or position writes after initialization."
+  ]
+}

@@ -1,0 +1,66 @@
+.arm-reach {
+  background: #111d24;
+  color: #e1ecee;
+  min-height: 90vh;
+  padding: 20px;
+}
+.arm-reach header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.arm-reach-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  gap: 24px;
+}
+.arm-reach-canvas {
+  min-height: 600px;
+  height: 75vh;
+  overflow: hidden;
+  border: 1px solid #384c55;
+  border-radius: 12px;
+}
+.arm-reach aside {
+  padding: 16px;
+  background: #1b2b34;
+  border-radius: 12px;
+}
+.arm-reach label {
+  display: block;
+  font-size: 12px;
+  margin: 14px 0;
+}
+.arm-reach input {
+  display: block;
+  width: 100%;
+}
+.arm-reach output {
+  float: right;
+}
+.arm-reach-note {
+  font-size: 12px;
+  color: #acbec5;
+  line-height: 1.7;
+}
+.arm-reach progress {
+  width: 100%;
+  accent-color: #5de5c2;
+}
+@media (max-width: 800px) {
+  .arm-reach-layout {
+    grid-template-columns: 1fr;
+  }
+  .arm-reach-canvas {
+    height: 50vh;
+    min-height: 300px;
+  }
+}
+
+.arm-reach button {
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid #53636c;
+  border-radius: 6px;
+  margin: 4px 4px 4px 0;
+}

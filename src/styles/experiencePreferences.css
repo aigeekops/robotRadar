@@ -1,0 +1,120 @@
+.experience-preferences {
+  position: fixed;
+  top: 9px;
+  right: 14px;
+  z-index: 120;
+}
+.experience-preferences button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #b4c5cf;
+  background: #14232de8;
+  border: 1px solid #3b5260;
+  cursor: pointer;
+}
+.experience-preferences button svg {
+  pointer-events: none;
+}
+.experience-preferences button:hover {
+  color: #fff;
+  border-color: #80bcca;
+}
+.experience-preferences button[aria-pressed="true"] {
+  color: #a1e4d7;
+  border-color: #5f9c93;
+  background: #193a3c;
+}
+.experience-preferences button:focus-visible {
+  outline: 2px solid #b2e9ff;
+  outline-offset: 3px;
+}
+.audio-error {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  width: 210px;
+  padding: 10px;
+  font-size: 12px;
+  color: #fff;
+  background: #243640;
+}
+.topbar {
+  padding-right: 72px !important;
+}
+:root:not([data-reduced-motion="true"]) .hero-briefing,
+:root:not([data-reduced-motion="true"]) .inspector,
+:root:not([data-reduced-motion="true"]) .library-page {
+  animation: experience-reveal 0.28s ease-out both;
+}
+:root:not([data-reduced-motion="true"]) .robot-chip,
+:root:not([data-reduced-motion="true"]) .hero-action {
+  transition:
+    background-color 0.18s ease,
+    border-color 0.18s ease,
+    filter 0.18s ease;
+}
+@keyframes experience-reveal {
+  from {
+    opacity: 0.75;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+:root[data-reduced-motion="true"] *,
+:root[data-reduced-motion="true"] *::before,
+:root[data-reduced-motion="true"] *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  animation-delay: 0ms !important;
+  transition-duration: 0.001ms !important;
+  transition-delay: 0ms !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-reduced-motion="false"]) * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+/* Keep the global audio control clear of full-screen experience controls. */
+.app-shell .drive-top,
+.app-shell .ae-top {
+  padding-right: 72px;
+}
+@media (max-width: 700px) {
+  .app-shell .drive-top,
+  .app-shell .ae-top {
+    gap: 10px;
+    padding-left: 12px;
+  }
+  .app-shell .drive-top > button,
+  .app-shell .ae-top > button,
+  .app-shell .ae-top > time {
+    flex-shrink: 0;
+  }
+  .app-shell .drive-top > div,
+  .app-shell .ae-top > div {
+    min-width: 0;
+    overflow: hidden;
+  }
+  .app-shell .drive-top small,
+  .app-shell .ae-top > div > span {
+    display: none;
+  }
+  .app-shell .drive-top h2,
+  .app-shell .ae-top strong {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

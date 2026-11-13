@@ -1,0 +1,318 @@
+{
+  "repository": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver",
+  "commit": "eece0762dc080431630301d02d5ddcaef69128bc",
+  "files": [
+    {
+      "file": "source/schunk_svh_description/CHANGELOG.rst",
+      "sourcePath": "schunk_svh_description/CHANGELOG.rst",
+      "sha256": "bde26f57c8ffa130909be7d46a44dba15ac799afef3ff9c70efce9a2553cbfdb",
+      "bytes": 1225,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/CMakeLists.txt",
+      "sourcePath": "schunk_svh_description/CMakeLists.txt",
+      "sha256": "722236232faadc9850a1f30f614a876debcae2fefc730436085766cde1bcd819",
+      "bytes": 198,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/README.md",
+      "sourcePath": "schunk_svh_description/README.md",
+      "sha256": "9f9902412b0bde551221c2aed61c7df88264b572775dc5f284758774c7801691",
+      "bytes": 126,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/base10.dae",
+      "sourcePath": "schunk_svh_description/meshes/base10.dae",
+      "sha256": "6656f283b111b942cc7f26c26a2495e408d474111fa89e666154254119a5dfa3",
+      "bytes": 71762,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/d10.dae",
+      "sourcePath": "schunk_svh_description/meshes/d10.dae",
+      "sha256": "7e720412b34d0765039dd5349aa2ddb3b465366a484e2e65bdfa47a99ab407a2",
+      "bytes": 35348,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/d11.dae",
+      "sourcePath": "schunk_svh_description/meshes/d11.dae",
+      "sha256": "fe4e6fe4a499116070c72a7dc39df07425777c901db61dd28fd831ad70319449",
+      "bytes": 65936,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/d12.dae",
+      "sourcePath": "schunk_svh_description/meshes/d12.dae",
+      "sha256": "6dd6e4a3a9b8b2145cccc9f0761283d4af5c6d7abacc28ca6df5dc25d5be12eb",
+      "bytes": 44650,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/d13.dae",
+      "sourcePath": "schunk_svh_description/meshes/d13.dae",
+      "sha256": "6079b109586f5722befac2dcdbe8616c6bf30043eb94dbab9203f95740dc9f8c",
+      "bytes": 36028,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f10.dae",
+      "sourcePath": "schunk_svh_description/meshes/f10.dae",
+      "sha256": "bd66d1dd760d329ec86272c88564a44f5681aaac0fb41df2c2da69f9fadb20e1",
+      "bytes": 27850,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f11.dae",
+      "sourcePath": "schunk_svh_description/meshes/f11.dae",
+      "sha256": "e10166b63a273179ae9f141f3b6bcf5545879d134dba32c3d3d0ba0abe8bb3fe",
+      "bytes": 65870,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f12.dae",
+      "sourcePath": "schunk_svh_description/meshes/f12.dae",
+      "sha256": "574f810386f4c138483ef45568931fd9f648d43b537c01487178f80530061a50",
+      "bytes": 53782,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f13.dae",
+      "sourcePath": "schunk_svh_description/meshes/f13.dae",
+      "sha256": "029867d715fcd16e8b16f4a1fa6d681e53a863113e097dcbb7007d491993ac14",
+      "bytes": 41299,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f20.dae",
+      "sourcePath": "schunk_svh_description/meshes/f20.dae",
+      "sha256": "dedfe54ed9468be972b6a06d7a4e35952e883dfde0cf41e718df4a1612288f59",
+      "bytes": 28145,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f21.dae",
+      "sourcePath": "schunk_svh_description/meshes/f21.dae",
+      "sha256": "1ddf1e4b40b9329f04f83e51cd15e857fdc19615e0070f23f43e63d18cc452cf",
+      "bytes": 66009,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f22.dae",
+      "sourcePath": "schunk_svh_description/meshes/f22.dae",
+      "sha256": "8aad2dd6cd274f78c61e47ea9c8806dfed27551c2c0d0dcec768fcfaa12ea3c8",
+      "bytes": 57338,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f23.dae",
+      "sourcePath": "schunk_svh_description/meshes/f23.dae",
+      "sha256": "ed47bdf2e7bfcda557056d77457f6d875668004a2a5da0f0055f72dafeebd716",
+      "bytes": 41344,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f30.dae",
+      "sourcePath": "schunk_svh_description/meshes/f30.dae",
+      "sha256": "1a57699a10014ade73858dac6da7139b03d02ac353f23939947f882285f5bf84",
+      "bytes": 28007,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f31.dae",
+      "sourcePath": "schunk_svh_description/meshes/f31.dae",
+      "sha256": "83d2d0fe1045024cd9b92e91f33dcc8128ca262b2c4420170186360390c532f7",
+      "bytes": 71890,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f32.dae",
+      "sourcePath": "schunk_svh_description/meshes/f32.dae",
+      "sha256": "36a769674f67b7baf1737414b9b408f3753023572c2823841cc684ada959891d",
+      "bytes": 57318,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f33.dae",
+      "sourcePath": "schunk_svh_description/meshes/f33.dae",
+      "sha256": "93b6ee2ef1c63704c08d22fe08f18b29985fcd3a30d1964f2b9a1e8e7a36786f",
+      "bytes": 41310,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f40.dae",
+      "sourcePath": "schunk_svh_description/meshes/f40.dae",
+      "sha256": "f221677e87e3dbe5076eadadebd06f3ba70a3dacc0a128a4bf95339851025987",
+      "bytes": 28000,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f41.dae",
+      "sourcePath": "schunk_svh_description/meshes/f41.dae",
+      "sha256": "82093e4b1718c13d94a387f7e3baf3d8eac603c710fad5f506a3319bc192fb8a",
+      "bytes": 71868,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f42.dae",
+      "sourcePath": "schunk_svh_description/meshes/f42.dae",
+      "sha256": "30d68d8e2824ceb42496ee43566a26e410f1d5d60c022d09c87a548c054c5186",
+      "bytes": 52584,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/f43.dae",
+      "sourcePath": "schunk_svh_description/meshes/f43.dae",
+      "sha256": "9cbd42b430ccb9552d3e504dc6649284523e746d48ed06216b640000043e137a",
+      "bytes": 41364,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/h10.dae",
+      "sourcePath": "schunk_svh_description/meshes/h10.dae",
+      "sha256": "ea43f6a52c6b1d8f19167f6ba4ac72f53c309704294c1dcc80e73b1c2bb58cc4",
+      "bytes": 128465,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/h11.dae",
+      "sourcePath": "schunk_svh_description/meshes/h11.dae",
+      "sha256": "aa79de4b15841f6fa3bd1210fe58d0fadd3ad8768fb00be899535440e4f71671",
+      "bytes": 101127,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/materials.daelib",
+      "sourcePath": "schunk_svh_description/meshes/materials.daelib",
+      "sha256": "57277e1117dd9056b4846905786e5166f3f17564f136dbda6b03df8b39358b92",
+      "bytes": 6535,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/meshes/replace_effects.sed",
+      "sourcePath": "schunk_svh_description/meshes/replace_effects.sed",
+      "sha256": "612933632685de87531005a07f56c7b8b247d358357ee8d858a491f0eb20469d",
+      "bytes": 140,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/package.xml",
+      "sourcePath": "schunk_svh_description/package.xml",
+      "sha256": "a166b67535232204d2cec887da8b3d8ebd896335b38378487a42f425e659a02d",
+      "bytes": 806,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/common.xacro",
+      "sourcePath": "schunk_svh_description/urdf/common.xacro",
+      "sha256": "24aaab7fd096083bea6db020de38b440a923a5a1317c68f7b2d5d7c8842f3939",
+      "bytes": 3986,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/svh-standalone.srdf",
+      "sourcePath": "schunk_svh_description/urdf/svh-standalone.srdf",
+      "sha256": "069b1ce6eca1319222d914b43545a426e574492c14e99c747aa812b5389b77ba",
+      "bytes": 1200,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/svh-standalone.urdf.xacro",
+      "sourcePath": "schunk_svh_description/urdf/svh-standalone.urdf.xacro",
+      "sha256": "7b5b5ab4456f05a49b0ea3e505efc5b67e8fb47c7c6c3ce1a4d1916cfffc0e65",
+      "bytes": 321,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/svh.gazebo.xacro",
+      "sourcePath": "schunk_svh_description/urdf/svh.gazebo.xacro",
+      "sha256": "cf04ae6f57ef9a85d650069c8292d7fcbb9ec044ffcf09c3b12777d33155cce4",
+      "bytes": 4832,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/svh.transmission.xacro",
+      "sourcePath": "schunk_svh_description/urdf/svh.transmission.xacro",
+      "sha256": "84e7f31d1f2d5c4994ba335f48c19c7d3501b408e19b222dc9cd6fa58977b56a",
+      "bytes": 838,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/schunk_svh_description/urdf/svh.urdf.xacro",
+      "sourcePath": "schunk_svh_description/urdf/svh.urdf.xacro",
+      "sha256": "04182f2444a36b7ccc59e3ce820835cd0051d64e535b05649015cf41e30a9a46",
+      "bytes": 25384,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/LICENSE",
+      "sourcePath": "LICENSE",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "bytes": 35149,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/LICENSES/license_notice.cpp",
+      "sourcePath": "LICENSES/license_notice.cpp",
+      "sha256": "a7efe9eb46d1ce592a00b5031450b2ea6de26f5396dfe723c2174bc5ebc4b828",
+      "bytes": 840,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/LICENSES/license_notice.py",
+      "sourcePath": "LICENSES/license_notice.py",
+      "sha256": "25e60e9d664ae8d286257309f0058e66cc3afa8f92f328c16b2a457093b57ad7",
+      "bytes": 824,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    },
+    {
+      "file": "source/UPSTREAM-README.md",
+      "sourcePath": "README.md",
+      "sha256": "223d1f07411dc84bc74c4feefa48d2bd42b4a33cb95ea6c5ae0190e37105d50b",
+      "bytes": 3478,
+      "license": "GPL-3.0-or-later",
+      "licenseBasis": "Description package.xml and root LICENSE; original notices retained"
+    }
+  ]
+}

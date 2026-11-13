@@ -1,0 +1,97 @@
+.build-kit {
+  padding: 18px;
+  max-width: 100%;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.build-kit h2 {
+  font-size: 20px;
+}
+.build-kit h3 {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  margin: 0;
+}
+.build-kit a {
+  color: #69ddd0;
+}
+.build-kit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 12px 0;
+}
+.build-kit button {
+  border: 1px solid #3c555b;
+  background: #13282e;
+  color: #dceff1;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.build-kit button[aria-pressed="true"] {
+  border-color: #5ce2c9;
+  background: #20493e;
+}
+.build-kit button:focus-visible,
+.build-kit a:focus-visible {
+  outline: 2px solid #7bffe2;
+  outline-offset: 3px;
+}
+.build-kit-rows {
+  display: grid;
+  gap: 10px;
+}
+.build-kit-rows article {
+  padding: 12px;
+  border: 1px solid #30454c;
+  border-radius: 9px;
+  background: #102028;
+}
+.build-kit-rows article > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: baseline;
+}
+.build-kit-rows span {
+  flex-shrink: 0;
+  color: #80dfd0;
+}
+.build-kit p {
+  color: #acc2ca;
+}
+.build-kit code {
+  overflow-wrap: anywhere;
+  font-size: 11px;
+}
+.build-kit dl > div {
+  border-bottom: 1px solid #30454c;
+  padding: 10px 0;
+}
+.build-kit dt {
+  font-weight: 600;
+}
+.build-kit dd {
+  margin: 3px 0;
+  color: #acc2ca;
+}
+.build-kit-steps {
+  padding-left: 22px;
+}
+.build-kit-steps li {
+  margin: 18px 0;
+}
+.build-kit footer {
+  border-top: 1px solid #30454c;
+  margin-top: 20px;
+  padding-top: 12px;
+}
+.build-kit .notice {
+  padding: 12px;
+  border: 1px solid #68572c;
+  background: #302a1c;
+  border-radius: 8px;
+  color: #e8d8ae;
+}

@@ -1,0 +1,190 @@
+.hand-lab-panel {
+  padding: 18px;
+  color: #d4e3e9;
+  background: #14232b;
+  border: 1px solid #3b535f;
+}
+.hand-lab-heading span {
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  color: #e7a36e;
+}
+.hand-lab-heading h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.hand-lab-panel p,
+.hand-lab-panel small {
+  font-size: 11px;
+  color: #acc1cb;
+  line-height: 1.7;
+}
+.hand-lab-boundary {
+  font-size: 11px;
+  line-height: 1.65;
+  padding: 10px;
+  border-left: 2px solid #ce9257;
+  background: #26313a;
+  color: #e0c5a8;
+}
+.hand-fingers,
+.hand-presets,
+.hand-playback {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 15px 0 8px;
+}
+.hand-lab-panel button {
+  border: 1px solid #47616f;
+  background: #203640;
+  color: #dbe8ec;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 11px;
+}
+.hand-lab-panel button[aria-pressed="true"] {
+  border-color: #e3aa74;
+  background: #70472d;
+}
+.hand-lab-panel button:disabled,
+.hand-lab-panel input:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.hand-progress {
+  display: block;
+  font-size: 11px;
+  margin-top: 16px;
+}
+.hand-progress input,
+.hand-joint input {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+.hand-joints {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+.hand-joint {
+  padding: 10px;
+  border: 1px solid #364e5a;
+  background: #182c35;
+  min-width: 0;
+}
+.hand-joint > span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.hand-joint small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.hand-lab-panel footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 11px;
+}
+.hand-lab-panel footer a {
+  color: #97d7e6;
+}
+.hand-lab-panel button:focus-visible,
+.hand-lab-panel input:focus-visible {
+  outline: 2px solid #b7e7f0;
+  outline-offset: 3px;
+}
+.hand-lab-unverified {
+  color: #f2bb80 !important;
+}
+@media (max-width: 600px) {
+  .hand-lab-panel {
+    padding: 12px;
+  }
+  .hand-fingers button,
+  .hand-presets button {
+    padding: 10px 12px;
+  }
+}
+.hand-independent,
+.hand-research-card {
+  margin-top: 18px;
+  padding: 12px;
+  background: #192d37;
+  border: 1px solid #3b5563;
+}
+.hand-independent h3,
+.hand-research-card h3 {
+  font-size: 13px;
+  margin: 0 0 9px;
+}
+.hand-independent > label {
+  display: block;
+  margin-top: 12px;
+}
+.hand-independent > label > span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.hand-independent input {
+  width: 100%;
+  margin-top: 8px;
+}
+.hand-sequences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0 8px;
+}
+.hand-speed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px 0;
+  font-size: 12px;
+}
+.hand-speed select {
+  background: #203640;
+  color: #dceaf0;
+  border: 1px solid #547181;
+  padding: 7px 14px;
+}
+.hand-research-card strong,
+.hand-research-card a {
+  display: block;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.hand-research-card strong {
+  color: #e4bd8b;
+}
+.hand-research-card a {
+  color: #9cd8e6;
+  margin-top: 9px;
+}
+.hand-mimic-list {
+  margin-top: 16px;
+  padding: 12px;
+  border: 1px solid #405864;
+  background: #182b34;
+}
+.hand-mimic-list summary {
+  cursor: pointer;
+  font-size: 12px;
+}
+.hand-mimic-list p {
+  overflow-wrap: anywhere;
+  border-top: 1px solid #304650;
+  padding-top: 8px;
+}
+.hand-license-note {
+  border-left: 2px solid #cf9d65;
+  padding: 8px 10px;
+  background: #24323b;
+}

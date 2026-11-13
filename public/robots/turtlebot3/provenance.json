@@ -1,0 +1,158 @@
+{
+  "repository": "https://github.com/ROBOTIS-GIT/turtlebot3",
+  "commit": "0d4e59cf34da9c0661f80008bb0fa02636c713b2",
+  "sourceFile": "turtlebot3_description/urdf/turtlebot3_burger.urdf",
+  "sourceSha256": "bc453d08d6a3f2da1530201a15807edafffa5158c291dc40f5edb19ae35ca603",
+  "license": "Apache-2.0",
+  "method": "Official URDF; Xacro expanded for TurtleBot3. Only local mesh paths and XML formatting changed.",
+  "files": [
+    {
+      "file": "meshes/bases/burger_base.stl",
+      "sha256": "7d7f3329a437b43bbcbbec59f9a2d1df1d88b59c3882c543d979baf73670f025",
+      "bytes": 4826284,
+      "sourcePath": "turtlebot3_description/meshes/bases/burger_base.stl",
+      "sourceUrl": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description/meshes/bases/burger_base.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "turtlebot3_description/package.xml"
+      ]
+    },
+    {
+      "file": "meshes/wheels/left_tire.stl",
+      "sha256": "578c9452ee51c2f71e5e6723b503d784e58a6ac317fa53ee308e645f204c8d6a",
+      "bytes": 1083684,
+      "sourcePath": "turtlebot3_description/meshes/wheels/left_tire.stl",
+      "sourceUrl": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description/meshes/wheels/left_tire.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "turtlebot3_description/package.xml"
+      ]
+    },
+    {
+      "file": "meshes/wheels/right_tire.stl",
+      "sha256": "407aaf271ba7051c6186b220e1dc36b2a6eca688fced66a3347f49747b684596",
+      "bytes": 1083684,
+      "sourcePath": "turtlebot3_description/meshes/wheels/right_tire.stl",
+      "sourceUrl": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description/meshes/wheels/right_tire.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "turtlebot3_description/package.xml"
+      ]
+    },
+    {
+      "file": "meshes/sensors/lds.stl",
+      "sha256": "98f0bd7046159f83caab9509293112ef13534368535669124b91b5114c3132f6",
+      "bytes": 728384,
+      "sourcePath": "turtlebot3_description/meshes/sensors/lds.stl",
+      "sourceUrl": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description/meshes/sensors/lds.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "turtlebot3_description/package.xml"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "base_joint",
+      "type": "fixed",
+      "parent": "base_footprint",
+      "child": "base_link",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.0 0.0 0.010"
+      },
+      "limit": {}
+    },
+    {
+      "id": "wheel_left_joint",
+      "type": "continuous",
+      "parent": "base_link",
+      "child": "wheel_left_link",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "-1.57 0 0",
+        "xyz": "0.0 0.08 0.023"
+      },
+      "limit": {}
+    },
+    {
+      "id": "wheel_right_joint",
+      "type": "continuous",
+      "parent": "base_link",
+      "child": "wheel_right_link",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "-1.57 0 0",
+        "xyz": "0.0 -0.080 0.023"
+      },
+      "limit": {}
+    },
+    {
+      "id": "caster_back_joint",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "caster_back_link",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.57 0 0",
+        "xyz": "-0.081 0 -0.004"
+      },
+      "limit": {}
+    },
+    {
+      "id": "imu_joint",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "imu_link",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.032 0 0.068"
+      },
+      "limit": {}
+    },
+    {
+      "id": "scan_joint",
+      "type": "fixed",
+      "parent": "base_link",
+      "child": "base_scan",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.032 0 0.172"
+      },
+      "limit": {}
+    }
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "Package manifest explicitly describes the package as 3D models for simulation and visualization and declares Apache 2.0; root LICENSE provides terms. No nested licence override or NOTICE found.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "f9946796a8a5bd5981565142fa42e3b0cc36aef6f80e86beaf5905b3c0fef1b5",
+        "url": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/LICENSE"
+      },
+      {
+        "repositoryPath": "turtlebot3_description/package.xml",
+        "sha256": "d887943fb8196f3db5a93cb3c16457a1e1ece55f5668d66bc8f287a7c12c007f",
+        "url": "https://github.com/ROBOTIS-GIT/turtlebot3/blob/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description/package.xml"
+      }
+    ],
+    "reviewDate": "2026-11-13"
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "ATTRIBUTION.txt",
+    "MODIFICATIONS.txt"
+  ],
+  "supportStatus": {
+    "zh": "2 个连续旋转轮关节；仅官方外观和关节链。试驾为教学运动学示意，未集成 ROS 导航、避障、传感器数据或实机；不代表完整可制造文件。",
+    "en": "Two continuous wheel joints. Official visuals and topology only; driving is a teaching kinematic illustration. No ROS navigation, avoidance, sensor stream or hardware integration; not a complete manufacturing package."
+  }
+}

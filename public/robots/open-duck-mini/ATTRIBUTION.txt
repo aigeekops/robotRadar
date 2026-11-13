@@ -1,0 +1,1 @@
+Open Duck Mini v2 by apirrone and contributors. Source commit b23317a485b3cec7d8417f352478778b3475173c. Apache-2.0, see LICENSE.txt. Only URDF mesh paths rewritten; original model and mesh bytes retained. Model descriptions are not measured hardware validation. External CAD/BOM and runtime/training software excluded.

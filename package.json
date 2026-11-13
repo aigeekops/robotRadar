@@ -1,0 +1,38 @@
+{
+  "name": "robot-radar-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/core/*.test.ts",
+    "test:e2e": "playwright test",
+    "preview": "vite preview --host 127.0.0.1",
+    "validate:assets": "python3 scripts/assets-validate.py",
+    "format:check": "prettier --check src tests vite.config.ts tsconfig.json package.json",
+    "format": "prettier --write src tests vite.config.ts tsconfig.json package.json",
+    "simulation:serve": "sh services/mujoco/run.sh",
+    "simulation:test": "PYTHONDONTWRITEBYTECODE=1 services/mujoco/.venv/bin/python -m unittest discover -s tests/simulation -v",
+    "check": "npm run typecheck && npm run format:check && npm test && npm run validate:assets && npm run build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "three": "^0.183.2",
+    "urdf-loader": "^0.12.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.183.1",
+    "prettier": "^3.10.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
+}

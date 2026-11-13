@@ -1,0 +1,200 @@
+.compare-experience {
+  max-width: 1500px;
+  margin: auto;
+  padding: 34px 28px 100px;
+  color: #d5e1e5;
+}
+.compare-experience h1 {
+  font-size: clamp(24px, 3vw, 40px);
+  margin: 12px 0;
+}
+.compare-experience p {
+  color: #9aafb9;
+  line-height: 1.7;
+  font-size: 13px;
+}
+.compare-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 24px 0 16px;
+}
+.compare-toolbar button {
+  background: #1a2931;
+  color: #d6e4e9;
+  border: 1px solid #3a505b;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.compare-toolbar button[aria-pressed="true"] {
+  background: #b65d2a;
+  color: white;
+  border-color: #df8b50;
+}
+.compare-toolbar label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin: 0 8px;
+}
+.compare-stages {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.compare-stage {
+  min-width: 0;
+  background: #142028;
+  border: 1px solid #334650;
+}
+.compare-stage > label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+}
+.compare-stage > label span {
+  font-size: 11px;
+  white-space: nowrap;
+  color: #a5bac4;
+}
+.compare-stage select {
+  min-width: 0;
+  width: 100%;
+  background: #1d303b;
+  color: #e6eff3;
+  border: 1px solid #4d616c;
+  padding: 10px;
+  font-size: 13px;
+}
+.compare-canvas {
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.compare-canvas .viewer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.compare-stage .compare-selection {
+  font-size: 11px;
+  min-height: 20px;
+  padding: 0 14px;
+  overflow-wrap: anywhere;
+}
+.compare-stage nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0 14px 16px;
+  font-size: 12px;
+}
+.compare-stage a {
+  color: #90d3e1;
+}
+.compare-data {
+  margin-top: 30px;
+}
+.compare-data-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.compare-data-heading h2 {
+  font-size: 19px;
+}
+.compare-data-heading label {
+  font-size: 12px;
+  white-space: nowrap;
+}
+.compare-data table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.65;
+}
+.compare-data th,
+.compare-data td {
+  border: 1px solid #30444f;
+  padding: 12px;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.compare-data thead th {
+  background: #233540;
+  color: #e1ebef;
+}
+.compare-data th:first-child {
+  width: 24%;
+  color: #a9bdc7;
+}
+.compare-data td {
+  background: #15222b;
+}
+.compare-data .compare-difference td {
+  background: #203039;
+  border-left-color: #ae713e;
+}
+.compare-experience input:focus-visible,
+.compare-experience button:focus-visible,
+.compare-experience select:focus-visible {
+  outline: 2px solid #b8e7f4;
+  outline-offset: 3px;
+}
+@media (max-width: 650px) {
+  .compare-experience {
+    padding: 22px 12px 110px;
+  }
+  .compare-stages {
+    grid-template-columns: 1fr;
+  }
+  .compare-canvas {
+    height: 300px;
+  }
+  .compare-data-heading {
+    align-items: flex-start;
+  }
+  .compare-data th,
+  .compare-data td {
+    padding: 8px 6px;
+    font-size: 11px;
+  }
+  .compare-data th:first-child {
+    width: 25%;
+  }
+  .compare-toolbar button {
+    padding: 9px 12px;
+  }
+  .compare-toolbar label {
+    margin: 5px 0;
+  }
+  .compare-experience p {
+    font-size: 12px;
+  }
+}
+.compare-explore {
+  color: #e6b186;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  margin-left: auto;
+}
+.compare-data td {
+  color: #d0dee5;
+}
+/* Comparison frames must not inherit the showroom's sidebar camera offset. */
+.app-shell.immersive .compare-canvas .viewer {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,814 @@
+{
+  "repository": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/g1_description",
+  "commit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+  "sourceFile": "robots/g1_description/g1_23dof_mode_10.urdf",
+  "sourceSha256": "9333e89c51614c92b416c2c22a28f1614284d02321548e10479cce73552bcf43",
+  "license": "BSD-3-Clause",
+  "method": "Official URDF or expanded vendor Xacro; mesh paths rewritten only. Visual meshes retained. No new geometry.",
+  "files": [
+    {
+      "file": "meshes/pelvis_ver0529.STL",
+      "sha256": "9a249feb95d632aa648cd07757b2ccce6da36723875e7630fa75d66a4ae8f036",
+      "bytes": 1751184,
+      "sourcePath": "robots/g1_description/meshes/pelvis_ver0529.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/pelvis_ver0529.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_hip_pitch_link.STL",
+      "sha256": "4725168105ee768ee31638ef22b53f6be2d7641bfd7cfefe803488d884776fa4",
+      "bytes": 181684,
+      "sourcePath": "robots/g1_description/meshes/left_hip_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_hip_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_hip_roll_link.STL",
+      "sha256": "91f25922ee8a7c3152790051bebad17b4d9cd243569c38fe340285ff93a97acf",
+      "bytes": 192184,
+      "sourcePath": "robots/g1_description/meshes/left_hip_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_hip_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_hip_yaw_link.STL",
+      "sha256": "a16d88aa6ddac8083aa7ad55ed317bea44b1fa003d314fba88965b7ed0f3b55b",
+      "bytes": 296284,
+      "sourcePath": "robots/g1_description/meshes/left_hip_yaw_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_hip_yaw_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_knee_link.STL",
+      "sha256": "8d92b9e3d3a636761150bb8025e32514c4602b91c7028d523ee42b3e632de477",
+      "bytes": 854884,
+      "sourcePath": "robots/g1_description/meshes/left_knee_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_knee_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_ankle_pitch_link.STL",
+      "sha256": "d49e3abc6f5b12e532062cd575b87b5ef40cd2a3fc18f54a1ca5bba4f773d51d",
+      "bytes": 71184,
+      "sourcePath": "robots/g1_description/meshes/left_ankle_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_ankle_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_ankle_roll_link.STL",
+      "sha256": "c4092af943141d4d9f74232f3cfa345afc6565f46a077793b8ae0e68b39dc33f",
+      "bytes": 653384,
+      "sourcePath": "robots/g1_description/meshes/left_ankle_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_ankle_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_hip_pitch_link.STL",
+      "sha256": "e4f3c99d7f4a7d34eadbef9461fc66e3486cb5442db1ec50c86317d459f1a9c6",
+      "bytes": 181284,
+      "sourcePath": "robots/g1_description/meshes/right_hip_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_hip_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_hip_roll_link.STL",
+      "sha256": "4c254ef66a356f492947f360dd931965477b631e3fcc841f91ccc46d945d54f6",
+      "bytes": 192684,
+      "sourcePath": "robots/g1_description/meshes/right_hip_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_hip_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_hip_yaw_link.STL",
+      "sha256": "e479c2936ca2057e9eb2f7dff6c189b7419d7b8484dea0b298cbb36a2a6aa668",
+      "bytes": 296284,
+      "sourcePath": "robots/g1_description/meshes/right_hip_yaw_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_hip_yaw_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_knee_link.STL",
+      "sha256": "63c4008449c9bbe701a6e2b557b7a252e90cf3a5abcf54cee46862b9a69f8ec8",
+      "bytes": 852284,
+      "sourcePath": "robots/g1_description/meshes/right_knee_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_knee_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_ankle_pitch_link.STL",
+      "sha256": "15be426539ec1be70246d4d82a168806db64a41301af8b35c197a33348c787a9",
+      "bytes": 71184,
+      "sourcePath": "robots/g1_description/meshes/right_ankle_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_ankle_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_ankle_roll_link.STL",
+      "sha256": "4b66222ea56653e627711b56d0a8949b4920da5df091da0ceb343f54e884e3a5",
+      "bytes": 653784,
+      "sourcePath": "robots/g1_description/meshes/right_ankle_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_ankle_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/torso_link_23dof_rev_1_0.STL",
+      "sha256": "3cd0d56fde14b73c1623304684805029971c4f84b596f9914e823ca70a107fd2",
+      "bytes": 7825434,
+      "sourcePath": "robots/g1_description/meshes/torso_link_23dof_rev_1_0.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/torso_link_23dof_rev_1_0.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/logo_link.STL",
+      "sha256": "8571a0a19bc4916fa55f91449f51d5fdefd751000054865a842449429d5f155b",
+      "bytes": 243384,
+      "sourcePath": "robots/g1_description/meshes/logo_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/logo_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/head_link.STL",
+      "sha256": "005fb67fbd3eff94aa8bf4a6e83238174e9f91b6721f7111594322f223724411",
+      "bytes": 932784,
+      "sourcePath": "robots/g1_description/meshes/head_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/head_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_shoulder_pitch_link.STL",
+      "sha256": "f0d1cfd02fcf0d42f95e678eeca33da3afbcc366ffba5c052847773ec4f31d52",
+      "bytes": 176784,
+      "sourcePath": "robots/g1_description/meshes/left_shoulder_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_shoulder_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_shoulder_roll_link.STL",
+      "sha256": "fb9df21687773522598dc384f1a2945c7519f11cbc8bd372a49170316d6eee88",
+      "bytes": 400284,
+      "sourcePath": "robots/g1_description/meshes/left_shoulder_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_shoulder_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_shoulder_yaw_link.STL",
+      "sha256": "1aa97e9748e924336567992181f78c7cd0652fd52a4afcca3df6b2ef6f9e712e",
+      "bytes": 249184,
+      "sourcePath": "robots/g1_description/meshes/left_shoulder_yaw_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_shoulder_yaw_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_elbow_link.STL",
+      "sha256": "fa752198accd104d5c4c3a01382e45165b944fbbc5acce085059223324e5bed3",
+      "bytes": 88784,
+      "sourcePath": "robots/g1_description/meshes/left_elbow_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_elbow_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/left_wrist_roll_rubber_hand.STL",
+      "sha256": "e81030abd023bd9e4a308ef376d814a2c12d684d8a7670c335bbd5cd7809c909",
+      "bytes": 3484884,
+      "sourcePath": "robots/g1_description/meshes/left_wrist_roll_rubber_hand.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/left_wrist_roll_rubber_hand.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_shoulder_pitch_link.STL",
+      "sha256": "24cdb387e0128dfe602770a81c56cdce3a0181d34d039a11d1aaf8819b7b8c02",
+      "bytes": 176784,
+      "sourcePath": "robots/g1_description/meshes/right_shoulder_pitch_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_shoulder_pitch_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_shoulder_roll_link.STL",
+      "sha256": "962b97c48f9ce9e8399f45dd9522e0865d19aa9fd299406b2d475a8fc4a53e81",
+      "bytes": 401884,
+      "sourcePath": "robots/g1_description/meshes/right_shoulder_roll_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_shoulder_roll_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_shoulder_yaw_link.STL",
+      "sha256": "a0b76489271da0c72461a344c9ffb0f0c6e64f019ea5014c1624886c442a2fe5",
+      "bytes": 249984,
+      "sourcePath": "robots/g1_description/meshes/right_shoulder_yaw_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_shoulder_yaw_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_elbow_link.STL",
+      "sha256": "1be925d7aa268bb8fddf5362b9173066890c7d32092c05638608126e59d1e2ab",
+      "bytes": 88784,
+      "sourcePath": "robots/g1_description/meshes/right_elbow_link.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_elbow_link.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    },
+    {
+      "file": "meshes/right_wrist_roll_rubber_hand.STL",
+      "sha256": "0729aff1ac4356f9314de13a46906267642e58bc47f0d8a7f17f6590a6242ccf",
+      "bytes": 3481584,
+      "sourcePath": "robots/g1_description/meshes/right_wrist_roll_rubber_hand.STL",
+      "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/meshes/right_wrist_roll_rubber_hand.STL",
+      "license": "BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "robots/g1_description/README.md"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "left_hip_pitch_joint",
+      "type": "revolute",
+      "parent": "pelvis",
+      "child": "left_hip_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 0.064452 -0.1027",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.5307",
+        "upper": "2.8798",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "left_hip_roll_joint",
+      "type": "revolute",
+      "parent": "left_hip_pitch_link",
+      "child": "left_hip_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 0.052 -0.030465",
+        "rpy": "0 -0.1749 0"
+      },
+      "limit": {
+        "lower": "-0.5236",
+        "upper": "2.9671",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "left_hip_yaw_joint",
+      "type": "revolute",
+      "parent": "left_hip_roll_link",
+      "child": "left_hip_yaw_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0.025001 0 -0.12412",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7576",
+        "upper": "2.7576",
+        "effort": "88",
+        "velocity": "32"
+      }
+    },
+    {
+      "id": "left_knee_joint",
+      "type": "revolute",
+      "parent": "left_hip_yaw_link",
+      "child": "left_knee_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "-0.078273 0.0021489 -0.17734",
+        "rpy": "0 0.1749 0"
+      },
+      "limit": {
+        "lower": "-0.087267",
+        "upper": "2.8798",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "left_ankle_pitch_joint",
+      "type": "revolute",
+      "parent": "left_knee_link",
+      "child": "left_ankle_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 -9.4445E-05 -0.30001",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.87267",
+        "upper": "0.5236",
+        "effort": "35",
+        "velocity": "30"
+      }
+    },
+    {
+      "id": "left_ankle_roll_joint",
+      "type": "revolute",
+      "parent": "left_ankle_pitch_link",
+      "child": "left_ankle_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 0 -0.017558",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.2618",
+        "upper": "0.2618",
+        "effort": "35",
+        "velocity": "30"
+      }
+    },
+    {
+      "id": "right_hip_pitch_joint",
+      "type": "revolute",
+      "parent": "pelvis",
+      "child": "right_hip_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 -0.064452 -0.1027",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.5307",
+        "upper": "2.8798",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "right_hip_roll_joint",
+      "type": "revolute",
+      "parent": "right_hip_pitch_link",
+      "child": "right_hip_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 -0.052 -0.030465",
+        "rpy": "0 -0.1749 0"
+      },
+      "limit": {
+        "lower": "-2.9671",
+        "upper": "0.5236",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "right_hip_yaw_joint",
+      "type": "revolute",
+      "parent": "right_hip_roll_link",
+      "child": "right_hip_yaw_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0.025001 0 -0.12412",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.7576",
+        "upper": "2.7576",
+        "effort": "88",
+        "velocity": "32"
+      }
+    },
+    {
+      "id": "right_knee_joint",
+      "type": "revolute",
+      "parent": "right_hip_yaw_link",
+      "child": "right_knee_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "-0.078273 -0.0021489 -0.17734",
+        "rpy": "0 0.1749 0"
+      },
+      "limit": {
+        "lower": "-0.087267",
+        "upper": "2.8798",
+        "effort": "139",
+        "velocity": "20"
+      }
+    },
+    {
+      "id": "right_ankle_pitch_joint",
+      "type": "revolute",
+      "parent": "right_knee_link",
+      "child": "right_ankle_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0 9.4445E-05 -0.30001",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.87267",
+        "upper": "0.5236",
+        "effort": "35",
+        "velocity": "30"
+      }
+    },
+    {
+      "id": "right_ankle_roll_joint",
+      "type": "revolute",
+      "parent": "right_ankle_pitch_link",
+      "child": "right_ankle_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 0 -0.017558",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-0.2618",
+        "upper": "0.2618",
+        "effort": "35",
+        "velocity": "30"
+      }
+    },
+    {
+      "id": "waist_yaw_joint",
+      "type": "revolute",
+      "parent": "pelvis",
+      "child": "torso_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "-0.0039635 0 0.044",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.618",
+        "upper": "2.618",
+        "effort": "88",
+        "velocity": "32"
+      }
+    },
+    {
+      "id": "logo_joint",
+      "type": "fixed",
+      "parent": "torso_link",
+      "child": "logo_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.0039635 0 -0.044",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "head_joint",
+      "type": "fixed",
+      "parent": "torso_link",
+      "child": "head_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.0039635 0 -0.044",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "imu_in_torso_joint",
+      "type": "fixed",
+      "parent": "torso_link",
+      "child": "imu_in_torso",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "-0.03959 -0.00224 0.14792",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "imu_in_pelvis_joint",
+      "type": "fixed",
+      "parent": "pelvis",
+      "child": "imu_in_pelvis",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.04525 0 -0.08339",
+        "rpy": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "d435_joint",
+      "type": "fixed",
+      "parent": "torso_link",
+      "child": "d435_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.0576235 0.01753 0.42987",
+        "rpy": "0 0.8307767239493009 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "mid360_joint",
+      "type": "fixed",
+      "parent": "torso_link",
+      "child": "mid360_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.0002835 0.00003 0.428434",
+        "rpy": "3.141592653589793 0.05112069379091391 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "left_shoulder_pitch_joint",
+      "type": "revolute",
+      "parent": "torso_link",
+      "child": "left_shoulder_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0.0039563 0.10022 0.24778",
+        "rpy": "0.27931 5.4949E-05 -0.00019159"
+      },
+      "limit": {
+        "lower": "-3.0892",
+        "upper": "2.6704",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "left_shoulder_roll_joint",
+      "type": "revolute",
+      "parent": "left_shoulder_pitch_link",
+      "child": "left_shoulder_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 0.038 -0.013831",
+        "rpy": "-0.27925 0 0"
+      },
+      "limit": {
+        "lower": "-1.5882",
+        "upper": "2.2515",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "left_shoulder_yaw_joint",
+      "type": "revolute",
+      "parent": "left_shoulder_roll_link",
+      "child": "left_shoulder_yaw_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0 0.00624 -0.1032",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.618",
+        "upper": "2.618",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "left_elbow_joint",
+      "type": "revolute",
+      "parent": "left_shoulder_yaw_link",
+      "child": "left_elbow_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0.015783 0 -0.080518",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "2.0944",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "left_wrist_roll_joint",
+      "type": "revolute",
+      "parent": "left_elbow_link",
+      "child": "left_wrist_roll_rubber_hand",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.100 0.00188791 -0.010",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "effort": "25",
+        "velocity": "37",
+        "lower": "-1.972222054",
+        "upper": "1.972222054"
+      }
+    },
+    {
+      "id": "right_shoulder_pitch_joint",
+      "type": "revolute",
+      "parent": "torso_link",
+      "child": "right_shoulder_pitch_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0.0039563 -0.10021 0.24778",
+        "rpy": "-0.27931 5.4949E-05 0.00019159"
+      },
+      "limit": {
+        "lower": "-3.0892",
+        "upper": "2.6704",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "right_shoulder_roll_joint",
+      "type": "revolute",
+      "parent": "right_shoulder_pitch_link",
+      "child": "right_shoulder_roll_link",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0 -0.038 -0.013831",
+        "rpy": "0.27925 0 0"
+      },
+      "limit": {
+        "lower": "-2.2515",
+        "upper": "1.5882",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "right_shoulder_yaw_joint",
+      "type": "revolute",
+      "parent": "right_shoulder_roll_link",
+      "child": "right_shoulder_yaw_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0 -0.00624 -0.1032",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-2.618",
+        "upper": "2.618",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "right_elbow_joint",
+      "type": "revolute",
+      "parent": "right_shoulder_yaw_link",
+      "child": "right_elbow_link",
+      "axis": "0 1 0",
+      "origin": {
+        "xyz": "0.015783 0 -0.080518",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "lower": "-1.0472",
+        "upper": "2.0944",
+        "effort": "25",
+        "velocity": "37"
+      }
+    },
+    {
+      "id": "right_wrist_roll_joint",
+      "type": "revolute",
+      "parent": "right_elbow_link",
+      "child": "right_wrist_roll_rubber_hand",
+      "axis": "1 0 0",
+      "origin": {
+        "xyz": "0.100 -0.00188791 -0.010",
+        "rpy": "0 0 0"
+      },
+      "limit": {
+        "effort": "25",
+        "velocity": "37",
+        "lower": "-1.972222054",
+        "upper": "1.972222054"
+      }
+    }
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "Repository BSD-3-Clause licence; tracked G1 subtree contains no separate licence or exception. Each used mesh checked against the pinned tree.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "84aac59fd3246e3ddc49d1387644e8fcf43b0def4f0b9fe687f372e90446df2d",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/LICENSE"
+      },
+      {
+        "repositoryPath": "robots/g1_description/README.md",
+        "sha256": "44b09b105d13733d726bd8535b7a6ee92045dde07a412cf7963d7604559588fa",
+        "url": "https://github.com/unitreerobotics/unitree_ros/blob/725b59b6de39a26c425632120c89f23c49a36f1e/robots/g1_description/README.md"
+      }
+    ],
+    "scope": "Actual referenced meshes and generated description only. No blanket licence inference for other robot assets.",
+    "reviewDate": "2026-11-13"
+  },
+  "supportStatus": {
+    "zh": "Mode 10：12 个腿部、1 个腰部、10 个手臂主动关节，不含主动灵巧手；官方 README 标为 Up-to-date。仅核验此配置，不等同于 29/31 自由度型号。尚无匹配 Mode 10 MJCF 或已运行控制器。",
+    "en": "Mode 10 has 12 leg, 1 waist and 10 arm actuated joints, excluding active dexterous hands. The pinned README marks it Up-to-date. This is not a 29/31-DOF variant; no matching Mode 10 MJCF or running controller is verified."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "MODIFICATIONS.txt",
+    "ATTRIBUTION.txt"
+  ]
+}

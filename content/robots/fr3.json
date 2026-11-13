@@ -1,0 +1,647 @@
+{
+  "repository": "https://github.com/frankarobotics/franka_description",
+  "commit": "7aeeddc449edf8d62b594f9e36a81da53e7796f9",
+  "sourceFile": "robots/fr3/fr3.urdf.xacro",
+  "sourceSha256": "8f068b2f9093e36fe7dfb7dbb811eb77b86c2aa4215bb2624217784458031a89",
+  "license": "Apache-2.0",
+  "method": "Official URDF or expanded vendor Xacro; mesh paths rewritten only. Visual meshes retained. No new geometry.",
+  "files": [
+    {
+      "file": "meshes/robots/fr3/visual/link0.dae",
+      "sha256": "3c52a112d1610d645934945b80ea8d9bb3d1635f345098480a33a537bd43224e",
+      "bytes": 7079719,
+      "sourcePath": "meshes/robots/fr3/visual/link0.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link0.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link0.stl",
+      "sha256": "56990396d712b2ebb89f7d29083973c823babd3bfa605f2d2863bd1069d29788",
+      "bytes": 18784,
+      "sourcePath": "meshes/robots/fr3/collision/link0.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link0.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link1.dae",
+      "sha256": "5c5846eabc714aefc82ef051a4d09c4fc1c092bca6258b1290227345dd217fcb",
+      "bytes": 906843,
+      "sourcePath": "meshes/robots/fr3/visual/link1.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link1.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link1.stl",
+      "sha256": "e023cf1db282e07f38597d4e7f9edae03cd0dc338974677b31639f677411dc18",
+      "bytes": 11884,
+      "sourcePath": "meshes/robots/fr3/collision/link1.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link2.dae",
+      "sha256": "90a1bd38abdc53d0141719cd8e040f788db337b768a845bb6d53c5c52590498f",
+      "bytes": 921715,
+      "sourcePath": "meshes/robots/fr3/visual/link2.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link2.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link2.stl",
+      "sha256": "3117fd3aea238c07fc1bf678784d38497bfdd603a7760bf36b7fb31b15f0624e",
+      "bytes": 11484,
+      "sourcePath": "meshes/robots/fr3/collision/link2.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link2.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link3.dae",
+      "sha256": "1c7a2a8124e39ad07096c0cce8461b0e650f6752900cfd777bf87c181e81749b",
+      "bytes": 2475274,
+      "sourcePath": "meshes/robots/fr3/visual/link3.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link3.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link3.stl",
+      "sha256": "1f21215bdb62892271a263969c92dc1be15c409ec8fc96b6bdec3c28d77f0e6e",
+      "bytes": 13584,
+      "sourcePath": "meshes/robots/fr3/collision/link3.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link3.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link4.dae",
+      "sha256": "dd134cf13cdaced2b67739e4d9fe2ca011cc533936397d9f6303fc740424e2a2",
+      "bytes": 2533228,
+      "sourcePath": "meshes/robots/fr3/visual/link4.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link4.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link4.stl",
+      "sha256": "b9574ef02cdf234dff9f12359e00f6c11a4b062cf73d1db20894c57f5a9d716a",
+      "bytes": 13184,
+      "sourcePath": "meshes/robots/fr3/collision/link4.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link4.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link5.dae",
+      "sha256": "cbcabd369e044eba3f1c2cab84b9ed2ebc1b2f424c6104ad9c5d7410e92fabfe",
+      "bytes": 3259292,
+      "sourcePath": "meshes/robots/fr3/visual/link5.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link5.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link5.stl",
+      "sha256": "c174872b06547dc6acdd027679e476d4cddffe0224cb048763bdbf4f68fe7542",
+      "bytes": 13384,
+      "sourcePath": "meshes/robots/fr3/collision/link5.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link5.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link6.dae",
+      "sha256": "907b16fea84931f4881174234065bb647700abf105b432c3ff65360e0ad5cf8b",
+      "bytes": 5252660,
+      "sourcePath": "meshes/robots/fr3/visual/link6.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link6.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link6.stl",
+      "sha256": "9ad5c4698aed204cd505e74356adfbb955196913d0b75a616c3865b319d39e6b",
+      "bytes": 16234,
+      "sourcePath": "meshes/robots/fr3/collision/link6.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link6.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/visual/link7.dae",
+      "sha256": "b9d05ac502ff269b1323705de811d07a8eb9920ce711b32ee0497bf16b74989b",
+      "bytes": 4243523,
+      "sourcePath": "meshes/robots/fr3/visual/link7.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/visual/link7.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robots/fr3/collision/link7.stl",
+      "sha256": "c48646a72ed0264e5f90b221327fd2b72163935ec7bc1cde9612ac1dcf23eabf",
+      "bytes": 15784,
+      "sourcePath": "meshes/robots/fr3/collision/link7.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robots/fr3/collision/link7.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "sha256": "1b50601d3157f810176aba6db7164d6bdb4ec8b6546a8a725baba2fa2a21c58a",
+      "bytes": 550371,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "bytes": 10084,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "sha256": "12c7bc9b55ffd0d1d0e3442d3e213ecc4fbebbced15259a20195af464f871fcd",
+      "bytes": 52371,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "fr3_base_joint",
+      "type": "fixed",
+      "parent": "base",
+      "child": "fr3_link0",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link0_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link0",
+      "child": "fr3_link0_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "3.1416 0.0 0.0",
+        "xyz": "-0.017402 -0.007872 0.04715"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link0_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link0",
+      "child": "fr3_link0_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0.0 0.0 -1.5708",
+        "xyz": "-0.019739 0.0015506 0.05075"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link1_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link1",
+      "child": "fr3_link1_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 0.0 3.1416",
+        "xyz": "0.017402 -0.093352 -0.00787"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link1_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link1",
+      "child": "fr3_link1_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 1.5708 0.0",
+        "xyz": "0.01974 -0.08975 0.00155"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_joint1",
+      "type": "revolute",
+      "parent": "fr3_link0",
+      "child": "fr3_link1",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.333"
+      },
+      "limit": {
+        "effort": "87.0",
+        "lower": "-2.9007",
+        "upper": "2.9007",
+        "velocity": "2.62"
+      }
+    },
+    {
+      "id": "fr3_link2_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link2",
+      "child": "fr3_link2_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "1.5708 0.0 3.1416",
+        "xyz": "0.017403 -0.11715 0.00787"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link2_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link2",
+      "child": "fr3_link2_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "1.5708 -1.5708 0.0",
+        "xyz": "0.019737 -0.11875 -0.00155"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_joint2",
+      "type": "revolute",
+      "parent": "fr3_link1",
+      "child": "fr3_link2",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "-1.570796326794897 0 0",
+        "xyz": "0 0 0"
+      },
+      "limit": {
+        "effort": "87.0",
+        "lower": "-1.8361",
+        "upper": "1.8361",
+        "velocity": "2.62"
+      }
+    },
+    {
+      "id": "fr3_link3_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link3",
+      "child": "fr3_link3_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 0.0 0.0",
+        "xyz": "0.065099 0.077352 -0.00787"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link3_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link3",
+      "child": "fr3_link3_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "1.5708 1.5708 0.0",
+        "xyz": "0.062769 0.073756 0.00155"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_joint3",
+      "type": "revolute",
+      "parent": "fr3_link2",
+      "child": "fr3_link3",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "1.570796326794897 0 0",
+        "xyz": "0 -0.316 0"
+      },
+      "limit": {
+        "effort": "87.0",
+        "lower": "-2.9007",
+        "upper": "2.9007",
+        "velocity": "2.62"
+      }
+    },
+    {
+      "id": "fr3_link4_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link4",
+      "child": "fr3_link4_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 0.0 -3.1416",
+        "xyz": "-0.0651 0.046252 -0.00787"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link4_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link4",
+      "child": "fr3_link4_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 1.5708 0.0",
+        "xyz": "-0.062775 0.049753 0.00155"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_joint4",
+      "type": "revolute",
+      "parent": "fr3_link3",
+      "child": "fr3_link4",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "1.570796326794897 0 0",
+        "xyz": "0.0825 0 0"
+      },
+      "limit": {
+        "effort": "87.0",
+        "lower": "-3.077",
+        "upper": "-0.1169",
+        "velocity": "2.62"
+      }
+    },
+    {
+      "id": "fr3_link5_accelerometer_top_joint",
+      "type": "fixed",
+      "parent": "fr3_link5",
+      "child": "fr3_link5_accelerometer_top",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "-1.5708 0.0 0.0",
+        "xyz": "-0.017363 0.085872 -0.00795"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_link5_accelerometer_bottom_joint",
+      "type": "fixed",
+      "parent": "fr3_link5",
+      "child": "fr3_link5_accelerometer_bottom",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "1.5708 1.5708 0.0",
+        "xyz": "-0.019742 0.082275 0.00146"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_joint5",
+      "type": "revolute",
+      "parent": "fr3_link4",
+      "child": "fr3_link5",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "-1.570796326794897 0 0",
+        "xyz": "-0.0825 0.384 0"
+      },
+      "limit": {
+        "effort": "12.0",
+        "lower": "-2.8763",
+        "upper": "2.8763",
+        "velocity": "5.26"
+      }
+    },
+    {
+      "id": "fr3_joint6",
+      "type": "revolute",
+      "parent": "fr3_link5",
+      "child": "fr3_link6",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "1.570796326794897 0 0",
+        "xyz": "0 0 0"
+      },
+      "limit": {
+        "effort": "12.0",
+        "lower": "0.4398",
+        "upper": "4.6216",
+        "velocity": "4.18"
+      }
+    },
+    {
+      "id": "fr3_joint7",
+      "type": "revolute",
+      "parent": "fr3_link6",
+      "child": "fr3_link7",
+      "axis": "0 0 1",
+      "origin": {
+        "rpy": "1.570796326794897 0 0",
+        "xyz": "0.088 0 0"
+      },
+      "limit": {
+        "effort": "12.0",
+        "lower": "-3.0508",
+        "upper": "3.0508",
+        "velocity": "5.26"
+      }
+    },
+    {
+      "id": "fr3_joint8",
+      "type": "fixed",
+      "parent": "fr3_link7",
+      "child": "fr3_link8",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.107"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_hand_joint",
+      "type": "fixed",
+      "parent": "fr3_link8",
+      "child": "fr3_hand",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 -0.7853981633974483",
+        "xyz": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_hand_tcp_joint",
+      "type": "fixed",
+      "parent": "fr3_hand",
+      "child": "fr3_hand_tcp",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.1034"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_finger_joint1",
+      "type": "prismatic",
+      "parent": "fr3_hand",
+      "child": "fr3_leftfinger",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.0584"
+      },
+      "limit": {
+        "effort": "100",
+        "lower": "0.0",
+        "upper": "0.04",
+        "velocity": "0.2"
+      }
+    },
+    {
+      "id": "fr3_finger_joint2",
+      "type": "prismatic",
+      "parent": "fr3_hand",
+      "child": "fr3_rightfinger",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 3.141592653589793",
+        "xyz": "0 0 0.0584"
+      },
+      "limit": {
+        "effort": "100",
+        "lower": "0.0",
+        "upper": "0.04",
+        "velocity": "0.2"
+      }
+    }
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "The package manifest explicitly covers robot URDF and meshes under Apache-2.0; README confirms the project licence; all 19 selected FR3/white-hand meshes are within that scope with no local override in the tracked tree; NOTICE retained.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/LICENSE"
+      },
+      {
+        "repositoryPath": "NOTICE",
+        "sha256": "13991525876741e3dc94c46e0afce111dc0a5c6156c89bbbefd06547b84738fd",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/NOTICE"
+      },
+      {
+        "repositoryPath": "README.rst",
+        "sha256": "fc0223356e8b55b7bff25ae4db5d0587662e62d2aa1cd45a8ee63fb018616f77",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/README.rst"
+      },
+      {
+        "repositoryPath": "package.xml",
+        "sha256": "ff3d3c63eaccfb28b0d36b5f364be11b0b2406786a8db08253b3e384c436e456",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/package.xml"
+      },
+      {
+        "repositoryPath": "robots/fr3/fr3.urdf.xacro",
+        "sha256": "8f068b2f9093e36fe7dfb7dbb811eb77b86c2aa4215bb2624217784458031a89",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/robots/fr3/fr3.urdf.xacro"
+      }
+    ],
+    "scope": "Actual referenced meshes and generated description only. No blanket licence inference for other robot assets.",
+    "reviewDate": "2026-11-13"
+  },
+  "supportStatus": {
+    "zh": "官方维护中的 fr3（Desk 标识 Arm3R）描述配置，7 个手臂主动关节、2 个夹爪关节（其中一个 mimic）。不是 Arm3Rv2/v2.1。这里只验证文件和运动学，未运行 FCI/ROS 控制器或实机。",
+    "en": "Maintained official fr3 description (Desk identity Arm3R): 7 actuated arm joints and 2 gripper joints, one mimic. Not Arm3Rv2/v2.1. File and kinematic validation only; no FCI/ROS controller or hardware run."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "MODIFICATIONS.txt",
+    "ATTRIBUTION.txt",
+    "NOTICE.txt"
+  ]
+}

@@ -1,0 +1,11 @@
+SO-101 follower by TheRobotStudio with Hugging Face collaboration.
+Source: https://github.com/TheRobotStudio/SO-ARM100
+Pinned commit: a758567c3978dfeefe282ede0500085a48fe8f78
+Apache-2.0: see LICENSE.txt. No upstream NOTICE file present at this commit.
+Motor parameters upstream adapted from Open Duck Mini.
+External linked videos, images and vendor internal designs are not included or relicensed.
+
+Assembly-course text adapted and summarized/translated from Hugging Face LeRobot docs/source/so101.mdx, commit e6ffde60312365c5452c46189a26872483943154.
+Copyright 2024 The Hugging Face team. All rights reserved. Apache-2.0; see LEROBOT-LICENSE.txt.
+Source: https://github.com/huggingface/lerobot/blob/e6ffde60312365c5452c46189a26872483943154/docs/source/so101.mdx
+No upstream NOTICE or docs-specific override found. External linked media are excluded. These adaptations are not manufacturer-certified work instructions.

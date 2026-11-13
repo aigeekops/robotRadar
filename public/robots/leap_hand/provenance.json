@@ -1,0 +1,131 @@
+{
+  "repository": "https://github.com/leap-hand/LEAP_Hand_Sim",
+  "commit": "150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+  "sourceFile": "assets/leap_hand/robot.urdf",
+  "sourceSha256": "b3f29881e1c013f8b4eda85e9afecc6b2f4b89b5b49b643183ef6031422ed7f4",
+  "runtimeSha256": "47b8b0bd81cd0ae28f867bb63ca556a7199e330fef3e8ec84113592d70639b92",
+  "license": "MIT",
+  "method": "Only mesh filename prefixes changed from relative source filenames to /robots/leap_hand/. No joint, inertial, geometry or material values modified. Viewer rigid display rotation/elevation is presentation only.",
+  "files": [
+    {
+      "file": "dip.stl",
+      "sha256": "9222f0ee1fa0077c70a219f7952df6f4208b003ad06a608e006cd0d8057d4b1c",
+      "bytes": 1538284,
+      "sourcePath": "assets/leap_hand/dip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/dip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "fingertip.stl",
+      "sha256": "e149e01e395b58950332dc2e2bda4b51b5557328a73c80b990d184c2e84dcc53",
+      "bytes": 562684,
+      "sourcePath": "assets/leap_hand/fingertip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/fingertip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "mcp_joint.stl",
+      "sha256": "56af82c57b469d491f544d6de12e2696b4284b50e89ca271502aaa0631f04b59",
+      "bytes": 1608784,
+      "sourcePath": "assets/leap_hand/mcp_joint.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/mcp_joint.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "palm_lower.stl",
+      "sha256": "eae47756f1a1978b255a36c0b75c24c0af886d10026c2950a2b0acef66f09c8c",
+      "bytes": 4347184,
+      "sourcePath": "assets/leap_hand/palm_lower.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/palm_lower.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "pip.stl",
+      "sha256": "b778405c95127023c8b110e6e2f5a181ad8a46dadc2ac98d3f038debae52ef33",
+      "bytes": 1051084,
+      "sourcePath": "assets/leap_hand/pip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/pip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "thumb_dip.stl",
+      "sha256": "7261cf99cd44ae42360dc72a417c2526a73ec8ff4c446858042d6d0675b4f2bf",
+      "bytes": 1451484,
+      "sourcePath": "assets/leap_hand/thumb_dip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_dip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "thumb_fingertip.stl",
+      "sha256": "b43c5a13cf67a25da5ea64afafdcae2179b53971f940375c94656919d717dfb0",
+      "bytes": 1111984,
+      "sourcePath": "assets/leap_hand/thumb_fingertip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_fingertip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    },
+    {
+      "file": "thumb_pip.stl",
+      "sha256": "40532d5d555e150748f8563fb378ab3d0839b9221eb5ef108e86fde01a98dfe0",
+      "bytes": 468884,
+      "sourcePath": "assets/leap_hand/thumb_pip.stl",
+      "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand/thumb_pip.stl",
+      "license": "MIT",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "NOTICE.md"
+      ],
+      "modified": false
+    }
+  ],
+  "licenseAudit": {
+    "evidence": [
+      "LICENSE.txt",
+      "NOTICE.md"
+    ],
+    "source": "https://github.com/leap-hand/LEAP_Hand_Sim/blob/150bc3d4b61fd6619193ba5a8ef209f3609ced89/LICENSE.txt",
+    "scope": "Root repository MIT covers staged simulation assets; pinned tree has no nested asset license/notice, binary STL headers contain no alternate notice. Manufacturing CAD/printability not certified."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "NOTICE.md"
+  ],
+  "supportStatus": {
+    "zh": "四指、16个源模型转动关节；仿真URDF和外观网格，支持有界运动学示意。不是Shadow五指手；未核验制造CAD、打印工艺、碰撞接触、抓力或真机控制。",
+    "en": "Four digits and 16 source revolute joints. Simulation URDF and visual meshes with bounded kinematic illustration. Not a five-finger Shadow hand; manufacturing CAD, print process, contact, grip force and hardware control are unverified."
+  }
+}

@@ -1,0 +1,5 @@
+Franka Robotics
+Source: https://github.com/frankarobotics/franka_ros
+Pinned commit: ddd2fffd9de44b02ad15b4bbb2bfa2cec4d60d98
+Licence: Apache-2.0; see LICENSE.txt and provenance.json.
+franka_description package manifest explicitly covers URDF and meshes under Apache-2.0; repository README covers all packages; upstream NOTICE retained.

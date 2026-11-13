@@ -1,0 +1,33 @@
+.physical-assembly-panel .physical-status {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #8b7460;
+  margin: 12px 0;
+}
+.physical-fasteners {
+  padding: 12px;
+  margin: 15px 0;
+  background: #f3f5ed;
+  border: 1px solid #e2e7d9;
+  border-radius: 6px;
+  font-size: 11px;
+  line-height: 1.9;
+}
+.physical-fasteners h4 {
+  margin: 0 0 6px;
+  font-size: 11px;
+}
+.physical-fasteners ul {
+  margin: 0;
+  padding-left: 18px;
+}
+.physical-read-button {
+  margin-top: 16px;
+}
+.physical-extra-source {
+  display: block;
+  margin-top: 7px;
+}
+.assembly-learning-switch {
+  margin-bottom: 18px;
+}

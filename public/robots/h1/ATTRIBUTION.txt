@@ -1,0 +1,4 @@
+Unitree
+Source: https://github.com/unitreerobotics/unitree_ros
+Commit: 725b59b6de39a26c425632120c89f23c49a36f1e
+Repository BSD-3-Clause licence applies to the tracked H1 subtree, with no separate licence or exception found. The package.xml licence field is TODO, not an additional licence grant; reliance is on root LICENSE. README identifies this as official H1 description.

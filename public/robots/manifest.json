@@ -1,0 +1,493 @@
+[
+  {
+    "id": "g1",
+    "name": {
+      "zh": "宇树 G1 · 23 自由度 · Mode 10",
+      "en": "Unitree G1 · 23 DOF · Mode 10"
+    },
+    "manufacturer": "Unitree",
+    "form": "humanoid",
+    "description": {
+      "zh": "官方 Mode 10（23 自由度）描述配置，观察双足、人形关节链与传感器布局。",
+      "en": "Official Mode 10 (23-DOF) description configuration for exploring biped kinematics and sensor layout."
+    },
+    "license": "BSD-3-Clause",
+    "urdfUrl": "/robots/g1/robot.urdf",
+    "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/g1_description",
+    "sourceCommit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+    "provenanceUrl": "/robots/g1/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型 · 外观资源与关节树",
+      "en": "Official description · visual resources and joint topology"
+    },
+    "limitations": {
+      "zh": "仅核验官方描述文件的关节树与外观资源；未核验内部电路、电机内部、维修拆装顺序或实机精度。 Mode 10：12 个腿部、1 个腰部、10 个手臂主动关节，不含主动灵巧手；官方 README 标为 Up-to-date。仅核验此配置，不等同于 29/31 自由度型号。尚无匹配 Mode 10 MJCF 或已运行控制器。",
+      "en": "Official description topology and visual resources only; no validation of internal electronics, motor internals, service disassembly or physical accuracy. Mode 10 has 12 leg, 1 waist and 10 arm actuated joints, excluding active dexterous hands. The pinned README marks it Up-to-date. This is not a 29/31-DOF variant; no matching Mode 10 MJCF or running controller is verified."
+    },
+    "jointCount": 23,
+    "linkCount": 30,
+    "downloadBytes": 24048834,
+    "supportStatus": {
+      "zh": "Mode 10：12 个腿部、1 个腰部、10 个手臂主动关节，不含主动灵巧手；官方 README 标为 Up-to-date。仅核验此配置，不等同于 29/31 自由度型号。尚无匹配 Mode 10 MJCF 或已运行控制器。",
+      "en": "Mode 10 has 12 leg, 1 waist and 10 arm actuated joints, excluding active dexterous hands. The pinned README marks it Up-to-date. This is not a 29/31-DOF variant; no matching Mode 10 MJCF or running controller is verified."
+    },
+    "licenseEvidenceUrl": "/robots/g1/provenance.json",
+    "licenseNoticeUrl": "/robots/g1/LICENSE.txt"
+  },
+  {
+    "id": "go2",
+    "name": {
+      "zh": "宇树 Go2",
+      "en": "Unitree Go2"
+    },
+    "manufacturer": "Unitree",
+    "form": "quadruped",
+    "description": {
+      "zh": "官方 Go2 描述模型，探索四条三关节腿；不声明对应某个零售配置。",
+      "en": "Official Go2 description with four three-joint legs; no retail variant equivalence is claimed."
+    },
+    "license": "BSD-3-Clause",
+    "urdfUrl": "/robots/go2/robot.urdf",
+    "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/tree/master/robots/go2_description",
+    "sourceCommit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+    "provenanceUrl": "/robots/go2/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型 · 外观资源与关节树",
+      "en": "Official description · visual resources and joint topology"
+    },
+    "limitations": {
+      "zh": "仅核验官方描述文件的关节树与外观资源；未核验内部电路、电机内部、维修拆装顺序或实机精度。 12 个主动腿部关节。仓库提供 ROS 1 Gazebo 低层控制配置，但本应用只加载可视化 URDF；未运行 Gazebo、SDK 或行走控制器，不能据此声称高层行走支持。",
+      "en": "Official description topology and visual resources only; no validation of internal electronics, motor internals, service disassembly or physical accuracy. 12 actuated leg joints. The repository supplies ROS 1 Gazebo low-level control configuration; this app only loads the visual URDF. Gazebo, SDK and locomotion controllers have not been run; high-level walking support is not claimed."
+    },
+    "jointCount": 12,
+    "linkCount": 42,
+    "downloadBytes": 25932493,
+    "supportStatus": {
+      "zh": "12 个主动腿部关节。仓库提供 ROS 1 Gazebo 低层控制配置，但本应用只加载可视化 URDF；未运行 Gazebo、SDK 或行走控制器，不能据此声称高层行走支持。",
+      "en": "12 actuated leg joints. The repository supplies ROS 1 Gazebo low-level control configuration; this app only loads the visual URDF. Gazebo, SDK and locomotion controllers have not been run; high-level walking support is not claimed."
+    },
+    "licenseEvidenceUrl": "/robots/go2/provenance.json",
+    "licenseNoticeUrl": "/robots/go2/LICENSE.txt"
+  },
+  {
+    "id": "panda",
+    "name": {
+      "zh": "Franka Panda · 夹爪配置",
+      "en": "Franka Panda · With gripper"
+    },
+    "manufacturer": "Franka Robotics",
+    "form": "arm",
+    "description": {
+      "zh": "Panda 七轴机械臂与双指夹爪，展示冗余关节和末端机构；并非 FR3。",
+      "en": "Panda seven-axis arm and parallel gripper, illustrating redundancy and end-effector kinematics; not FR3."
+    },
+    "license": "Apache-2.0",
+    "urdfUrl": "/robots/panda/robot.urdf",
+    "sourceUrl": "https://github.com/frankarobotics/franka_ros/tree/develop/franka_description",
+    "sourceCommit": "ddd2fffd9de44b02ad15b4bbb2bfa2cec4d60d98",
+    "provenanceUrl": "/robots/panda/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型 · 外观资源与关节树",
+      "en": "Official description · visual resources and joint topology"
+    },
+    "limitations": {
+      "zh": "仅核验官方描述文件的关节树与外观资源；未核验内部电路、电机内部、维修拆装顺序或实机精度。 历史 Panda/FER 七轴机械臂及双指夹爪（其中一指 mimic）。并非 FR3。现行官方 franka_description 文档称 FER 仍可生成但不再维护问题；保留为历史教学模型，不代表当前官方受支持机型。",
+      "en": "Official description topology and visual resources only; no validation of internal electronics, motor internals, service disassembly or physical accuracy. Historical Panda/FER seven-axis arm with a two-finger gripper (one mimic joint), not FR3. Current official franka_description docs say FER remains generatable but reported issues are not fixed. Retained for historical education, not represented as a currently maintained model."
+    },
+    "jointCount": 9,
+    "linkCount": 22,
+    "downloadBytes": 10633961,
+    "supportStatus": {
+      "zh": "历史 Panda/FER 七轴机械臂及双指夹爪（其中一指 mimic）。并非 FR3。现行官方 franka_description 文档称 FER 仍可生成但不再维护问题；保留为历史教学模型，不代表当前官方受支持机型。",
+      "en": "Historical Panda/FER seven-axis arm with a two-finger gripper (one mimic joint), not FR3. Current official franka_description docs say FER remains generatable but reported issues are not fixed. Retained for historical education, not represented as a currently maintained model."
+    },
+    "licenseEvidenceUrl": "/robots/panda/provenance.json",
+    "licenseNoticeUrl": "/robots/panda/LICENSE.txt",
+    "noticeUrl": "/robots/panda/NOTICE.txt"
+  },
+  {
+    "id": "ur5e",
+    "name": {
+      "zh": "Universal Robots UR5e",
+      "en": "Universal Robots UR5e"
+    },
+    "manufacturer": "Universal Robots",
+    "form": "arm",
+    "description": {
+      "zh": "UR5e 六轴协作臂，官方默认运动学参数；不代表特定实机标定。",
+      "en": "UR5e six-axis collaborative arm with official nominal kinematics, not calibration for a specific physical unit."
+    },
+    "license": "BSD-3-Clause",
+    "urdfUrl": "/robots/ur5e/robot.urdf",
+    "sourceUrl": "https://github.com/UniversalRobots/Universal_Robots_ROS2_Description",
+    "sourceCommit": "0eb1a861f7772fceb38510d90fa2f98ec668070c",
+    "provenanceUrl": "/robots/ur5e/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型 · 外观资源与关节树",
+      "en": "Official description · visual resources and joint topology"
+    },
+    "limitations": {
+      "zh": "仅核验官方描述文件的关节树与外观资源；未核验内部电路、电机内部、维修拆装顺序或实机精度。 UR5e 六轴官方默认模型，不带 Smart Panel 或末端工具。参数不是特定实机标定；未运行 ROS 2 驱动或实体控制。",
+      "en": "Official description topology and visual resources only; no validation of internal electronics, motor internals, service disassembly or physical accuracy. Official nominal six-axis UR5e, without Smart Panel or tool. Parameters are not calibration of a specific physical unit; no ROS 2 driver or hardware control has been run."
+    },
+    "jointCount": 6,
+    "linkCount": 13,
+    "downloadBytes": 9712629,
+    "supportStatus": {
+      "zh": "UR5e 六轴官方默认模型，不带 Smart Panel 或末端工具。参数不是特定实机标定；未运行 ROS 2 驱动或实体控制。",
+      "en": "Official nominal six-axis UR5e, without Smart Panel or tool. Parameters are not calibration of a specific physical unit; no ROS 2 driver or hardware control has been run."
+    },
+    "licenseEvidenceUrl": "/robots/ur5e/provenance.json",
+    "licenseNoticeUrl": "/robots/ur5e/LICENSE.txt"
+  },
+  {
+    "id": "fr3",
+    "name": {
+      "zh": "Franka Research 3 · Arm3R + Franka Hand",
+      "en": "Franka Research 3 · Arm3R + Franka Hand"
+    },
+    "manufacturer": "Franka Robotics",
+    "form": "arm",
+    "description": {
+      "zh": "官方 Arm3R 配置，七轴机械臂与白色 Franka Hand。区别于 Panda、Arm3Rv2 与 Arm3Rv2.1。",
+      "en": "Official Arm3R configuration: seven-axis arm with the white Franka Hand. Distinct from Panda, Arm3Rv2 and Arm3Rv2.1."
+    },
+    "license": "Apache-2.0",
+    "urdfUrl": "/robots/fr3/robot.urdf",
+    "sourceUrl": "https://github.com/frankarobotics/franka_description",
+    "sourceCommit": "7aeeddc449edf8d62b594f9e36a81da53e7796f9",
+    "provenanceUrl": "/robots/fr3/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型 · 外观资源与关节树",
+      "en": "Official description · visual resources and joint topology"
+    },
+    "limitations": {
+      "zh": "仅核验官方描述文件的关节树与外观资源；未核验内部电路、电机内部、维修拆装顺序或实机精度。 官方维护中的 fr3（Desk 标识 Arm3R）描述配置，7 个手臂主动关节、2 个夹爪关节（其中一个 mimic）。不是 Arm3Rv2/v2.1。这里只验证文件和运动学，未运行 FCI/ROS 控制器或实机。",
+      "en": "Official description topology and visual resources only; no validation of internal electronics, motor internals, service disassembly or physical accuracy. Maintained official fr3 description (Desk identity Arm3R): 7 actuated arm joints and 2 gripper joints, one mimic. Not Arm3Rv2/v2.1. File and kinematic validation only; no FCI/ROS controller or hardware run."
+    },
+    "jointCount": 9,
+    "linkCount": 26,
+    "downloadBytes": 27399402,
+    "supportStatus": {
+      "zh": "官方维护中的 fr3（Desk 标识 Arm3R）描述配置，7 个手臂主动关节、2 个夹爪关节（其中一个 mimic）。不是 Arm3Rv2/v2.1。这里只验证文件和运动学，未运行 FCI/ROS 控制器或实机。",
+      "en": "Maintained official fr3 description (Desk identity Arm3R): 7 actuated arm joints and 2 gripper joints, one mimic. Not Arm3Rv2/v2.1. File and kinematic validation only; no FCI/ROS controller or hardware run."
+    },
+    "licenseEvidenceUrl": "/robots/fr3/provenance.json",
+    "licenseNoticeUrl": "/robots/fr3/LICENSE.txt",
+    "noticeUrl": "/robots/fr3/NOTICE.txt"
+  },
+  {
+    "id": "so101",
+    "name": {
+      "zh": "SO-101 follower · 基础开放硬件",
+      "en": "SO-101 follower · Foundational open hardware"
+    },
+    "manufacturer": "TheRobotStudio / Hugging Face",
+    "form": "arm",
+    "description": {
+      "zh": "SO-101 五轴机械臂与旋转夹爪，用于学习有公开 CAD 与装配文字证据的基础硬件。不是主流工业机型内部结构替代品。",
+      "en": "SO-101 five-axis arm with revolute gripper for foundational open-hardware study backed by public CAD and assembly text. Not a substitute for industrial robot internals."
+    },
+    "license": "Apache-2.0",
+    "urdfUrl": "/robots/so101/robot.urdf",
+    "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/tree/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101",
+    "sourceCommit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+    "provenanceUrl": "/robots/so101/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述模型、CAD/打印件与装配文字出处",
+      "en": "Official description, CAD/print files and assembly-text provenance"
+    },
+    "limitations": {
+      "zh": "官方已移除基座碰撞网格；这里验证外观、运动学及官方装配文字出处，不代表实机装配验证、碰撞安全或电气仿真。 基础开放硬件 SO-101 follower，新校准零位；不是 SO-100 或 leader。五个臂关节加一个旋转夹爪，非 LeRobot 0–100 归一化夹爪接口。未运行串口、电机、校准或控制代码。",
+      "en": "Upstream removed base collision meshes. Visual geometry, kinematics and assembly-text provenance only; no physical assembly validation, collision safety or electrical simulation. Foundational open-hardware SO-101 follower, new-calibration zero; not SO-100 or leader. Five arm joints plus a revolute gripper, not the LeRobot normalized 0–100 gripper interface. No serial, motor, calibration or control code executed."
+    },
+    "supportStatus": {
+      "zh": "基础开放硬件 SO-101 follower，新校准零位；不是 SO-100 或 leader。五个臂关节加一个旋转夹爪，非 LeRobot 0–100 归一化夹爪接口。未运行串口、电机、校准或控制代码。",
+      "en": "Foundational open-hardware SO-101 follower, new-calibration zero; not SO-100 or leader. Five arm joints plus a revolute gripper, not the LeRobot normalized 0–100 gripper interface. No serial, motor, calibration or control code executed."
+    },
+    "jointCount": 6,
+    "linkCount": 8,
+    "downloadBytes": 16129292,
+    "licenseEvidenceUrl": "/robots/so101/provenance.json",
+    "licenseNoticeUrl": "/robots/so101/LICENSE.txt"
+  },
+  {
+    "id": "h1",
+    "name": {
+      "zh": "宇树 H1 · 无灵巧手",
+      "en": "Unitree H1 · Without dexterous hands"
+    },
+    "manufacturer": "Unitree",
+    "form": "humanoid",
+    "description": {
+      "zh": "官方 H1 19 关节基础配置，探索长腿人形机构；不是 H1-2。",
+      "en": "Official basic H1 configuration with 19 joints, not H1-2."
+    },
+    "license": "BSD-3-Clause",
+    "urdfUrl": "/robots/h1/robot.urdf",
+    "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/tree/725b59b6de39a26c425632120c89f23c49a36f1e/robots/h1_description",
+    "sourceCommit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+    "provenanceUrl": "/robots/h1/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述 · 外观资源与关节树",
+      "en": "Official description · visuals and topology"
+    },
+    "limitations": {
+      "zh": "19 个主动关节，无灵巧手；保留官方外观和关节链。仅展示/运动学，未集成 H1 动力学模型或行走控制器；未核验内部机构、拆装工艺或制造尺寸。",
+      "en": "19 actuated joints without dexterous hands. Official visual assets and topology only. No integrated H1 dynamics or walking controller; internals, service assembly and manufacturing dimensions unverified."
+    },
+    "supportStatus": {
+      "zh": "19 个主动关节，无灵巧手；保留官方外观和关节链。仅展示/运动学，未集成 H1 动力学模型或行走控制器；未核验内部机构、拆装工艺或制造尺寸。",
+      "en": "19 actuated joints without dexterous hands. Official visual assets and topology only. No integrated H1 dynamics or walking controller; internals, service assembly and manufacturing dimensions unverified."
+    },
+    "jointCount": 19,
+    "linkCount": 25,
+    "downloadBytes": 17290014,
+    "licenseEvidenceUrl": "/robots/h1/provenance.json",
+    "licenseNoticeUrl": "/robots/h1/LICENSE.txt"
+  },
+  {
+    "id": "turtlebot3",
+    "name": {
+      "zh": "TurtleBot3 Burger · 双轮移动底盘",
+      "en": "TurtleBot3 Burger · Differential drive"
+    },
+    "manufacturer": "ROBOTIS",
+    "form": "mobile",
+    "description": {
+      "zh": "官方 Burger 模型，探索双轮、底盘与激光雷达布局。",
+      "en": "Official Burger model for exploring differential wheels, chassis and lidar layout."
+    },
+    "license": "Apache-2.0",
+    "urdfUrl": "/robots/turtlebot3/robot.urdf",
+    "sourceUrl": "https://github.com/ROBOTIS-GIT/turtlebot3/tree/0d4e59cf34da9c0661f80008bb0fa02636c713b2/turtlebot3_description",
+    "sourceCommit": "0d4e59cf34da9c0661f80008bb0fa02636c713b2",
+    "provenanceUrl": "/robots/turtlebot3/provenance.json",
+    "verifiedScope": {
+      "zh": "官方描述 · 外观资源与关节树",
+      "en": "Official description · visuals and topology"
+    },
+    "limitations": {
+      "zh": "2 个连续旋转轮关节；仅官方外观和关节链。试驾为教学运动学示意，未集成 ROS 导航、避障、传感器数据或实机；不代表完整可制造文件。",
+      "en": "Two continuous wheel joints. Official visuals and topology only; driving is a teaching kinematic illustration. No ROS navigation, avoidance, sensor stream or hardware integration; not a complete manufacturing package."
+    },
+    "supportStatus": {
+      "zh": "2 个连续旋转轮关节；仅官方外观和关节链。试驾为教学运动学示意，未集成 ROS 导航、避障、传感器数据或实机；不代表完整可制造文件。",
+      "en": "Two continuous wheel joints. Official visuals and topology only; driving is a teaching kinematic illustration. No ROS navigation, avoidance, sensor stream or hardware integration; not a complete manufacturing package."
+    },
+    "jointCount": 2,
+    "linkCount": 7,
+    "downloadBytes": 7722036,
+    "licenseEvidenceUrl": "/robots/turtlebot3/provenance.json",
+    "licenseNoticeUrl": "/robots/turtlebot3/LICENSE.txt"
+  },
+  {
+    "id": "go2w",
+    "name": {
+      "zh": "宇树 Go2-W · 轮足",
+      "en": "Unitree Go2-W · Wheel-legged"
+    },
+    "manufacturer": "Unitree",
+    "form": "quadruped",
+    "license": "BSD-3-Clause",
+    "description": {
+      "zh": "官方轮足描述；12个腿关节与4个连续轮关节。仅可视化与运动学，未核验轮地接触、里程计、越障或SDK控制，不是制造/维修文件。",
+      "en": "Official wheel-legged description: 12 leg joints and 4 continuous wheels. Visuals and kinematics only, without verified wheel-ground contact, odometry, obstacle traversal or SDK control; not manufacturing/service instructions."
+    },
+    "limitations": {
+      "zh": "官方轮足描述；12个腿关节与4个连续轮关节。仅可视化与运动学，未核验轮地接触、里程计、越障或SDK控制，不是制造/维修文件。",
+      "en": "Official wheel-legged description: 12 leg joints and 4 continuous wheels. Visuals and kinematics only, without verified wheel-ground contact, odometry, obstacle traversal or SDK control; not manufacturing/service instructions."
+    },
+    "supportStatus": {
+      "zh": "官方轮足描述；12个腿关节与4个连续轮关节。仅可视化与运动学，未核验轮地接触、里程计、越障或SDK控制，不是制造/维修文件。",
+      "en": "Official wheel-legged description: 12 leg joints and 4 continuous wheels. Visuals and kinematics only, without verified wheel-ground contact, odometry, obstacle traversal or SDK control; not manufacturing/service instructions."
+    },
+    "verifiedScope": {
+      "zh": "来源描述与外观资源；待应用集成验收",
+      "en": "Source description and visual assets; app integration pending"
+    },
+    "sourceCommit": "725b59b6de39a26c425632120c89f23c49a36f1e",
+    "sourceUrl": "https://github.com/unitreerobotics/unitree_ros/tree/725b59b6de39a26c425632120c89f23c49a36f1e/robots/go2w_description",
+    "urdfUrl": "/robots/go2w/robot.urdf",
+    "provenanceUrl": "/robots/go2w/provenance.json",
+    "licenseEvidenceUrl": "/robots/go2w/provenance.json",
+    "licenseNoticeUrl": "/robots/go2w/LICENSE.txt",
+    "linkCount": 33,
+    "jointCount": 16,
+    "downloadBytes": 29879825
+  },
+  {
+    "id": "spot",
+    "name": {
+      "zh": "Spot · 简化无臂配置",
+      "en": "Spot · Simplified leg-only"
+    },
+    "manufacturer": "Boston Dynamics · RAI Institute description",
+    "form": "quadruped",
+    "license": "MIT AND BSD-3-Clause",
+    "description": {
+      "zh": "RAI Institute提供的Spot简化无臂URDF，不等同于官方完整CAD或特定零售配置。12个腿关节；effort/velocity含1000等未验证值，不能视为实机性能。无可运行行走控制器、内部机构或维修拆装验证。",
+      "en": "RAI Institute simplified leg-only Spot URDF, not complete manufacturer CAD or verified retail configuration. Twelve leg joints; effort/velocity fields include unvalidated values of 1000, not verified hardware performance. No integrated walking controller, validated internals or service procedures."
+    },
+    "limitations": {
+      "zh": "RAI Institute提供的Spot简化无臂URDF，不等同于官方完整CAD或特定零售配置。12个腿关节；effort/velocity含1000等未验证值，不能视为实机性能。无可运行行走控制器、内部机构或维修拆装验证。",
+      "en": "RAI Institute simplified leg-only Spot URDF, not complete manufacturer CAD or verified retail configuration. Twelve leg joints; effort/velocity fields include unvalidated values of 1000, not verified hardware performance. No integrated walking controller, validated internals or service procedures."
+    },
+    "supportStatus": {
+      "zh": "RAI Institute提供的Spot简化无臂URDF，不等同于官方完整CAD或特定零售配置。12个腿关节；effort/velocity含1000等未验证值，不能视为实机性能。无可运行行走控制器、内部机构或维修拆装验证。",
+      "en": "RAI Institute simplified leg-only Spot URDF, not complete manufacturer CAD or verified retail configuration. Twelve leg joints; effort/velocity fields include unvalidated values of 1000, not verified hardware performance. No integrated walking controller, validated internals or service procedures."
+    },
+    "verifiedScope": {
+      "zh": "来源描述与外观资源；待应用集成验收",
+      "en": "Source description and visual assets; app integration pending"
+    },
+    "sourceCommit": "156d1802bfb117f219dbfce7597d283d5fabc968",
+    "sourceUrl": "https://github.com/bdaiinstitute/spot_description/tree/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description",
+    "urdfUrl": "/robots/spot/robot.urdf",
+    "provenanceUrl": "/robots/spot/provenance.json",
+    "licenseEvidenceUrl": "/robots/spot/provenance.json",
+    "licenseNoticeUrl": "/robots/spot/LICENSE.txt",
+    "linkCount": 14,
+    "jointCount": 12,
+    "downloadBytes": 1082407
+  },
+  {
+    "id": "open-duck-mini",
+    "name": {
+      "zh": "Open Duck Mini v2 · 双足小鸭",
+      "en": "Open Duck Mini v2 · Biped"
+    },
+    "manufacturer": "apirrone / Open Duck community",
+    "form": "biped",
+    "description": {
+      "zh": "官方 v2 源模型与部分制作资料；不是完整实物制作或行走验证。",
+      "en": "Official v2 source model and partial making resources; not a fully verified physical build or walking controller."
+    },
+    "urdfUrl": "/robots/open-duck-mini/robot.urdf",
+    "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/mini_bdx/robots/open_duck_mini_v2/robot.urdf",
+    "sourceCommit": "b23317a485b3cec7d8417f352478778b3475173c",
+    "license": "Apache-2.0",
+    "provenanceUrl": "/robots/open-duck-mini/provenance.json",
+    "licenseNoticeUrl": "/robots/open-duck-mini/LICENSE.txt",
+    "verifiedScope": {
+      "zh": "21连杆、20关节，官方打印清单；原始网格字节保持",
+      "en": "21 links, 20 joints, official print list; original mesh bytes preserved"
+    },
+    "limitations": {
+      "zh": "装配指南不完整；未验证实物、接线、电池安全或行走。外部BOM/CAD及运行软件不打包。",
+      "en": "Assembly guide incomplete; no physical, wiring, battery-safety or walking validation. External BOM/CAD and runtime software not bundled."
+    },
+    "jointCount": 16,
+    "linkCount": 21,
+    "downloadBytes": 18824895
+  },
+  {
+    "id": "leap_hand",
+    "name": {
+      "zh": "LEAP Hand V1 · 四指灵巧手",
+      "en": "LEAP Hand V1 · Four-digit dexterous hand"
+    },
+    "manufacturer": "LEAP Hand",
+    "form": "hand",
+    "description": {
+      "zh": "官方仿真源四指手，查看17连杆与16转动关节，体验按源限位约束的手指姿态。",
+      "en": "Official four-digit simulation hand: inspect 17 links and 16 revolute joints with source-bounded finger poses."
+    },
+    "license": "MIT",
+    "urdfUrl": "/robots/leap_hand/robot.urdf",
+    "sourceUrl": "https://github.com/leap-hand/LEAP_Hand_Sim/tree/150bc3d4b61fd6619193ba5a8ef209f3609ced89/assets/leap_hand",
+    "sourceCommit": "150bc3d4b61fd6619193ba5a8ef209f3609ced89",
+    "provenanceUrl": "/robots/leap_hand/provenance.json",
+    "noticeUrl": "/robots/leap_hand/NOTICE.md",
+    "verifiedScope": {
+      "zh": "官方仿真URDF · 关节链/限位/可视网格",
+      "en": "Official simulation URDF · joint topology, limits and visual meshes"
+    },
+    "limitations": {
+      "zh": "四指、16个源模型转动关节；仿真URDF和外观网格，支持有界运动学示意。不是Shadow五指手；未核验制造CAD、打印工艺、碰撞接触、抓力或真机控制。",
+      "en": "Four digits and 16 source revolute joints. Simulation URDF and visual meshes with bounded kinematic illustration. Not a five-finger Shadow hand; manufacturing CAD, print process, contact, grip force and hardware control are unverified."
+    },
+    "supportStatus": {
+      "zh": "四指、16个源模型转动关节；仿真URDF和外观网格，支持有界运动学示意。不是Shadow五指手；未核验制造CAD、打印工艺、碰撞接触、抓力或真机控制。",
+      "en": "Four digits and 16 source revolute joints. Simulation URDF and visual meshes with bounded kinematic illustration. Not a five-finger Shadow hand; manufacturing CAD, print process, contact, grip force and hardware control are unverified."
+    },
+    "jointCount": 16,
+    "linkCount": 17,
+    "downloadBytes": 12172481,
+    "licenseEvidenceUrl": "/robots/leap_hand/provenance.json",
+    "licenseNoticeUrl": "/robots/leap_hand/LICENSE.txt"
+  },
+  {
+    "id": "franka-hand",
+    "name": {
+      "zh": "Franka Hand · 两指平行夹爪",
+      "en": "Franka Hand · Parallel gripper"
+    },
+    "manufacturer": "Franka Robotics",
+    "form": "gripper",
+    "description": {
+      "zh": "派生独立白色Franka Hand；两平移关节、一个独立驱动，第二指mimic。开口为URDF推导的标称相向行程，不是实测夹持间隙。无接触求解、力传感、负载验证或实机SDK。",
+      "en": "Derived standalone white Franka Hand: two prismatic joints, one independent drive and a mimic follower. Opening is nominal opposing travel derived from URDF, not measured contact clearance. No contact solving, force sensing, payload validation or hardware SDK."
+    },
+    "license": "Apache-2.0",
+    "urdfUrl": "/robots/franka-hand/robot.urdf",
+    "sourceUrl": "https://github.com/frankarobotics/franka_description",
+    "sourceCommit": "7aeeddc449edf8d62b594f9e36a81da53e7796f9",
+    "provenanceUrl": "/robots/franka-hand/provenance.json",
+    "noticeUrl": "/robots/franka-hand/NOTICE.txt",
+    "verifiedScope": {
+      "zh": "固定源派生手部子树，原始材质/轴线/限位/mimic",
+      "en": "Pinned-source hand subtree; original materials/axes/limits/mimic"
+    },
+    "limitations": {
+      "zh": "派生独立白色Franka Hand；两平移关节、一个独立驱动，第二指mimic。开口为URDF推导的标称相向行程，不是实测夹持间隙。无接触求解、力传感、负载验证或实机SDK。",
+      "en": "Derived standalone white Franka Hand: two prismatic joints, one independent drive and a mimic follower. Opening is nominal opposing travel derived from URDF, not measured contact clearance. No contact solving, force sensing, payload validation or hardware SDK."
+    },
+    "supportStatus": {
+      "zh": "派生独立白色Franka Hand；两平移关节、一个独立驱动，第二指mimic。开口为URDF推导的标称相向行程，不是实测夹持间隙。无接触求解、力传感、负载验证或实机SDK。",
+      "en": "Derived standalone white Franka Hand: two prismatic joints, one independent drive and a mimic follower. Opening is nominal opposing travel derived from URDF, not measured contact clearance. No contact solving, force sensing, payload validation or hardware SDK."
+    },
+    "jointCount": 2,
+    "linkCount": 4,
+    "downloadBytes": 612826,
+    "licenseEvidenceUrl": "/robots/franka-hand/provenance.json",
+    "licenseNoticeUrl": "/robots/franka-hand/LICENSE.txt"
+  },
+  {
+    "id": "svh_hand",
+    "name": {
+      "zh": "SCHUNK SVH · 左手五指 · 9驱动",
+      "en": "SCHUNK SVH · Left five-finger hand · 9 drives"
+    },
+    "manufacturer": "SCHUNK",
+    "form": "hand",
+    "description": {
+      "zh": "官方左手五指模型：20可动关节、11个源mimic、9独立驱动，探索真实源运动链与耦合。",
+      "en": "Official left five-finger model: 20 movable joints, 11 source mimics and 9 independent drives for source-based kinematics and coupling."
+    },
+    "license": "GPL-3.0-or-later",
+    "urdfUrl": "/robots/svh_hand/robot.urdf",
+    "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/tree/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description",
+    "sourceCommit": "eece0762dc080431630301d02d5ddcaef69128bc",
+    "provenanceUrl": "/robots/svh_hand/provenance.json",
+    "noticeUrl": "/robots/svh_hand/NOTICE.md",
+    "sourceDownloadUrl": "/robots/svh_hand/corresponding-source.zip",
+    "verifiedScope": {
+      "zh": "官方description包 · 可视网格/源关节及mimic",
+      "en": "Official description package · visuals, source joints and mimic coupling"
+    },
+    "limitations": {
+      "zh": "官方左手五指描述，20可动关节中11个mimic，9独立驱动。仅外观/运动学；源文件含未由数据表核实的拇指辅助长度。未运行硬件驱动、接触或抓力验证。此SVH资产包GPL-3.0-or-later，提供完整对应模型源及转换脚本，不保证混合发布法律兼容性。",
+      "en": "Official left five-finger description: 20 movable joints, 11 mimic, 9 independent drives. Visuals/kinematics only; source includes guessed auxiliary thumb lengths. No hardware driver, contact or grip-force validation. This SVH asset package is GPL-3.0-or-later with complete corresponding model source and conversion script; no combined-distribution legal compatibility guarantee."
+    },
+    "supportStatus": {
+      "zh": "官方左手五指描述，20可动关节中11个mimic，9独立驱动。仅外观/运动学；源文件含未由数据表核实的拇指辅助长度。未运行硬件驱动、接触或抓力验证。此SVH资产包GPL-3.0-or-later，提供完整对应模型源及转换脚本，不保证混合发布法律兼容性。",
+      "en": "Official left five-finger description: 20 movable joints, 11 mimic, 9 independent drives. Visuals/kinematics only; source includes guessed auxiliary thumb lengths. No hardware driver, contact or grip-force validation. This SVH asset package is GPL-3.0-or-later with complete corresponding model source and conversion script; no combined-distribution legal compatibility guarantee."
+    },
+    "jointCount": 9,
+    "linkCount": 32,
+    "downloadBytes": 1289601,
+    "licenseEvidenceUrl": "/robots/svh_hand/provenance.json",
+    "licenseNoticeUrl": "/robots/svh_hand/LICENSE.txt"
+  }
+]

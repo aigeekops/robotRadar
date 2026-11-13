@@ -1,0 +1,1 @@
+Original mesh bytes retained. XML formatted and mesh URLs rewritten for local browser delivery; Spot Xacro expanded. No geometry, axes, limits or dimensions changed. No hardware, service or manufacturing validation.

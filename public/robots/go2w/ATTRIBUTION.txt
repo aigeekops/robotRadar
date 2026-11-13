@@ -1,0 +1,4 @@
+https://github.com/unitreerobotics/unitree_ros
+Commit: 725b59b6de39a26c425632120c89f23c49a36f1e
+Licence: BSD-3-Clause
+Retain all upstream licence texts and copyright notices. No manufacturer endorsement implied.

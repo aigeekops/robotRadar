@@ -1,0 +1,388 @@
+{
+  "repository": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver",
+  "commit": "eece0762dc080431630301d02d5ddcaef69128bc",
+  "sourceFile": "schunk_svh_description/urdf/svh-standalone.urdf.xacro",
+  "license": "GPL-3.0-or-later",
+  "method": "xacro 2.1.1 official standalone left hand expansion; only mesh package URI prefixes adapted; generated absolute-path comments omitted, source internal comments retained.",
+  "expandedSha256": "c811a3dae2445eb294585a56b1b278a793ed31a1331b176c26ed448b731f6e09",
+  "runtimeSha256": "72434345bf7b5f136fe3b3d4e97ccca655d4500f1f2560b1207cbd4f59ea8124",
+  "files": [
+    {
+      "file": "meshes/base10.dae",
+      "sha256": "6656f283b111b942cc7f26c26a2495e408d474111fa89e666154254119a5dfa3",
+      "bytes": 71762,
+      "sourcePath": "schunk_svh_description/meshes/base10.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/base10.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/d10.dae",
+      "sha256": "7e720412b34d0765039dd5349aa2ddb3b465366a484e2e65bdfa47a99ab407a2",
+      "bytes": 35348,
+      "sourcePath": "schunk_svh_description/meshes/d10.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/d10.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/d11.dae",
+      "sha256": "fe4e6fe4a499116070c72a7dc39df07425777c901db61dd28fd831ad70319449",
+      "bytes": 65936,
+      "sourcePath": "schunk_svh_description/meshes/d11.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/d11.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/d12.dae",
+      "sha256": "6dd6e4a3a9b8b2145cccc9f0761283d4af5c6d7abacc28ca6df5dc25d5be12eb",
+      "bytes": 44650,
+      "sourcePath": "schunk_svh_description/meshes/d12.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/d12.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/d13.dae",
+      "sha256": "6079b109586f5722befac2dcdbe8616c6bf30043eb94dbab9203f95740dc9f8c",
+      "bytes": 36028,
+      "sourcePath": "schunk_svh_description/meshes/d13.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/d13.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f10.dae",
+      "sha256": "bd66d1dd760d329ec86272c88564a44f5681aaac0fb41df2c2da69f9fadb20e1",
+      "bytes": 27850,
+      "sourcePath": "schunk_svh_description/meshes/f10.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f10.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f11.dae",
+      "sha256": "e10166b63a273179ae9f141f3b6bcf5545879d134dba32c3d3d0ba0abe8bb3fe",
+      "bytes": 65870,
+      "sourcePath": "schunk_svh_description/meshes/f11.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f11.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f12.dae",
+      "sha256": "574f810386f4c138483ef45568931fd9f648d43b537c01487178f80530061a50",
+      "bytes": 53782,
+      "sourcePath": "schunk_svh_description/meshes/f12.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f12.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f13.dae",
+      "sha256": "029867d715fcd16e8b16f4a1fa6d681e53a863113e097dcbb7007d491993ac14",
+      "bytes": 41299,
+      "sourcePath": "schunk_svh_description/meshes/f13.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f13.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f20.dae",
+      "sha256": "dedfe54ed9468be972b6a06d7a4e35952e883dfde0cf41e718df4a1612288f59",
+      "bytes": 28145,
+      "sourcePath": "schunk_svh_description/meshes/f20.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f20.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f21.dae",
+      "sha256": "1ddf1e4b40b9329f04f83e51cd15e857fdc19615e0070f23f43e63d18cc452cf",
+      "bytes": 66009,
+      "sourcePath": "schunk_svh_description/meshes/f21.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f21.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f22.dae",
+      "sha256": "8aad2dd6cd274f78c61e47ea9c8806dfed27551c2c0d0dcec768fcfaa12ea3c8",
+      "bytes": 57338,
+      "sourcePath": "schunk_svh_description/meshes/f22.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f22.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f23.dae",
+      "sha256": "ed47bdf2e7bfcda557056d77457f6d875668004a2a5da0f0055f72dafeebd716",
+      "bytes": 41344,
+      "sourcePath": "schunk_svh_description/meshes/f23.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f23.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f30.dae",
+      "sha256": "1a57699a10014ade73858dac6da7139b03d02ac353f23939947f882285f5bf84",
+      "bytes": 28007,
+      "sourcePath": "schunk_svh_description/meshes/f30.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f30.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f31.dae",
+      "sha256": "83d2d0fe1045024cd9b92e91f33dcc8128ca262b2c4420170186360390c532f7",
+      "bytes": 71890,
+      "sourcePath": "schunk_svh_description/meshes/f31.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f31.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f32.dae",
+      "sha256": "36a769674f67b7baf1737414b9b408f3753023572c2823841cc684ada959891d",
+      "bytes": 57318,
+      "sourcePath": "schunk_svh_description/meshes/f32.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f32.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f33.dae",
+      "sha256": "93b6ee2ef1c63704c08d22fe08f18b29985fcd3a30d1964f2b9a1e8e7a36786f",
+      "bytes": 41310,
+      "sourcePath": "schunk_svh_description/meshes/f33.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f33.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f40.dae",
+      "sha256": "f221677e87e3dbe5076eadadebd06f3ba70a3dacc0a128a4bf95339851025987",
+      "bytes": 28000,
+      "sourcePath": "schunk_svh_description/meshes/f40.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f40.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f41.dae",
+      "sha256": "82093e4b1718c13d94a387f7e3baf3d8eac603c710fad5f506a3319bc192fb8a",
+      "bytes": 71868,
+      "sourcePath": "schunk_svh_description/meshes/f41.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f41.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f42.dae",
+      "sha256": "30d68d8e2824ceb42496ee43566a26e410f1d5d60c022d09c87a548c054c5186",
+      "bytes": 52584,
+      "sourcePath": "schunk_svh_description/meshes/f42.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f42.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/f43.dae",
+      "sha256": "9cbd42b430ccb9552d3e504dc6649284523e746d48ed06216b640000043e137a",
+      "bytes": 41364,
+      "sourcePath": "schunk_svh_description/meshes/f43.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/f43.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/h10.dae",
+      "sha256": "ea43f6a52c6b1d8f19167f6ba4ac72f53c309704294c1dcc80e73b1c2bb58cc4",
+      "bytes": 128465,
+      "sourcePath": "schunk_svh_description/meshes/h10.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/h10.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    },
+    {
+      "file": "meshes/h11.dae",
+      "sha256": "aa79de4b15841f6fa3bd1210fe58d0fadd3ad8768fb00be899535440e4f71671",
+      "bytes": 101127,
+      "sourcePath": "schunk_svh_description/meshes/h11.dae",
+      "sourceUrl": "https://github.com/SCHUNK-SE-Co-KG/schunk_svh_ros_driver/blob/eece0762dc080431630301d02d5ddcaef69128bc/schunk_svh_description/meshes/h11.dae",
+      "license": "GPL-3.0-or-later",
+      "licenseEvidence": [
+        "LICENSE.txt",
+        "source/schunk_svh_description/package.xml",
+        "source/LICENSES/license_notice.py"
+      ],
+      "modified": false,
+      "externalReferences": []
+    }
+  ],
+  "licenseAudit": {
+    "evidence": [
+      "LICENSE.txt",
+      "source/schunk_svh_description/package.xml",
+      "source/LICENSES/license_notice.py"
+    ],
+    "scope": "Separate SVH kinematic/visual asset package and adaptations; no claim that site or other models are GPL, no legal compatibility guarantee",
+    "perFileAudit": "Every description source and deployed DAE compared byte-for-byte to pinned git; no nested license override; no DAE external texture/source/url reference; all notices retained"
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "NOTICE.md",
+    "MODIFICATIONS.md",
+    "SOURCE-README.md"
+  ],
+  "supportStatus": {
+    "zh": "官方左手五指描述，20可动关节中11个mimic，9独立驱动。仅外观/运动学；源文件含未由数据表核实的拇指辅助长度。未运行硬件驱动、接触或抓力验证。此SVH资产包GPL-3.0-or-later，提供完整对应模型源及转换脚本，不保证混合发布法律兼容性。",
+    "en": "Official left five-finger description: 20 movable joints, 11 mimic, 9 independent drives. Visuals/kinematics only; source includes guessed auxiliary thumb lengths. No hardware driver, contact or grip-force validation. This SVH asset package is GPL-3.0-or-later with complete corresponding model source and conversion script; no combined-distribution legal compatibility guarantee."
+  },
+  "sourceArchive": {
+    "file": "corresponding-source.zip",
+    "url": "/robots/svh_hand/corresponding-source.zip",
+    "sha256": "5ae633b0f741b83fa595d5b79aa7c52d8a151c8555898f6d040a9299991188c2",
+    "bytes": 791799
+  },
+  "sourceManifest": "source-manifest.json",
+  "configuration": "official left_hand side=-1",
+  "links": 32,
+  "joints": 31,
+  "movable": 20,
+  "mimic": 11,
+  "independent": 9
+}

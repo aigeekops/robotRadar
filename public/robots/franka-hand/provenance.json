@@ -1,0 +1,140 @@
+{
+  "repository": "https://github.com/frankarobotics/franka_description",
+  "commit": "7aeeddc449edf8d62b594f9e36a81da53e7796f9",
+  "sourceFile": "robots/fr3/fr3.urdf.xacro",
+  "sourceSha256": "8f068b2f9093e36fe7dfb7dbb811eb77b86c2aa4215bb2624217784458031a89",
+  "license": "Apache-2.0",
+  "method": "Derived standalone hand subtree; source visual/collision meshes and joint kinematics unchanged.",
+  "files": [
+    {
+      "file": "meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "sha256": "1b50601d3157f810176aba6db7164d6bdb4ec8b6546a8a725baba2fa2a21c58a",
+      "bytes": 550371,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/visual/hand.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "sha256": "94493e94f30fe940f2c8ca2f155c3bbe67bbff406d3edf5e261670d2f0f6e2ed",
+      "bytes": 10084,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/collision/hand.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    },
+    {
+      "file": "meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "sha256": "12c7bc9b55ffd0d1d0e3442d3e213ecc4fbebbced15259a20195af464f871fcd",
+      "bytes": 52371,
+      "sourcePath": "meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "sourceUrl": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/meshes/robot_ee/franka_hand_white/visual/finger.dae",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.rst",
+        "package.xml"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "fr3_hand_tcp_joint",
+      "type": "fixed",
+      "parent": "fr3_hand",
+      "child": "fr3_hand_tcp",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.1034"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fr3_finger_joint1",
+      "type": "prismatic",
+      "parent": "fr3_hand",
+      "child": "fr3_leftfinger",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0.0584"
+      },
+      "limit": {
+        "effort": "100",
+        "lower": "0.0",
+        "upper": "0.04",
+        "velocity": "0.2"
+      }
+    },
+    {
+      "id": "fr3_finger_joint2",
+      "type": "prismatic",
+      "parent": "fr3_hand",
+      "child": "fr3_rightfinger",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 3.141592653589793",
+        "xyz": "0 0 0.0584"
+      },
+      "limit": {
+        "effort": "100",
+        "lower": "0.0",
+        "upper": "0.04",
+        "velocity": "0.2"
+      }
+    }
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "The package manifest explicitly covers robot URDF and meshes under Apache-2.0; README confirms the project licence; all 19 selected FR3/white-hand meshes are within that scope with no local override in the tracked tree; NOTICE retained.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "4b25434e6ec2012e28a484f1d7924a0fd1a8bf232c2be2d50d584d299d04d6d6",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/LICENSE"
+      },
+      {
+        "repositoryPath": "NOTICE",
+        "sha256": "13991525876741e3dc94c46e0afce111dc0a5c6156c89bbbefd06547b84738fd",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/NOTICE"
+      },
+      {
+        "repositoryPath": "README.rst",
+        "sha256": "fc0223356e8b55b7bff25ae4db5d0587662e62d2aa1cd45a8ee63fb018616f77",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/README.rst"
+      },
+      {
+        "repositoryPath": "package.xml",
+        "sha256": "ff3d3c63eaccfb28b0d36b5f364be11b0b2406786a8db08253b3e384c436e456",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/package.xml"
+      },
+      {
+        "repositoryPath": "robots/fr3/fr3.urdf.xacro",
+        "sha256": "8f068b2f9093e36fe7dfb7dbb811eb77b86c2aa4215bb2624217784458031a89",
+        "url": "https://github.com/frankarobotics/franka_description/blob/7aeeddc449edf8d62b594f9e36a81da53e7796f9/robots/fr3/fr3.urdf.xacro"
+      }
+    ],
+    "scope": "Actual referenced meshes and generated description only. No blanket licence inference for other robot assets.",
+    "reviewDate": "2026-11-13"
+  },
+  "supportStatus": {
+    "zh": "派生独立白色Franka Hand；两平移关节、一个独立驱动，第二指mimic。开口为URDF推导的标称相向行程，不是实测夹持间隙。无接触求解、力传感、负载验证或实机SDK。",
+    "en": "Derived standalone white Franka Hand: two prismatic joints, one independent drive and a mimic follower. Opening is nominal opposing travel derived from URDF, not measured contact clearance. No contact solving, force sensing, payload validation or hardware SDK."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "NOTICE.txt",
+    "MODIFICATIONS.txt",
+    "ATTRIBUTION.txt"
+  ]
+}

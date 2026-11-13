@@ -1,0 +1,1158 @@
+{
+  "id": "open-duck-mini",
+  "title": {
+    "zh": "Open Duck Mini v2 · 局部制作资料",
+    "en": "Open Duck Mini v2 · Partial build materials"
+  },
+  "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/README.md",
+  "commit": "b23317a485b3cec7d8417f352478778b3475173c",
+  "limitations": [
+    {
+      "zh": "这是局部资料，不是完整0→1制造保证；未实物打印、装配或验收。",
+      "en": "Partial materials, not a complete manufacturing guarantee; no physical printing, assembly or acceptance test."
+    },
+    {
+      "zh": "官方装配指南 incomplete，CAD导入教程 outdated；螺钉总数、头部/表情步骤仍有缺口。",
+      "en": "Official assembly guide is incomplete; CAD import tutorial outdated; screw totals and head/expression steps have gaps."
+    },
+    {
+      "zh": "IMU照片倒置，须核对官方文字；不提供自行制作锂电池组的操作教学。",
+      "en": "IMU photo is upside down; check official text. No DIY lithium battery-pack construction instruction is provided."
+    },
+    {
+      "zh": "外部BOM/Onshape许可未核实；独立runtime/Playground许可未完成审计，不随包分发。",
+      "en": "External BOM/Onshape rights unverified; separate runtime/Playground licenses not audited or bundled."
+    }
+  ],
+  "parts": [
+    {
+      "name": "foot_top.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/foot_top.stl"
+        }
+      ]
+    },
+    {
+      "name": "foot_side.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/foot_side.stl"
+        }
+      ]
+    },
+    {
+      "name": "foot_bottom_pla.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/foot_bottom_pla.stl"
+        }
+      ]
+    },
+    {
+      "name": "foot_bottom_tpu.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "TPU / 40%填充",
+        "en": "TPU / 40% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/foot_bottom_tpu.stl"
+        }
+      ]
+    },
+    {
+      "name": "knee_to_ankle_left_sheet.stl",
+      "quantity": 4,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/knee_to_ankle_left_sheet.stl"
+        }
+      ]
+    },
+    {
+      "name": "knee_to_ankle_right_sheet.stl",
+      "quantity": 4,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/knee_to_ankle_right_sheet.stl"
+        }
+      ]
+    },
+    {
+      "name": "leg_spacer.stl",
+      "quantity": 4,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/leg_spacer.stl"
+        }
+      ]
+    },
+    {
+      "name": "left_roll_to_pitch.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/left_roll_to_pitch.stl"
+        }
+      ]
+    },
+    {
+      "name": "right_roll_to_pitch.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/right_roll_to_pitch.stl"
+        }
+      ]
+    },
+    {
+      "name": "roll_motor_bottom.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/roll_motor_bottom.stl"
+        }
+      ]
+    },
+    {
+      "name": "roll_motor_top.stl",
+      "quantity": 2,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/roll_motor_top.stl"
+        }
+      ]
+    },
+    {
+      "name": "trunk_bottom.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/trunk_bottom.stl"
+        }
+      ]
+    },
+    {
+      "name": "trunk_top.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/trunk_top.stl"
+        }
+      ]
+    },
+    {
+      "name": "neck_left_sheet.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/neck_left_sheet.stl"
+        }
+      ]
+    },
+    {
+      "name": "neck_right_sheet.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/neck_right_sheet.stl"
+        }
+      ]
+    },
+    {
+      "name": "head_pitch_to_yaw.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/head_pitch_to_yaw.stl"
+        }
+      ]
+    },
+    {
+      "name": "head_yaw_to_roll.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/head_yaw_to_roll.stl"
+        }
+      ]
+    },
+    {
+      "name": "head_roll_mount.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/head_roll_mount.stl"
+        }
+      ]
+    },
+    {
+      "name": "head.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/head.stl"
+        }
+      ]
+    },
+    {
+      "name": "head_bot_sheet.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/head_bot_sheet.stl"
+        }
+      ]
+    },
+    {
+      "name": "left_antenna_holder.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/left_antenna_holder.stl"
+        }
+      ]
+    },
+    {
+      "name": "right_antenna_holder.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/right_antenna_holder.stl"
+        }
+      ]
+    },
+    {
+      "name": "left_cache.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/left_cache.stl"
+        }
+      ]
+    },
+    {
+      "name": "right_cache.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/right_cache.stl"
+        }
+      ]
+    },
+    {
+      "name": "body_front.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/body_front.stl"
+        }
+      ]
+    },
+    {
+      "name": "body_middle_bottom.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/body_middle_bottom.stl"
+        }
+      ]
+    },
+    {
+      "name": "body_middle_top.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/body_middle_top.stl"
+        }
+      ]
+    },
+    {
+      "name": "body_back.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/body_back.stl"
+        }
+      ]
+    },
+    {
+      "name": "battery_pack_lid.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/battery_pack_lid.stl"
+        }
+      ]
+    },
+    {
+      "name": "bulb.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/bulb.stl"
+        }
+      ]
+    },
+    {
+      "name": "flash_light_module.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/flash_light_module.stl"
+        }
+      ]
+    },
+    {
+      "name": "flash_reflector_interface.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/flash_reflector_interface.stl"
+        }
+      ]
+    },
+    {
+      "name": "left_eye.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/left_eye.stl"
+        }
+      ]
+    },
+    {
+      "name": "right_eye.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/right_eye.stl"
+        }
+      ]
+    },
+    {
+      "name": "speaker_interface.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/speaker_interface.stl"
+        }
+      ]
+    },
+    {
+      "name": "speaker_stand.stl",
+      "quantity": 1,
+      "unit": "piece",
+      "note": {
+        "zh": "PLA / 15%填充",
+        "en": "PLA / 15% infill"
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "downloads": [
+        {
+          "format": "STL",
+          "url": "/robots/maker-projects/open-duck-mini/speaker_stand.stl"
+        }
+      ]
+    }
+  ],
+  "hardware": [
+    {
+      "name": "Complete BOM / 完整采购单",
+      "quantity": null,
+      "unit": "unknown",
+      "note": {
+        "zh": "外部表格仅链接，不推断螺钉总数或代用电源。",
+        "en": "External spreadsheet linked only; screw totals and power substitutions not inferred."
+      },
+      "source": "https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit",
+      "downloads": []
+    }
+  ],
+  "settings": [
+    {
+      "zh": "PLA 15%填充；foot_bottom_tpu使用TPU 40%。层高、温度、扭矩未核实。",
+      "en": "PLA 15% infill; foot_bottom_tpu uses TPU 40%. Layer height, temperature and torque not verified."
+    }
+  ],
+  "steps": [
+    {
+      "title": "躯干 / Trunk",
+      "text": {
+        "zh": "原文先放轴承和M3插入件，再用2个M3x10连接上下躯干。",
+        "en": "Source places bearings and M3 inserts, then joins trunk sections with two M3x10 screws."
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md"
+    },
+    {
+      "title": "脚部 / Feet",
+      "text": {
+        "zh": "TPU与PLA底板组合，用2个M3x6连接；注意电机驱动侧方向。",
+        "en": "TPU and PLA sole sections join with two M3x6 screws; source specifies motor driver-side orientation."
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md"
+    },
+    {
+      "title": "小腿 / Shins",
+      "text": {
+        "zh": "leg_spacer两侧共4个M3插入件；先穿脚部电机线再装侧板。",
+        "en": "Four M3 inserts across leg_spacer sides; route the foot motor cable before side assembly."
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md"
+    },
+    {
+      "title": "IMU与缺失章节 / IMU and gaps",
+      "text": {
+        "zh": "官方警告照片IMU倒置；头部/颈部和表情步骤不可凭空补齐。",
+        "en": "Source warns that the IMU photo is upside down; missing head/neck/expression details must not be invented."
+      },
+      "source": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md"
+    }
+  ],
+  "links": [
+    {
+      "label": "Official incomplete assembly guide",
+      "url": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md"
+    },
+    {
+      "label": "External BOM · redistribution rights unverified",
+      "url": "https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit"
+    },
+    {
+      "label": "Runtime · separate license not verified",
+      "url": "https://github.com/apirrone/Open_Duck_Mini_Runtime"
+    },
+    {
+      "label": "Training · separate license not verified",
+      "url": "https://github.com/apirrone/Open_Duck_Playground"
+    }
+  ],
+  "files": [
+    {
+      "file": "foot_top.stl",
+      "sourcePath": "print/foot_top.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/foot_top.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "3afb25c2ae389b314742422c771bfaf7bf52baba9d27913c7eb6e70bfe7436e3",
+      "bytes": 181384,
+      "modified": false
+    },
+    {
+      "file": "foot_side.stl",
+      "sourcePath": "print/foot_side.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/foot_side.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "dc187767c6f8155e7ace9f46edd82ac48c6b0a09a898c8dc5f03716a02c48f9d",
+      "bytes": 190084,
+      "modified": false
+    },
+    {
+      "file": "foot_bottom_pla.stl",
+      "sourcePath": "print/foot_bottom_pla.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/foot_bottom_pla.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "5089794ed41fb42a551cac3216726156451e1598053616827ecdb9e23d267205",
+      "bytes": 48084,
+      "modified": false
+    },
+    {
+      "file": "foot_bottom_tpu.stl",
+      "sourcePath": "print/foot_bottom_tpu.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/foot_bottom_tpu.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "b911d94ee9e6ccff27f15164d18862786a6d4d95e21848f9780fea71e273701f",
+      "bytes": 77384,
+      "modified": false
+    },
+    {
+      "file": "knee_to_ankle_left_sheet.stl",
+      "sourcePath": "print/knee_to_ankle_left_sheet.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/knee_to_ankle_left_sheet.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "b2e5cb2f02b607b581998e6293bf3dfe45659c0f4d665d6d8b1408e7b2d63544",
+      "bytes": 227284,
+      "modified": false
+    },
+    {
+      "file": "knee_to_ankle_right_sheet.stl",
+      "sourcePath": "print/knee_to_ankle_right_sheet.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/knee_to_ankle_right_sheet.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "4349fd47a89e0bff9bf6789515ad9c796d0603d540ffc83573c6eb1c6e046b85",
+      "bytes": 232284,
+      "modified": false
+    },
+    {
+      "file": "leg_spacer.stl",
+      "sourcePath": "print/leg_spacer.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/leg_spacer.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "aaf11c99034147945660e6a5fc9fa21e59bc640eb5e5a919343fe7d4fe37383d",
+      "bytes": 114684,
+      "modified": false
+    },
+    {
+      "file": "left_roll_to_pitch.stl",
+      "sourcePath": "print/left_roll_to_pitch.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/left_roll_to_pitch.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "6deacead59bd43b3504c873ab7d07cc0bf002bab0b34ca7b0ba6cf0f23b4c9bb",
+      "bytes": 398884,
+      "modified": false
+    },
+    {
+      "file": "right_roll_to_pitch.stl",
+      "sourcePath": "print/right_roll_to_pitch.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/right_roll_to_pitch.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "8a383b9869dc56905fae5106221a48f3a956eafe3366bf51624cd3477cd606cf",
+      "bytes": 398884,
+      "modified": false
+    },
+    {
+      "file": "roll_motor_bottom.stl",
+      "sourcePath": "print/roll_motor_bottom.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/roll_motor_bottom.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "26f3de8d64a2f2c4319cc614bd7851ebf3f9c252cc8a52283a7fc02ee7d05505",
+      "bytes": 68084,
+      "modified": false
+    },
+    {
+      "file": "roll_motor_top.stl",
+      "sourcePath": "print/roll_motor_top.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/roll_motor_top.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "1fd5dd7d03b8a8c1b3c710835691ab198daa72230db765c541389918fc06ade4",
+      "bytes": 183784,
+      "modified": false
+    },
+    {
+      "file": "trunk_bottom.stl",
+      "sourcePath": "print/trunk_bottom.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/trunk_bottom.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "c8ff5af991e387bebb9b6553608c454f50c893228c27664db4eb6d367a6803e6",
+      "bytes": 222384,
+      "modified": false
+    },
+    {
+      "file": "trunk_top.stl",
+      "sourcePath": "print/trunk_top.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/trunk_top.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "5fa3ac6ae010673735c95285860dcd86792322863e7a47e6ddc2ff993113a8ac",
+      "bytes": 723884,
+      "modified": false
+    },
+    {
+      "file": "neck_left_sheet.stl",
+      "sourcePath": "print/neck_left_sheet.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/neck_left_sheet.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "727e8ff8d293e4ab2083021e3884722529bc81180bad102dc54ba67be5cb1d31",
+      "bytes": 171484,
+      "modified": false
+    },
+    {
+      "file": "neck_right_sheet.stl",
+      "sourcePath": "print/neck_right_sheet.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/neck_right_sheet.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "04fb4a8879d25d230949a6e10a811c2762bc7ecbb9922dada5100ee4189e2fd9",
+      "bytes": 175084,
+      "modified": false
+    },
+    {
+      "file": "head_pitch_to_yaw.stl",
+      "sourcePath": "print/head_pitch_to_yaw.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/head_pitch_to_yaw.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "36d8cee628301071f6a529624fdd780fd5d35187aec14759956b9313b4879bdf",
+      "bytes": 535584,
+      "modified": false
+    },
+    {
+      "file": "head_yaw_to_roll.stl",
+      "sourcePath": "print/head_yaw_to_roll.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/head_yaw_to_roll.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "870ccc86e1d0dafe37c7735080e7cd30aeeda29c7c313e9ec0ceefeb7a208d43",
+      "bytes": 281884,
+      "modified": false
+    },
+    {
+      "file": "head_roll_mount.stl",
+      "sourcePath": "print/head_roll_mount.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/head_roll_mount.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "ae111475ad24c52ca6a77ebe8b147d20f4ebe5f7ec22876f008705406123e2a3",
+      "bytes": 228284,
+      "modified": false
+    },
+    {
+      "file": "head.stl",
+      "sourcePath": "print/head.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/head.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "16e90adcf0d77d1e7649680dd05bcc1f67abcaf5c0e2db3e376ba58d873d0cc7",
+      "bytes": 1784584,
+      "modified": false
+    },
+    {
+      "file": "head_bot_sheet.stl",
+      "sourcePath": "print/head_bot_sheet.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/head_bot_sheet.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "31aad2a0e457bb71352694be8fb931512919e99586b973c2ccf4c40b8525e8b9",
+      "bytes": 238884,
+      "modified": false
+    },
+    {
+      "file": "left_antenna_holder.stl",
+      "sourcePath": "print/left_antenna_holder.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/left_antenna_holder.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "d0255cafc4a5ea6a21ff0974c27856bdf907b636af97d8da6fbad67ef0855189",
+      "bytes": 72184,
+      "modified": false
+    },
+    {
+      "file": "right_antenna_holder.stl",
+      "sourcePath": "print/right_antenna_holder.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/right_antenna_holder.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "baaa7f2732a2b77ec9bc5bb13ff2fb116a2016a5fc1888cea8c41817d7ddecb9",
+      "bytes": 72084,
+      "modified": false
+    },
+    {
+      "file": "left_cache.stl",
+      "sourcePath": "print/left_cache.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/left_cache.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "4f03e40ecee1d6728872a94d0278897c3b8d58997fcc4ee9b55f3f74393c07c6",
+      "bytes": 86984,
+      "modified": false
+    },
+    {
+      "file": "right_cache.stl",
+      "sourcePath": "print/right_cache.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/right_cache.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "d6ac76acb933ced770533d70fbcf61db381ec962bc7d5edd0f0c6dc1084f4dd2",
+      "bytes": 86984,
+      "modified": false
+    },
+    {
+      "file": "body_front.stl",
+      "sourcePath": "print/body_front.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/body_front.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "cfd8ad6235e9ae54c91a3e90c2cd65e8ab26f06cc444739ccc6b1a1217af6764",
+      "bytes": 195384,
+      "modified": false
+    },
+    {
+      "file": "body_middle_bottom.stl",
+      "sourcePath": "print/body_middle_bottom.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/body_middle_bottom.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "f0d2c216104f739fc0f6fc51b2283394ae44eb48f35ccd5801c0ca9e8562a305",
+      "bytes": 339884,
+      "modified": false
+    },
+    {
+      "file": "body_middle_top.stl",
+      "sourcePath": "print/body_middle_top.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/body_middle_top.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "a109db5603d863946c67154cdc10513d70024cee62359ede210c536f2a8d8180",
+      "bytes": 244684,
+      "modified": false
+    },
+    {
+      "file": "body_back.stl",
+      "sourcePath": "print/body_back.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/body_back.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "30b32fd17cc5d7fd35cf243e38af442a6789b8bd3a1b6404882b2ccbf105c053",
+      "bytes": 353884,
+      "modified": false
+    },
+    {
+      "file": "battery_pack_lid.stl",
+      "sourcePath": "print/battery_pack_lid.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/battery_pack_lid.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "32a1bb02f324bfa699594cd99ef9cb00620a4f6f1a422a27f1b32763b1024c59",
+      "bytes": 97184,
+      "modified": false
+    },
+    {
+      "file": "bulb.stl",
+      "sourcePath": "print/bulb.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/bulb.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "043cea34b4b37867de16f4f3e1729cabf460e633c08d45ee24c88c9e224f96f8",
+      "bytes": 139884,
+      "modified": false
+    },
+    {
+      "file": "flash_light_module.stl",
+      "sourcePath": "print/flash_light_module.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/flash_light_module.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "e1eb9e7c57aa7af65378a2897b0c9ff6f2b2c9ee84117286af4543ecc28dc814",
+      "bytes": 328784,
+      "modified": false
+    },
+    {
+      "file": "flash_reflector_interface.stl",
+      "sourcePath": "print/flash_reflector_interface.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/flash_reflector_interface.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "91f27d69945b5b8918454620a2744e09d11ca5c77ab93350b48c4feca818f9ea",
+      "bytes": 44484,
+      "modified": false
+    },
+    {
+      "file": "left_eye.stl",
+      "sourcePath": "print/left_eye.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/left_eye.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "04ec9038953f63f5ff9855338465f6f2c6bea92bd2211ee9bcd4e808074c6e0f",
+      "bytes": 106084,
+      "modified": false
+    },
+    {
+      "file": "right_eye.stl",
+      "sourcePath": "print/right_eye.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/right_eye.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "1d8ab5b5f5f153a2d73b4f195d4967ff5ba5dca7e761aa41ad0c50140e6b9e4d",
+      "bytes": 114684,
+      "modified": false
+    },
+    {
+      "file": "speaker_interface.stl",
+      "sourcePath": "print/speaker_interface.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/speaker_interface.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "c363018e1ed27e3480ee418c14290af84fc991780cf08bcdba098114c9d1f9dc",
+      "bytes": 115884,
+      "modified": false
+    },
+    {
+      "file": "speaker_stand.stl",
+      "sourcePath": "print/speaker_stand.stl",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/print/speaker_stand.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "eb306cdc8693a44d29a47bf986fd72558b230f9aa61ba3419c5855dbeec6f9f6",
+      "bytes": 1069584,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-LICENSE",
+      "sourcePath": "LICENSE",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/LICENSE",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-print_guide.md",
+      "sourcePath": "docs/print_guide.md",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/print_guide.md",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "3ba00d465138d00a89661c759aaab0a3c977c2fe5c9ce849b853710e58601700",
+      "bytes": 1139,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-assembly_guide.md",
+      "sourcePath": "docs/assembly_guide.md",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/assembly_guide.md",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "76e7f08da84c7a3caff381e40590d9c764c96fba17e2bf54fdf317448a4bb463",
+      "bytes": 11993,
+      "modified": false
+    },
+    {
+      "file": "SOURCE-configure_motors.md",
+      "sourcePath": "docs/configure_motors.md",
+      "sourceUrl": "https://github.com/apirrone/Open_Duck_Mini/blob/b23317a485b3cec7d8417f352478778b3475173c/docs/configure_motors.md",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ],
+      "sha256": "1e5231b26b4e18ceab5808edf28f3aeaa039edf97dd9a383ef18f281fd2bf26d",
+      "bytes": 1244,
+      "modified": false
+    }
+  ]
+}

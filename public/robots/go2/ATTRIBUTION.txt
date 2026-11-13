@@ -1,0 +1,5 @@
+Unitree
+Source: https://github.com/unitreerobotics/unitree_ros
+Pinned commit: 725b59b6de39a26c425632120c89f23c49a36f1e
+Licence: BSD-3-Clause; see LICENSE.txt and provenance.json.
+Package manifest explicitly covers configuration, 3D models and launch files under BSD; root provides BSD-3-Clause terms. No per-file or subtree exceptions found.

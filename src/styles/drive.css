@@ -1,0 +1,382 @@
+.drive-experience {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #111c27;
+  color: #e1edf4;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+}
+.drive-scene {
+  position: absolute;
+  inset: 0;
+}
+.drive-scene canvas {
+  display: block;
+}
+.drive-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 15px 22px;
+  background: #0b141de8;
+  border-bottom: 1px solid #3d505e;
+}
+.drive-top button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #c4d8e7;
+  border: 1px solid #405564;
+  padding: 11px 14px;
+}
+.drive-top > button:last-child {
+  margin-left: auto;
+}
+.drive-top h2 {
+  font-size: 16px;
+  margin: 4px 0 0;
+  font-weight: 500;
+}
+.drive-top small {
+  font: 8px monospace;
+  letter-spacing: 2px;
+  color: #73bad3;
+}
+.drive-boundary {
+  position: absolute;
+  top: 88px;
+  left: 22px;
+  right: 300px;
+  max-width: 850px;
+  color: #c0d0da;
+  font-size: 10px;
+  line-height: 1.8;
+  background: #0e1a23c7;
+  border-left: 2px solid #ecac59;
+  padding: 10px 13px;
+}
+.drive-boundary span {
+  display: block;
+  color: #f2c58d;
+}
+.drive-hud {
+  position: absolute;
+  right: 22px;
+  top: 100px;
+  width: 240px;
+  background: #0d1b25e8;
+  border: 1px solid #3b5263;
+  padding: 20px;
+  backdrop-filter: blur(8px);
+}
+.drive-goal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffb65c;
+  font: 13px monospace;
+}
+.drive-gate-dots {
+  display: flex;
+  gap: 6px;
+  margin: 15px 0;
+}
+.drive-gate-dots i {
+  font: 9px monospace;
+  font-style: normal;
+  border: 1px solid #53697b;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  color: #9bb0be;
+}
+.drive-gate-dots i.current {
+  background: #cc7a25;
+  color: #121a20;
+  border-color: #ffbd70;
+}
+.drive-gate-dots i.done {
+  background: #1c6d59;
+  color: #9affd3;
+  border-color: #39ca93;
+}
+.drive-hud dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 10px;
+  margin: 22px 0;
+}
+.drive-hud dt {
+  font: 8px monospace;
+  letter-spacing: 1px;
+  color: #91a9ba;
+  margin-bottom: 7px;
+}
+.drive-hud dd {
+  margin: 0;
+  font: 27px monospace;
+}
+.drive-hud dd small {
+  font-size: 9px;
+  margin-left: 4px;
+  color: #9eb4c4;
+}
+.drive-map {
+  width: 100%;
+  height: 175px;
+  background: #152832;
+  border: 1px solid #304b5b;
+  padding: 10px;
+}
+.drive-hud > p {
+  font-size: 10px;
+  line-height: 1.7;
+  color: #9cb6c7;
+  margin-bottom: 0;
+}
+.drive-controls {
+  position: absolute;
+  left: 24px;
+  bottom: 22px;
+  display: flex;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  max-width: 650px;
+}
+.drive-keypad {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+.drive-keypad > div {
+  display: flex;
+  gap: 4px;
+}
+.drive-keypad button {
+  width: 48px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: #142a38df;
+  border: 1px solid #698193;
+  touch-action: none;
+  color: #d5e8f6;
+}
+.drive-keypad small {
+  font: 8px monospace;
+  color: #8eacbf;
+}
+.drive-keypad button:active,
+.drive-actions button:active {
+  background: #307d9d;
+}
+.drive-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 340px;
+}
+.drive-actions button {
+  padding: 12px;
+  background: #152c3de8;
+  border: 1px solid #55778e;
+  color: #cbe9fa;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  touch-action: none;
+}
+.drive-actions kbd {
+  font: 8px monospace;
+  color: #7caec8;
+}
+.drive-controls > p {
+  width: 100%;
+  font: 10px monospace;
+  color: #9fb8c9;
+  margin: 0;
+  background: #0b1921c9;
+  padding: 9px 12px;
+}
+.drive-overlay,
+.drive-complete,
+.drive-paused {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: #0d1e2ced;
+  border: 1px solid #4e778d;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 70px #0008;
+  max-width: 550px;
+}
+.drive-overlay small {
+  max-width: 400px;
+  overflow-wrap: anywhere;
+  font-size: 10px;
+}
+.drive-overlay button,
+.drive-complete button,
+.drive-paused button {
+  background: #f89b3d;
+  color: #12212b;
+  padding: 11px 24px;
+  font-size: 12px;
+}
+.drive-complete {
+  border-color: #48d2a6;
+}
+.drive-complete > svg {
+  color: #70efb7;
+}
+.drive-complete h2 {
+  font: 22px monospace;
+  margin: 0;
+}
+.drive-complete p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0;
+  color: #b4cddc;
+}
+.drive-paused {
+  z-index: 3;
+}
+.drive-paused strong {
+  font: 25px monospace;
+  letter-spacing: 4px;
+}
+@media (max-width: 1000px) {
+  .drive-hud {
+    width: 200px;
+    right: 12px;
+    padding: 15px;
+  }
+  .drive-boundary {
+    right: 230px;
+    font-size: 9px;
+  }
+  .drive-top h2 {
+    max-width: 400px;
+    font-size: 13px;
+  }
+  .drive-controls {
+    max-width: 550px;
+    gap: 12px;
+  }
+  .drive-hud dd {
+    font-size: 22px;
+  }
+}
+.drive-top button {
+  background: #152a38;
+  border-radius: 0;
+}
+.drive-experience button:focus-visible {
+  outline: 2px solid #ffa94d;
+  outline-offset: 3px;
+}
+.drive-camera-toggle {
+  position: absolute;
+  left: 22px;
+  top: 160px;
+  z-index: 4;
+  min-height: 44px;
+  padding: 9px 13px;
+  border: 1px solid #668797;
+  background: #102632ef;
+  color: #e0f3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.drive-camera-toggle small {
+  font-size: 10px;
+  color: #b5c6d0;
+}
+.drive-camera-toggle:disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+@media (max-width: 700px) {
+  .drive-camera-toggle {
+    left: 12px;
+    top: 210px;
+    bottom: auto;
+    font-size: 11px;
+    max-width: 160px;
+  }
+}
+.drive-docking {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid #48788b;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.drive-docking small {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #b9d0dc;
+}
+.drive-docking progress {
+  width: 100%;
+  accent-color: #69d5ff;
+}
+.drive-stationary {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+.drive-stationary > div {
+  max-width: 580px;
+  padding: 26px;
+  border: 1px solid #4e778d;
+  background: #0d1e2c;
+}
+.drive-stationary p {
+  line-height: 1.7;
+  margin: 16px 0;
+  color: #bfd0da;
+}
+.drive-stationary button {
+  min-height: 44px;
+  padding: 10px 18px;
+  background: #f89b3d;
+  color: #10202a;
+}
+
+@media (max-width: 700px) {
+  .drive-hud {
+    max-height: calc(100dvh - 330px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 12px;
+  }
+  .drive-hud dl {
+    margin: 14px 0;
+    gap: 12px 8px;
+  }
+  .drive-map {
+    height: 100px;
+  }
+}

@@ -1,0 +1,5 @@
+Unitree
+Source: https://github.com/unitreerobotics/unitree_ros
+Pinned commit: 725b59b6de39a26c425632120c89f23c49a36f1e
+Licence: BSD-3-Clause; see LICENSE.txt and provenance.json.
+Repository BSD-3-Clause licence; tracked G1 subtree contains no separate licence or exception. Each used mesh checked against the pinned tree.

@@ -1,0 +1,626 @@
+{
+  "repository": "https://github.com/bdaiinstitute/spot_description",
+  "commit": "156d1802bfb117f219dbfce7597d283d5fabc968",
+  "sourceFile": "spot_description/urdf/spot_simple.urdf.xacro",
+  "sourceSha256": "45413c34d0be93e33bdc1a59d0bc707ea2421fece19b218e6010fcba8794ea32",
+  "license": "MIT AND BSD-3-Clause",
+  "files": [
+    {
+      "file": "meshes/base_simple/collision/body.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/body.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/body.stl",
+      "bytes": 64884,
+      "sha256": "8edd74d5734bebb26e3936b24e246daa1326799759ad63191167815b2cbc393f",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fl_hip.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fl_hip.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fl_hip.stl",
+      "bytes": 17784,
+      "sha256": "d9d3a92b72c0e17c11da5c422c1a141798fff00b39e0566c63c9dfff5d53d34a",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fl_lleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fl_lleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fl_lleg.stl",
+      "bytes": 18834,
+      "sha256": "f4997aa66958469006f23707de7188f8f38fdb032c14d885d1cb14f4efb4ed27",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fl_uleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fl_uleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fl_uleg.stl",
+      "bytes": 59284,
+      "sha256": "21214b67830ee4d1f61cedf30c490c9db3a9a092a18f62b436b4fe45653d8fac",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fr_hip.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fr_hip.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fr_hip.stl",
+      "bytes": 17784,
+      "sha256": "f8f8dbbf246004e241cba0059370c95361d1be30b33bf4e95da0843daf6f32fd",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fr_lleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fr_lleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fr_lleg.stl",
+      "bytes": 18834,
+      "sha256": "f4997aa66958469006f23707de7188f8f38fdb032c14d885d1cb14f4efb4ed27",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/fr_uleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/fr_uleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/fr_uleg.stl",
+      "bytes": 59284,
+      "sha256": "8b27b0ac5cd4c1f4cf42ceb916a302f926583639fe6b4e53ab2f5781e5f8f255",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hl_hip.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hl_hip.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hl_hip.stl",
+      "bytes": 17784,
+      "sha256": "13aa4b12ffe8ce4be5473db980b757ac0ec46470acec192907a2c51611d57970",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hl_lleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hl_lleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hl_lleg.stl",
+      "bytes": 18834,
+      "sha256": "f4997aa66958469006f23707de7188f8f38fdb032c14d885d1cb14f4efb4ed27",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hl_uleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hl_uleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hl_uleg.stl",
+      "bytes": 59284,
+      "sha256": "21214b67830ee4d1f61cedf30c490c9db3a9a092a18f62b436b4fe45653d8fac",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hr_hip.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hr_hip.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hr_hip.stl",
+      "bytes": 17784,
+      "sha256": "c9f6735d78ce25c9982bb4efd2f9a419d7b2deeb6a2e4dd279e835e9b4aa04a0",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hr_lleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hr_lleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hr_lleg.stl",
+      "bytes": 18834,
+      "sha256": "f4997aa66958469006f23707de7188f8f38fdb032c14d885d1cb14f4efb4ed27",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/collision/hr_uleg.stl",
+      "sourcePath": "spot_description/meshes/base_simple/collision/hr_uleg.stl",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/collision/hr_uleg.stl",
+      "bytes": 59284,
+      "sha256": "8b27b0ac5cd4c1f4cf42ceb916a302f926583639fe6b4e53ab2f5781e5f8f255",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/body.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/body.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/body.obj",
+      "bytes": 95659,
+      "sha256": "6a65701c2f314ec0daf7430b83da5b18302d504eed102cf038b41da5ceea1230",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fl_hip.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fl_hip.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fl_hip.obj",
+      "bytes": 24632,
+      "sha256": "023fdaf0546d6f7d4b778535059b23b3ed06394f58773cd6e59336f3977b63b1",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fl_lleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fl_lleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fl_lleg.obj",
+      "bytes": 26893,
+      "sha256": "92a34e929f9fac5dd43eef3bbde2a333fb1ac663429add297a1636932d57197d",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fl_uleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fl_uleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fl_uleg.obj",
+      "bytes": 83685,
+      "sha256": "18e760f534d32e25ea6f6f3445bf7ea61fd2241c2747c4acf95c440d69706d88",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fr_hip.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fr_hip.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fr_hip.obj",
+      "bytes": 24406,
+      "sha256": "716d321e2daf6e3a52502c0bea6a45b9ce75f82879973756900a9f40c3553b85",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fr_lleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fr_lleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fr_lleg.obj",
+      "bytes": 26893,
+      "sha256": "cd1fb383d3264de8fc5c3311e7614bc096d0d15eae59b373c9e83843b22bc51b",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/fr_uleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/fr_uleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/fr_uleg.obj",
+      "bytes": 82384,
+      "sha256": "e8a18f7bf11cf705fd2d6a9c36e182152c3f1218df4a40541cabd3a5ea8483c6",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hl_hip.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hl_hip.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hl_hip.obj",
+      "bytes": 24798,
+      "sha256": "8af3c8e74dab221e741d1aef9377e86b0b6c51a7b07e94646deae8ffaff327b1",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hl_lleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hl_lleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hl_lleg.obj",
+      "bytes": 26893,
+      "sha256": "456f70b678492fd5528887cb63bb4c89549d3c98382bf890a45766798357d0c4",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hl_uleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hl_uleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hl_uleg.obj",
+      "bytes": 83685,
+      "sha256": "70485986fab558c417a02b7771c02c32e8d68b2919126b0f92cfe80fe5ac4f6f",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hr_hip.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hr_hip.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hr_hip.obj",
+      "bytes": 24710,
+      "sha256": "e5617f84e8d2d015039c0f96b4cdaf05c7b28429615a811b571c3c04318c8515",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hr_lleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hr_lleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hr_lleg.obj",
+      "bytes": 26893,
+      "sha256": "5717719dd357842476e4196a134b49d769c076780a78822680868098089c6305",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    },
+    {
+      "file": "meshes/base_simple/visual/hr_uleg.obj",
+      "sourcePath": "spot_description/meshes/base_simple/visual/hr_uleg.obj",
+      "sourceUrl": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/meshes/base_simple/visual/hr_uleg.obj",
+      "bytes": 82384,
+      "sha256": "ea69a9166ca6f670e62c4b2de716fad0048dd06e438ce1fcbc46df84298e175a",
+      "license": "MIT AND BSD-3-Clause",
+      "licenseEvidence": [
+        "LICENSE",
+        "README.md",
+        "spot_description/package.xml",
+        "spot_description/urdf/README.md"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "body_inertia_joint",
+      "type": "fixed",
+      "parent": "body",
+      "child": "body_inertia",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0 0 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "fl_hx",
+      "type": "revolute",
+      "parent": "body",
+      "child": "fl_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.29785 0.05500 0.00000"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.78539816339744827899",
+        "upper": "0.78539816339744827899",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "fl_hy",
+      "type": "revolute",
+      "parent": "fl_hip",
+      "child": "fl_uleg",
+      "axis": "0 1      0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.0 0.11080 0.0"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.89884456477707963539",
+        "upper": "2.2951079663725435509",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "fl_kn",
+      "type": "revolute",
+      "parent": "fl_uleg",
+      "child": "fl_lleg",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.025 0.000 -0.3200"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-2.7929",
+        "upper": "-0.254402",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "fr_hx",
+      "type": "revolute",
+      "parent": "body",
+      "child": "fr_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.29785 -0.05500 0.00000"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.78539816339744827899",
+        "upper": "0.78539816339744827899",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "fr_hy",
+      "type": "revolute",
+      "parent": "fr_hip",
+      "child": "fr_uleg",
+      "axis": "0  1      0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.0 -0.11080 0.0"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.898845",
+        "upper": "2.24363",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "fr_kn",
+      "type": "revolute",
+      "parent": "fr_uleg",
+      "child": "fr_lleg",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.025 0.000 -0.3200"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-2.7929",
+        "upper": "-0.255648",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hl_hx",
+      "type": "revolute",
+      "parent": "body",
+      "child": "hl_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.29785 0.05500 0.00000"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.78539816339744827899",
+        "upper": "0.78539816339744827899",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hl_hy",
+      "type": "revolute",
+      "parent": "hl_hip",
+      "child": "hl_uleg",
+      "axis": "0 1      0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.0 0.11080 0.0"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.89884456477707963539",
+        "upper": "2.2951079663725435509",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hl_kn",
+      "type": "revolute",
+      "parent": "hl_uleg",
+      "child": "hl_lleg",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.025 0.000 -0.3200"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-2.7929",
+        "upper": "-0.247067",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hr_hx",
+      "type": "revolute",
+      "parent": "body",
+      "child": "hr_hip",
+      "axis": "1 0 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "-0.29785 -0.05500 0.00000"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.78539816339744827899",
+        "upper": "0.78539816339744827899",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hr_hy",
+      "type": "revolute",
+      "parent": "hr_hip",
+      "child": "hr_uleg",
+      "axis": "0  1      0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.0 -0.11080 0.0"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-0.89884456477707963539",
+        "upper": "2.2951079663725435509",
+        "velocity": "1000.00"
+      }
+    },
+    {
+      "id": "hr_kn",
+      "type": "revolute",
+      "parent": "hr_uleg",
+      "child": "hr_lleg",
+      "axis": "0 1 0",
+      "origin": {
+        "rpy": "0 0 0",
+        "xyz": "0.025 0.000 -0.3200"
+      },
+      "limit": {
+        "effort": "1000",
+        "lower": "-2.7929",
+        "upper": "-0.248282",
+        "velocity": "1000.00"
+      }
+    }
+  ],
+  "supportStatus": {
+    "zh": "RAI Institute提供的Spot简化无臂URDF，不等同于官方完整CAD或特定零售配置。12个腿关节；effort/velocity含1000等未验证值，不能视为实机性能。无可运行行走控制器、内部机构或维修拆装验证。",
+    "en": "RAI Institute simplified leg-only Spot URDF, not complete manufacturer CAD or verified retail configuration. Twelve leg joints; effort/velocity fields include unvalidated values of 1000, not verified hardware performance. No integrated walking controller, validated internals or service procedures."
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "ATTRIBUTION.txt",
+    "MODIFICATIONS.txt"
+  ],
+  "licenseAudit": {
+    "status": "staged-source-scoped-review",
+    "basis": "Repository licence and scoped package metadata retained; Spot includes both inherited BSD and MIT obligations.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "url": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/LICENSE",
+        "sha256": "50d49e4ffc2a35a640f81b87933445d42012057c8a19a18e61e952c934c2ba28"
+      },
+      {
+        "repositoryPath": "README.md",
+        "url": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/README.md",
+        "sha256": "80a39ca45550165b9e6586f7598a8e5a85d2219265e353774981d79bac901e8d"
+      },
+      {
+        "repositoryPath": "spot_description/package.xml",
+        "url": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/package.xml",
+        "sha256": "6dc6201b374327f1a9b99d2b0432ed8ff302f64c07c01a76d3b63982939d8ecd"
+      },
+      {
+        "repositoryPath": "spot_description/urdf/README.md",
+        "url": "https://github.com/bdaiinstitute/spot_description/blob/156d1802bfb117f219dbfce7597d283d5fabc968/spot_description/urdf/README.md",
+        "sha256": "7961debf610c819462a2ba11e7ed97c99fdeaa1da7a11de6e9f50331f057c691"
+      }
+    ]
+  }
+}

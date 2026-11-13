@@ -1,0 +1,34 @@
+# v2 is the repository root; normal source, assets and public docs are not excluded.
+# Installed/generated files used by this project.
+node_modules/
+/dist/
+/.static-preview/
+*.tsbuildinfo
+/playwright-report/
+/test-results/
+*.log
+.DS_Store
+/services/mujoco/.venv/
+/services/mujoco/.pip-cache/
+__pycache__/
+*.pyc
+
+# Local source snapshots, development context and historical evidence.
+/assets-source/
+/notes/
+/qa/
+/releases/
+/docs/
+/services/mujoco/verification.json
+/scripts/export-public-source.py
+
+
+# Small safety net for local environment secrets and agent context.
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+/.codex/
+AGENTS.md

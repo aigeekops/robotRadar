@@ -1,0 +1,2 @@
+Imported so101_new_calib.urdf (follower only). Only XML serialization and mesh paths changed. All referenced STL bytes retained.
+Upstream generated model using onshape-to-robot; upstream removed base collision meshes. New-calibration virtual zero is joint-range midpoint. No geometry, calibration, inertia or joint limit changed here. No control software executed.

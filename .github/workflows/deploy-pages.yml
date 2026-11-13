@@ -1,0 +1,72 @@
+name: Deploy GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Locate application
+        id: app
+        shell: bash
+        run: |
+          if [ -f package.json ] && [ -f vite.config.ts ]; then
+            echo "dir=." >> "$GITHUB_OUTPUT"
+          elif [ -f v2/package.json ] && [ -f v2/vite.config.ts ]; then
+            echo "dir=v2" >> "$GITHUB_OUTPUT"
+          else
+            echo "Robot Radar app not found at repository root or v2/" >&2
+            exit 1
+          fi
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: ${{ steps.app.outputs.dir }}/package-lock.json
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: Install dependencies
+        working-directory: ${{ steps.app.outputs.dir }}
+        run: npm ci
+      - name: Test portable core and validate robot assets
+        working-directory: ${{ steps.app.outputs.dir }}
+        run: |
+          node scripts/test-portable-core.mjs
+          npm run validate:assets
+      - name: Build for Pages URL
+        working-directory: ${{ steps.app.outputs.dir }}
+        env:
+          VITE_BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+        run: |
+          npm run build
+          python3 scripts/check-pages-build.py "$VITE_BASE_PATH"
+          touch dist/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ${{ steps.app.outputs.dir }}/dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

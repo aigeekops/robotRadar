@@ -1,0 +1,5 @@
+Franka Robotics
+Source: https://github.com/frankarobotics/franka_description
+Pinned commit: 7aeeddc449edf8d62b594f9e36a81da53e7796f9
+Licence: Apache-2.0; see LICENSE.txt and provenance.json.
+The package manifest explicitly covers robot URDF and meshes under Apache-2.0; README confirms the project licence; all 19 selected FR3/white-hand meshes are within that scope with no local override in the tracked tree; NOTICE retained.

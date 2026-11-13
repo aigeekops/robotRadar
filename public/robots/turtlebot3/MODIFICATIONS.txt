@@ -1,0 +1,1 @@
+Official mesh bytes unchanged. Xacro namespace expanded to empty for TurtleBot3; XML formatted and mesh paths rewritten for local static hosting. No geometry, axes, limits or dimensions changed. No claim of hardware or manufacturing validation.

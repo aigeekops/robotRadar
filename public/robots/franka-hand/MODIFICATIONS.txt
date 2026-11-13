@@ -1,0 +1,1 @@
+Derived standalone Franka Hand from pinned FR3 Arm3R+white-hand description. Removed arm and external mounting joint; retained hand subtree, TCP, source joint axes/limits/mimic, mesh bytes/materials/scales. Rewrote mesh URLs only. No manufacturing or contact validation.

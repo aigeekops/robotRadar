@@ -1,0 +1,322 @@
+{
+  "repository": "https://github.com/TheRobotStudio/SO-ARM100",
+  "commit": "a758567c3978dfeefe282ede0500085a48fe8f78",
+  "sourceFile": "Simulation/SO101/so101_new_calib.urdf",
+  "sourceSha256": "3a65d2d35e68a8d2f0c2cc176d19b884506543c93ba72980145b80abe276022c",
+  "generatedUrdfSha256": "c73df8e2ec5073922a96462e24ed0ee484f021f6ac55e123ccf3c25bb42bbf4c",
+  "license": "Apache-2.0",
+  "method": "Pinned official SO-101 follower new-calibration URDF; mesh paths rewritten only. Unmodified STL bytes.",
+  "files": [
+    {
+      "file": "assets/base_motor_holder_so101_v1.stl",
+      "sha256": "8cd2f241037ea377af1191fffe0dd9d9006beea6dcc48543660ed41647072424",
+      "bytes": 1877084,
+      "sourcePath": "Simulation/SO101/assets/base_motor_holder_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/base_motor_holder_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/base_so101_v2.stl",
+      "sha256": "bb12b7026575e1f70ccc7240051f9d943553bf34e5128537de6cd86fae33924d",
+      "bytes": 471584,
+      "sourcePath": "Simulation/SO101/assets/base_so101_v2.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/base_so101_v2.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/sts3215_03a_v1.stl",
+      "sha256": "a37c871fb502483ab96c256baf457d36f2e97afc9205313d9c5ab275ef941cd0",
+      "bytes": 954084,
+      "sourcePath": "Simulation/SO101/assets/sts3215_03a_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/sts3215_03a_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/waveshare_mounting_plate_so101_v2.stl",
+      "sha256": "e197e24005a07d01bbc06a8c42311664eaeda415bf859f68fa247884d0f1a6e9",
+      "bytes": 62784,
+      "sourcePath": "Simulation/SO101/assets/waveshare_mounting_plate_so101_v2.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/waveshare_mounting_plate_so101_v2.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/motor_holder_so101_base_v1.stl",
+      "sha256": "31242ae6fb59d8b15c66617b88ad8e9bded62d57c35d11c0c43a70d2f4caa95b",
+      "bytes": 1129384,
+      "sourcePath": "Simulation/SO101/assets/motor_holder_so101_base_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/motor_holder_so101_base_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/rotation_pitch_so101_v1.stl",
+      "sha256": "9be900cc2a2bf718102841ef82ef8d2873842427648092c8ed2ca1e2ef4ffa34",
+      "bytes": 883684,
+      "sourcePath": "Simulation/SO101/assets/rotation_pitch_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/rotation_pitch_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/upper_arm_so101_v1.stl",
+      "sha256": "475056e03a17e71919b82fd88ab9a0b898ab50164f2a7943652a6b2941bb2d4f",
+      "bytes": 1303484,
+      "sourcePath": "Simulation/SO101/assets/upper_arm_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/upper_arm_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/under_arm_so101_v1.stl",
+      "sha256": "d01d1f2de365651dcad9d6669e94ff87ff7652b5bb2d10752a66a456a86dbc71",
+      "bytes": 1975884,
+      "sourcePath": "Simulation/SO101/assets/under_arm_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/under_arm_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/motor_holder_so101_wrist_v1.stl",
+      "sha256": "887f92e6013cb64ea3a1ab8675e92da1e0beacfd5e001f972523540545e08011",
+      "bytes": 1052184,
+      "sourcePath": "Simulation/SO101/assets/motor_holder_so101_wrist_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/motor_holder_so101_wrist_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/sts3215_03a_no_horn_v1.stl",
+      "sha256": "75ef3781b752e4065891aea855e34dc161a38a549549cd0970cedd07eae6f887",
+      "bytes": 865884,
+      "sourcePath": "Simulation/SO101/assets/sts3215_03a_no_horn_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/sts3215_03a_no_horn_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/wrist_roll_pitch_so101_v2.stl",
+      "sha256": "6c7ec5525b4d8b9e397a30ab4bb0037156a5d5f38a4adf2c7d943d6c56eda5ae",
+      "bytes": 2699784,
+      "sourcePath": "Simulation/SO101/assets/wrist_roll_pitch_so101_v2.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/wrist_roll_pitch_so101_v2.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/wrist_roll_follower_so101_v1.stl",
+      "sha256": "4b17b410a12d64ec39554abc3e8054d8a97384b2dc4a8d95a5ecb2a93670f5f4",
+      "bytes": 1439884,
+      "sourcePath": "Simulation/SO101/assets/wrist_roll_follower_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/wrist_roll_follower_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    },
+    {
+      "file": "assets/moving_jaw_so101_v1.stl",
+      "sha256": "785a9dded2f474bc1d869e0d3dae398a3dcd9c0c345640040472210d2861fa9d",
+      "bytes": 1413584,
+      "sourcePath": "Simulation/SO101/assets/moving_jaw_so101_v1.stl",
+      "sourceUrl": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/assets/moving_jaw_so101_v1.stl",
+      "license": "Apache-2.0",
+      "licenseEvidence": [
+        "LICENSE"
+      ]
+    }
+  ],
+  "joints": [
+    {
+      "id": "gripper_frame_joint",
+      "type": "fixed",
+      "parent": "gripper_link",
+      "child": "gripper_frame_link",
+      "axis": "0 0 0",
+      "origin": {
+        "xyz": "-0.0079 -0.000218121 -0.0981274",
+        "rpy": "0 3.14159 0"
+      },
+      "limit": {}
+    },
+    {
+      "id": "gripper",
+      "type": "revolute",
+      "parent": "gripper_link",
+      "child": "moving_jaw_so101_v1_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0.0202 0.0188 -0.0234",
+        "rpy": "1.5708 -5.24284e-08 -1.41553e-15"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-0.174533",
+        "upper": "1.74533"
+      }
+    },
+    {
+      "id": "wrist_roll",
+      "type": "revolute",
+      "parent": "wrist_link",
+      "child": "gripper_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "5.55112e-17 -0.0611 0.0181",
+        "rpy": "1.5708 0.0486795 3.14159"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-2.74385",
+        "upper": "2.84121"
+      }
+    },
+    {
+      "id": "wrist_flex",
+      "type": "revolute",
+      "parent": "lower_arm_link",
+      "child": "wrist_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "-0.1349 0.0052 3.62355e-17",
+        "rpy": "4.02456e-15 8.67362e-16 -1.5708"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-1.65806",
+        "upper": "1.65806"
+      }
+    },
+    {
+      "id": "elbow_flex",
+      "type": "revolute",
+      "parent": "upper_arm_link",
+      "child": "lower_arm_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "-0.11257 -0.028 1.73763e-16",
+        "rpy": "-3.63608e-16 8.74301e-16 1.5708"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-1.69",
+        "upper": "1.69"
+      }
+    },
+    {
+      "id": "shoulder_lift",
+      "type": "revolute",
+      "parent": "shoulder_link",
+      "child": "upper_arm_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "-0.0303992 -0.0182778 -0.0542",
+        "rpy": "-1.5708 -1.5708 0"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-1.74533",
+        "upper": "1.74533"
+      }
+    },
+    {
+      "id": "shoulder_pan",
+      "type": "revolute",
+      "parent": "base_link",
+      "child": "shoulder_link",
+      "axis": "0 0 1",
+      "origin": {
+        "xyz": "0.0388353 -8.97657e-09 0.0624",
+        "rpy": "3.14159 4.18253e-17 -3.14159"
+      },
+      "limit": {
+        "effort": "10",
+        "velocity": "10",
+        "lower": "-1.91986",
+        "upper": "1.91986"
+      }
+    }
+  ],
+  "links": [
+    "base_link",
+    "shoulder_link",
+    "upper_arm_link",
+    "lower_arm_link",
+    "wrist_link",
+    "gripper_link",
+    "gripper_frame_link",
+    "moving_jaw_so101_v1_link"
+  ],
+  "licenseAudit": {
+    "status": "source-scoped-review",
+    "basis": "Root Apache-2.0 LICENSE; no subtree license or NOTICE found in pinned tracked tree. Covers actual referenced files as declared by repository, not independent vendor IP warranty. External linked resources excluded.",
+    "evidence": [
+      {
+        "repositoryPath": "LICENSE",
+        "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/LICENSE"
+      },
+      {
+        "repositoryPath": "README.md",
+        "sha256": "7e9bdd089aab15532f7304e65e748707315aaee359204143e3997ecfc568d01e",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/README.md"
+      },
+      {
+        "repositoryPath": "Simulation/SO101/README.md",
+        "sha256": "c6df213e471e4573ba6384cb957e9eee9644f5d671272f98f67d28866333f747",
+        "url": "https://github.com/TheRobotStudio/SO-ARM100/blob/a758567c3978dfeefe282ede0500085a48fe8f78/Simulation/SO101/README.md"
+      }
+    ]
+  },
+  "distributionNotices": [
+    "LICENSE.txt",
+    "ATTRIBUTION.txt",
+    "MODIFICATIONS.txt",
+    "LEROBOT-LICENSE.txt"
+  ],
+  "supportStatus": {
+    "zh": "基础开放硬件 SO-101 follower，新校准零位；不是 SO-100 或 leader。五个臂关节加一个旋转夹爪，非 LeRobot 0–100 归一化夹爪接口。未运行串口、电机、校准或控制代码。",
+    "en": "Foundational open-hardware SO-101 follower, new-calibration zero; not SO-100 or leader. Five arm joints plus a revolute gripper, not the LeRobot normalized 0–100 gripper interface. No serial, motor, calibration or control code executed."
+  },
+  "assemblyEvidence": {
+    "repository": "https://github.com/huggingface/lerobot",
+    "commit": "e6ffde60312365c5452c46189a26872483943154",
+    "path": "docs/source/so101.mdx",
+    "scope": "Textual follower assembly instructions; external videos not independently licensed or frame-verified.",
+    "license": "Apache-2.0",
+    "licenseFile": "LEROBOT-LICENSE.txt",
+    "licenseSha256": "9e108af26a7ae92a6d2cb0273856a4a0a84da8819c2cffee8b2657cc4f905718",
+    "sourceSha256": "b0b561065069a61792c88262a9544808aa676dc46a525b42a74c1dc543451beb",
+    "modifications": "Text summarized and translated for teaching; external linked media excluded."
+  }
+}
