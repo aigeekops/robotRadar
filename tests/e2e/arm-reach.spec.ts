@@ -7,7 +7,7 @@ for (const [id, endpoint] of Object.entries(armEndpoints)) {
     const errors: string[] = [];
     const assets: { url: string; status: number }[] = [];
     page.on("response", (response) => {
-      if (/\.(dae|stl|obj|png|jpg)(\?|$)/i.test(response.url()))
+      if (/\.(dae|stl|obj|png|jpg)(\.gz)?(\?|$)/i.test(response.url()))
         assets.push({ url: response.url(), status: response.status() });
     });
     page.on("pageerror", (error) => errors.push(error.message));
@@ -83,7 +83,7 @@ for (const [id, endpoint] of Object.entries(armEndpoints)) {
 test("missing arm visual mesh blocks task and explicit retry recovers", async ({
   page,
 }) => {
-  await page.route("**/robots/panda/meshes/visual/link0.dae", (r) =>
+  await page.route("**/robots/panda/meshes/visual/link0.dae*", (r) =>
     r.fulfill({ status: 404, body: "missing" }),
   );
   await page.goto("/?robot=panda&experience=reach&lang=en");
@@ -97,7 +97,7 @@ test("missing arm visual mesh blocks task and explicit retry recovers", async ({
   await expect(
     root.getByRole("button", { name: "Next target", exact: true }),
   ).toBeDisabled();
-  await page.unroute("**/robots/panda/meshes/visual/link0.dae");
+  await page.unroute("**/robots/panda/meshes/visual/link0.dae*");
   await root
     .getByRole("button", { name: "Retry model loading", exact: true })
     .click();

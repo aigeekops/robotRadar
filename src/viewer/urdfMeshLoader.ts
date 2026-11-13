@@ -2,6 +2,7 @@ import {
   FileLoader,
   LoadingManager,
   Mesh,
+  MeshPhongMaterial,
   Object3D,
   Group,
   Light,
@@ -127,5 +128,79 @@ export function withObjMeshSupport(
     } catch (error) {
       fail(error);
     }
+  };
+}
+
+/** Build-generated lossless gzip sidecars reduce network bytes without changing
+ * source topology, link boundaries or material assignments. Old deployments and
+ * browsers without streaming decompression fall back to original assets. */
+export function withCompressedMeshSupport(
+  original: UrdfMeshLoader,
+): UrdfMeshLoader {
+  return (path, manager, done) => {
+    if (!import.meta.env?.PROD || typeof DecompressionStream === "undefined") {
+      original(path, manager, done);
+      return;
+    }
+    const extension = path.split(/[?#]/, 1)[0].split(".").pop()?.toLowerCase();
+    if (!["stl", "dae", "obj"].includes(extension || "")) {
+      original(path, manager, done);
+      return;
+    }
+    const url = manager.resolveURL(path);
+    manager.itemStart(url);
+    void (async () => {
+      let object: Object3D;
+      try {
+        const response = await fetch(`${url}.gz`, {
+          signal: AbortSignal.timeout(60000),
+        });
+        if (!response.ok || !response.body)
+          throw new Error("Compressed mesh unavailable");
+        // Some servers mark .gz with Content-Encoding:gzip and the browser
+        // has already decoded it; never decompress those bytes a second time.
+        const wire = await response.arrayBuffer();
+        const magic = new Uint8Array(wire, 0, Math.min(2, wire.byteLength));
+        const buffer =
+          magic[0] === 0x1f && magic[1] === 0x8b
+            ? await new Response(
+                new Blob([wire])
+                  .stream()
+                  .pipeThrough(new DecompressionStream("gzip")),
+              ).arrayBuffer()
+            : wire;
+        if (extension === "stl") {
+          const { STLLoader } =
+            await import("three/examples/jsm/loaders/STLLoader.js");
+          object = new Mesh(
+            new STLLoader().parse(buffer),
+            new MeshPhongMaterial(),
+          );
+        } else if (extension === "dae") {
+          const { ColladaLoader } =
+            await import("three/examples/jsm/loaders/ColladaLoader.js");
+          object = new ColladaLoader(manager).parse(
+            new TextDecoder().decode(buffer),
+            url.slice(0, url.lastIndexOf("/") + 1),
+          )!.scene;
+        } else object = parseUrdfObj(new TextDecoder().decode(buffer));
+      } catch {
+        // Do not poison the manager on sidecar failure. The original loader owns
+        // final error reporting and callers keep their normal retry controls.
+        try {
+          original(path, manager, done);
+        } finally {
+          manager.itemEnd(url);
+        }
+        return;
+      }
+      // Consumer errors are not transport errors and must not trigger a second
+      // callback via the fallback loader.
+      try {
+        done(removeImportedAssetLights(object));
+      } finally {
+        manager.itemEnd(url);
+      }
+    })();
   };
 }

@@ -34,7 +34,7 @@ test("all official models load with local mesh resources and no HTTP failures", 
     if (response.status() >= 400)
       failures.push(`${response.status()} ${response.url()}`);
     if (
-      /\.(stl|dae|obj)(?:\?|$)/i.test(response.url()) &&
+      /\.(stl|dae|obj)(?:\.gz)?(?:\?|$)/i.test(response.url()) &&
       response.headers()["content-type"]?.includes("text/html")
     ) {
       failures.push(`Mesh URL returned HTML: ${response.url()}`);

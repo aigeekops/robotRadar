@@ -1,4 +1,8 @@
-import { withObjMeshSupport } from "./urdfMeshLoader";
+import { robotMeshCache } from "./meshCache";
+import {
+  withObjMeshSupport,
+  withCompressedMeshSupport,
+} from "./urdfMeshLoader";
 import { applyExplode } from "../core/explode";
 import { RoundedBoxGeometry } from "three/examples/jsm/geometries/RoundedBoxGeometry.js";
 import {
@@ -233,6 +237,7 @@ export default function RobotViewer(props: Props) {
   useEffect(() => {
     if (!host.current || !props.url) return;
     const element = host.current;
+    const loadStarted = performance.now();
     let disposed = false;
     let frame = 0;
     const ownedTextures = new Set<THREE.Texture>();
@@ -397,6 +402,10 @@ export default function RobotViewer(props: Props) {
         controls.target.copy(center);
         controls.update();
         invalidate();
+        element.dataset.meshCache = JSON.stringify(robotMeshCache.stats());
+        element.dataset.modelLoadMs = String(
+          Math.round(performance.now() - loadStarted),
+        );
         setStatus("ready");
       }
     };
@@ -410,12 +419,18 @@ export default function RobotViewer(props: Props) {
     loader.parseCollision = false;
     // LoadingManager may finish early for in-flight URLs shared by another loader.
     // Track callbacks belonging to this robot, including StrictMode/remount loads.
-    const defaultMeshLoader = withObjMeshSupport(
-      loader.loadMeshCb.bind(loader),
+    const defaultMeshLoader = robotMeshCache.wrap(
+      withCompressedMeshSupport(
+        withObjMeshSupport(loader.loadMeshCb.bind(loader)),
+      ),
     );
     loader.loadMeshCb = (path, loadingManager, done) => {
       pendingMeshes += 1;
       defaultMeshLoader(path, loadingManager, (object, error) => {
+        if (disposed) {
+          robotMeshCache.disposeInstance(object);
+          return;
+        }
         done(object, error);
         pendingMeshes -= 1;
         if (error) {
@@ -431,7 +446,10 @@ export default function RobotViewer(props: Props) {
     loader.load(
       props.url,
       (robot) => {
-        if (disposed) return;
+        if (disposed) {
+          robotMeshCache.disposeInstance(robot);
+          return;
+        }
         if (leapPresentation) robot.rotation.set(0, 0, Math.PI / 2);
         else robot.rotation.x = -Math.PI / 2;
         const originals = new Map<THREE.Object3D, THREE.Vector3>();

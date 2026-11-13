@@ -1,3 +1,8 @@
+import { robotMeshCache } from "./viewer/meshCache";
+import {
+  withObjMeshSupport,
+  withCompressedMeshSupport,
+} from "./viewer/urdfMeshLoader";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
@@ -44,7 +49,7 @@ export default function ContactGraspExperience({
     history.current = [];
     const c = createContactGraspClient(
       (s) => {
-        if (alive) accept(s);
+        if (alive && visible.current) accept(s);
       },
       (message) => {
         if (alive) {
@@ -242,6 +247,11 @@ export default function ContactGraspExperience({
     const loader = new URDFLoader(manager);
     loader.workingPath = window.location.origin;
     loader.parseCollision = false;
+    loader.loadMeshCb = robotMeshCache.wrap(
+      withCompressedMeshSupport(
+        withObjMeshSupport(loader.loadMeshCb.bind(loader)),
+      ),
+    );
     const disposeObject = (object: THREE.Object3D) =>
       object.traverse((n) => {
         if (n instanceof THREE.Mesh) {
@@ -359,7 +369,9 @@ export default function ContactGraspExperience({
       }
       const s = await c.command(action);
       if (client.current !== c) return;
-      accept(s);
+      // A queued action/state may arrive after blur. Keep the paused visual
+      // frozen until the user explicitly resumes.
+      if (visible.current) accept(s);
     } catch (e) {
       if (client.current !== c) return;
       if (action === "resume") {

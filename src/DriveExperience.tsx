@@ -1,10 +1,14 @@
+import { robotMeshCache } from "./viewer/meshCache";
 import { driveTaskFor, dockingFeedback, DOCK_TARGET } from "./core/driveTasks";
 import {
   stepDriveCamera,
   type DriveCameraMode,
   type CameraTrack,
 } from "./core/driveCamera";
-import { withObjMeshSupport } from "./viewer/urdfMeshLoader";
+import {
+  withObjMeshSupport,
+  withCompressedMeshSupport,
+} from "./viewer/urdfMeshLoader";
 import { siteAsset } from "./siteAssets";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
@@ -330,10 +334,18 @@ export default function DriveExperience({
       camera.lookAt(cameraLook);
       lighting.fit(height, new THREE.Vector3(0, height * 0.5, 0));
     };
-    const defaultMesh = withObjMeshSupport(loader.loadMeshCb.bind(loader));
+    const defaultMesh = robotMeshCache.wrap(
+      withCompressedMeshSupport(
+        withObjMeshSupport(loader.loadMeshCb.bind(loader)),
+      ),
+    );
     loader.loadMeshCb = (path, m, done) => {
       pending++;
       defaultMesh(path, m, (obj, error) => {
+        if (disposed) {
+          robotMeshCache.disposeInstance(obj);
+          return;
+        }
         done(obj, error);
         pending--;
         if (error) {
@@ -353,7 +365,10 @@ export default function DriveExperience({
     loader.load(
       robot.urdfUrl,
       (loaded) => {
-        if (disposed) return;
+        if (disposed) {
+          robotMeshCache.disposeInstance(loaded);
+          return;
+        }
         model = loaded;
         model.rotation.x = -Math.PI / 2;
         carrier.add(model);

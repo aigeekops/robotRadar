@@ -1,6 +1,10 @@
+import { robotMeshCache } from "./viewer/meshCache";
 import { fitAssemblyOverview } from "./core/assemblyOverviewFit";
 import { assemblyTrayLayout } from "./core/assemblyTrayLayout";
-import { withObjMeshSupport } from "./viewer/urdfMeshLoader";
+import {
+  withObjMeshSupport,
+  withCompressedMeshSupport,
+} from "./viewer/urdfMeshLoader";
 import {
   installPhotographicLighting,
   photographicMaterial,
@@ -438,10 +442,18 @@ export default function AssemblyExperience({
     const loader = new URDFLoader(manager);
     loader.workingPath = window.location.origin;
     loader.parseCollision = false;
-    const original = withObjMeshSupport(loader.loadMeshCb.bind(loader));
+    const original = robotMeshCache.wrap(
+      withCompressedMeshSupport(
+        withObjMeshSupport(loader.loadMeshCb.bind(loader)),
+      ),
+    );
     loader.loadMeshCb = (path, mgr, done) => {
       pending++;
       original(path, mgr, (object, error) => {
+        if (disposed) {
+          robotMeshCache.disposeInstance(object);
+          return;
+        }
         done(object, error);
         pending--;
         if (error) fail(error);
@@ -451,7 +463,10 @@ export default function AssemblyExperience({
     loader.load(
       robot.urdfUrl,
       (loaded) => {
-        if (disposed) return;
+        if (disposed) {
+          robotMeshCache.disposeInstance(loaded);
+          return;
+        }
         source = loaded;
         parsed = true;
         queueMicrotask(finalize);

@@ -1,5 +1,7 @@
 """Check built entry URLs and all model assets without network access."""
 import json
+import gzip
+import hashlib
 import sys
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
@@ -24,12 +26,20 @@ class EntryParser(HTMLParser):
 EntryParser().feed((DIST / "index.html").read_text())
 models = json.loads((DIST / "robots/manifest.json").read_text())
 meshes = 0
+checked_sidecars = set()
 for model in models:
     folder = DIST / "robots" / model["id"]
     root = ET.parse(folder / "robot.urdf").getroot()
     for mesh in root.findall(".//mesh"):
         filename = mesh.get("filename")
         assert filename and (DIST / filename.lstrip("/")).is_file(), filename
+        asset = DIST / filename.lstrip("/")
+        if asset.suffix.lower() in {".stl", ".dae", ".obj"} and asset not in checked_sidecars:
+            sidecar = Path(str(asset) + ".gz")
+            assert sidecar.is_file(), f"Compressed mesh missing: {sidecar}"
+            with gzip.open(sidecar, "rb") as compressed:
+                assert hashlib.sha256(compressed.read()).digest() == hashlib.sha256(asset.read_bytes()).digest(), f"Compressed mesh differs from source: {asset}"
+            checked_sidecars.add(asset)
         meshes += 1
 # Validate the files actually loaded by the browser, not an empty legacy directory.
 for relative in (

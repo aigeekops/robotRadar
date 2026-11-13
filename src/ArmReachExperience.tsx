@@ -1,3 +1,8 @@
+import { robotMeshCache } from "./viewer/meshCache";
+import {
+  withObjMeshSupport,
+  withCompressedMeshSupport,
+} from "./viewer/urdfMeshLoader";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
@@ -161,7 +166,11 @@ export default function ArmReachExperience({
     // Source mesh URLs are root-relative, not relative to the URDF folder.
     loader.workingPath = window.location.origin;
     loader.parseCollision = false;
-    const loadMesh = loader.loadMeshCb.bind(loader);
+    const loadMesh = robotMeshCache.wrap(
+      withCompressedMeshSupport(
+        withObjMeshSupport(loader.loadMeshCb.bind(loader)),
+      ),
+    );
     loader.loadMeshCb = (path, loadingManager, done) => {
       pending++;
       loadMesh(path, loadingManager, (object, error) => {
