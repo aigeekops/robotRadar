@@ -248,6 +248,8 @@ export default function App() {
   const explodeFrame = useRef(0);
   const [formFilter, setFormFilter] = useState("all");
   const robot = robots.find((r) => r.id === robotId) || robots[0];
+  const activeRobotId = useRef("");
+  activeRobotId.current = robot?.id || "";
   const mode = robot
     ? normalizeRobotMode(robot.id, requestedMode)
     : requestedMode;
@@ -846,6 +848,7 @@ export default function App() {
       </header>
       {experience === "build" && robot ? (
         <AssemblyExperience
+          key={robot.id}
           robot={robot}
           lang={lang}
           contextPart={assemblyContextPart || undefined}
@@ -867,7 +870,12 @@ export default function App() {
       ) : experience === "grasp" && robot?.id === "leap_hand" ? (
         <ContactGraspExperience lang={lang} onExit={showBriefing} />
       ) : experience === "reach" && robot ? (
-        <ArmReachExperience robot={robot} lang={lang} onExit={showBriefing} />
+        <ArmReachExperience
+          key={robot.id}
+          robot={robot}
+          lang={lang}
+          onExit={showBriefing}
+        />
       ) : loadError ? (
         <div className="empty-state">
           <h1>{t("机型清单加载失败", "Robot library failed to load")}</h1>
@@ -1169,7 +1177,10 @@ export default function App() {
                         setSelected(part);
                         if (part) setBriefing(false);
                       }}
-                      onLoaded={onLoaded}
+                      onLoaded={(newInfo) => {
+                        if (activeRobotId.current === robot.id)
+                          onLoaded(newInfo);
+                      }}
                     />
                     {mode === "assembly" &&
                       !(robot.id === "so101" && assemblyView === "physical") &&

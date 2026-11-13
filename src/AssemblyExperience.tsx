@@ -1,3 +1,4 @@
+import ChallengeLoading from "./ChallengeLoading";
 import { robotMeshCache } from "./viewer/meshCache";
 import { fitAssemblyOverview } from "./core/assemblyOverviewFit";
 import { assemblyTrayLayout } from "./core/assemblyTrayLayout";
@@ -91,6 +92,7 @@ export default function AssemblyExperience({
     "loading",
   );
   const [error, setError] = useState("");
+  const [loadProgress, setLoadProgress] = useState({ completed: 0, total: 0 });
   const [reload, setReload] = useState(0);
   const [hint, setHint] = useState(false);
   const [feedback, setFeedback] = useState("");
@@ -164,6 +166,8 @@ export default function AssemblyExperience({
       parsed = false,
       finalized = false,
       failed = false;
+    let meshTotal = 0,
+      meshCompleted = 0;
     let source: URDFRobot | null = null;
     let ghostModel: THREE.Group | null = null;
     const materialOriginals = new Map<
@@ -174,6 +178,7 @@ export default function AssemblyExperience({
       sceneSteps: SceneStep[] = [];
     const sourceMatrices = new Map<THREE.Mesh, THREE.Matrix4>();
     setStatus("loading");
+    setLoadProgress({ completed: 0, total: 0 });
     setError("");
     setSteps([]);
     setSession(initialBuild());
@@ -449,6 +454,8 @@ export default function AssemblyExperience({
     );
     loader.loadMeshCb = (path, mgr, done) => {
       pending++;
+      meshTotal++;
+      setLoadProgress({ completed: meshCompleted, total: meshTotal });
       original(path, mgr, (object, error) => {
         if (disposed) {
           robotMeshCache.disposeInstance(object);
@@ -456,6 +463,8 @@ export default function AssemblyExperience({
         }
         done(object, error);
         pending--;
+        meshCompleted++;
+        setLoadProgress({ completed: meshCompleted, total: meshTotal });
         if (error) fail(error);
         queueMicrotask(finalize);
       });
@@ -723,7 +732,12 @@ export default function AssemblyExperience({
   const minutes = Math.floor(session.elapsed / 60),
     seconds = Math.floor(session.elapsed % 60);
   return (
-    <section className="assembly-experience" data-testid="assembly-experience">
+    <section
+      className="assembly-experience"
+      data-testid="assembly-experience"
+      data-robot-id={robot.id}
+      data-load-state={status}
+    >
       <header className="ae-top">
         <button onClick={onExit}>
           <ArrowLeft size={16} />
@@ -850,18 +864,18 @@ export default function AssemblyExperience({
         ))}
       </div>
       {status !== "ready" && (
-        <div className="ae-loading" role="status">
-          <strong>
-            {status === "loading"
-              ? t("正在加载真实模型部件…", "Loading source model parts…")
-              : t("部件加载失败", "Part loading failed")}
-          </strong>
-          {error && <p>{error}</p>}
-          {status === "error" && (
-            <button onClick={() => setReload((n) => n + 1)}>
-              {t("重试加载", "Retry loading")}
-            </button>
-          )}
+        <div className="ae-loading-shell">
+          <ChallengeLoading
+            robot={robot}
+            lang={lang}
+            failed={status === "error"}
+            completed={loadProgress.completed}
+            total={loadProgress.total}
+            retryLabel={t("重试加载", "Retry loading")}
+            onRetry={() => setReload((n) => n + 1)}
+            onBack={onExit}
+          />
+          {error && <span className="sr-only">{error}</span>}
         </div>
       )}
       <aside className="ae-panel">

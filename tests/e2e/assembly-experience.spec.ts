@@ -133,7 +133,10 @@ test("assembly mesh failure is recoverable and never reports completion", async 
 }) => {
   await page.route("**/robots/g1/robot.urdf", (r) => r.abort());
   await page.goto("/?robot=g1&experience=build");
-  await expect(page.getByText("部件加载失败", { exact: true })).toBeVisible();
+  await expect(page.getByTestId("challenge-loading")).toHaveAttribute(
+    "data-load-state",
+    "error",
+  );
   await expect(page.locator(".ae-complete")).toHaveCount(0);
   await page.unroute("**/robots/g1/robot.urdf");
   await page.getByRole("button", { name: "重试加载", exact: true }).click();

@@ -1,3 +1,4 @@
+import ChallengeLoading from "./ChallengeLoading";
 import { robotMeshCache } from "./viewer/meshCache";
 import {
   withObjMeshSupport,
@@ -32,6 +33,7 @@ export default function ArmReachExperience({
     [error, setError] = useState<number | null>(null),
     [status, setStatus] = useState("loading");
   const [retry, setRetry] = useState(0);
+  const [loadProgress, setLoadProgress] = useState({ completed: 0, total: 0 });
   const [paused, setPaused] = useState(false);
   const pausedRef = useRef(false);
   const operated = useRef(false);
@@ -59,6 +61,7 @@ export default function ArmReachExperience({
     setProgress(0);
     setError(null);
     setStatus("loading");
+    setLoadProgress({ completed: 0, total: 0 });
     setJoints([]);
     setValues({});
     targets.current = [];
@@ -104,6 +107,8 @@ export default function ArmReachExperience({
           );
         }
       });
+    let meshTotal = 0,
+      meshCompleted = 0;
     let pending = 0,
       failed = false,
       ready = false,
@@ -173,6 +178,8 @@ export default function ArmReachExperience({
     );
     loader.loadMeshCb = (path, loadingManager, done) => {
       pending++;
+      meshTotal++;
+      setLoadProgress({ completed: meshCompleted, total: meshTotal });
       loadMesh(path, loadingManager, (object, error) => {
         done(object, error);
         pending--;
@@ -181,6 +188,8 @@ export default function ArmReachExperience({
           return;
         }
         if (error) failed = true;
+        meshCompleted++;
+        setLoadProgress({ completed: meshCompleted, total: meshTotal });
         queueMicrotask(finish);
       });
     };
@@ -302,13 +311,31 @@ export default function ArmReachExperience({
     };
   }, [robot.id, robot.urdfUrl, retry]);
   return (
-    <section className="arm-reach">
+    <section
+      className="arm-reach"
+      data-robot-id={robot.id}
+      data-load-state={status}
+    >
       <header>
         <button onClick={onExit}>{zh ? "返回" : "Back"}</button>
         <h2>{zh ? "机械臂 · 末端定位" : "Arm · endpoint positioning"}</h2>
       </header>
       <div className="arm-reach-layout">
-        <div className="arm-reach-canvas" ref={host} />
+        <div className="challenge-model-shell" aria-busy={status === "loading"}>
+          <div className="arm-reach-canvas" ref={host} />
+          {(status === "loading" || status === "error") && (
+            <ChallengeLoading
+              robot={robot}
+              lang={lang}
+              failed={status === "error"}
+              completed={loadProgress.completed}
+              total={loadProgress.total}
+              retryLabel={zh ? "重新加载模型" : "Retry model loading"}
+              onRetry={() => setRetry((n) => n + 1)}
+              onBack={onExit}
+            />
+          )}
+        </div>
         <aside>
           <h3>
             {zh ? "定位挑战" : "Position challenge"} {stage + 1}/3
@@ -336,11 +363,6 @@ export default function ArmReachExperience({
               ? "需先手动调整关节；失焦暂停，返回后点击恢复计分。"
               : "Move a joint first. Focus loss pauses scoring; resume explicitly."}
           </small>
-          {status === "error" && (
-            <button onClick={() => setRetry((value) => value + 1)}>
-              {zh ? "重新加载模型" : "Retry model loading"}
-            </button>
-          )}
           {joints.map((j) => (
             <label key={j.name}>
               {j.name} <output>{(values[j.name] || 0).toFixed(2)} rad</output>
@@ -363,6 +385,7 @@ export default function ArmReachExperience({
             </label>
           ))}
           <button
+            disabled={status !== "ready"}
             onClick={() => {
               pausedRef.current = !pausedRef.current;
               setPaused(pausedRef.current);
@@ -379,6 +402,7 @@ export default function ArmReachExperience({
                 : "Pause scoring"}
           </button>
           <button
+            disabled={status !== "ready"}
             onClick={() => {
               const initial = Object.fromEntries(
                 joints.map((j) => [
